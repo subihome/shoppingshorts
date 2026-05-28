@@ -1,120 +1,100 @@
 from __future__ import annotations
 
 import json
-import uuid
 from pathlib import Path
 
 from ..types import EditPlan
-
-
-# SKELETON CapCut Desktop (Global) draft_content.json builder.
-# The exact schema must be verified against a real sample exported from
-# CapCut Desktop Global. Keys here follow the publicly-known shape and will
-# be adjusted once tests/fixtures/sample_capcut/draft_content.json is added.
-
-_VIDEO_EXT = {".mp4", ".mov", ".m4v", ".webm"}
-_IMAGE_EXT = {".jpg", ".jpeg", ".png"}
-
-
-def _uid() -> str:
-    return str(uuid.uuid4()).upper()
-
-
-def _us(seconds: float) -> int:
-    return int(round(seconds * 1_000_000))
-
-
-def _video_material(path: Path, duration_us: int) -> dict:
-    is_image = path.suffix.lower() in _IMAGE_EXT
-    return {
-        "id": _uid(),
-        "type": "photo" if is_image else "video",
-        "path": str(path.resolve()),
-        "material_name": path.name,
-        "duration": duration_us,
-        "width": 1080,
-        "height": 1920,
-        "has_audio": False,
-        "extra_material_refs": [],
-    }
-
-
-def _audio_material(path: Path, duration_us: int) -> dict:
-    return {
-        "id": _uid(),
-        "type": "extract_music",
-        "path": str(path.resolve()),
-        "name": path.name,
-        "duration": duration_us,
-        "extra_material_refs": [],
-    }
-
-
-def _text_material(text: str) -> dict:
-    return {
-        "id": _uid(),
-        "type": "text",
-        "content": json.dumps({"text": text}, ensure_ascii=False),
-        "font_size": 12,
-    }
-
-
-def _segment(material_id: str, source_us: int, target_start_us: int, target_dur_us: int) -> dict:
-    return {
-        "id": _uid(),
-        "material_id": material_id,
-        "source_timerange": {"start": 0, "duration": source_us},
-        "target_timerange": {"start": target_start_us, "duration": target_dur_us},
-        "speed": 1.0,
-        "volume": 1.0,
-        "visible": True,
-    }
+from . import templates as T
 
 
 def export_capcut_draft(*, plan_path: Path, out_path: Path) -> None:
     plan = EditPlan.model_validate_json(plan_path.read_text(encoding="utf-8"))
 
-    materials = {"videos": [], "audios": [], "texts": []}
+    materials = T.empty_materials()
     video_segs: list[dict] = []
     text_segs: list[dict] = []
     audio_segs: list[dict] = []
 
     for clip in plan.clips:
-        dur_us = _us(clip.audio_end - clip.audio_start)
-        start_us = _us(clip.audio_start)
+        target_start = T.us(clip.audio_start)
+        target_dur = T.us(clip.audio_end - clip.audio_start)
 
-        vm = _video_material(Path(clip.asset_path), dur_us)
+        vm = T.video_material(Path(clip.asset_path), plan.width, plan.height)
         materials["videos"].append(vm)
-        video_segs.append(_segment(vm["id"], dur_us, start_us, dur_us))
+
+        # Per-video-segment aux materials. CapCut requires each main-track
+        # video segment to point at a private set of these.
+        speed = T.speed_material()
+        ph = T.placeholder_info_material()
+        canvas = T.canvas_material()
+        anim = T.sticker_animation_material()
+        scm = T.sound_channel_mapping_material()
+        mc = T.material_color_material()
+        loud = T.loudness_material()
+        vs = T.vocal_separation_material()
+        materials["speeds"].append(speed)
+        materials["placeholder_infos"].append(ph)
+        materials["canvases"].append(canvas)
+        materials["material_animations"].append(anim)
+        materials["sound_channel_mappings"].append(scm)
+        materials["material_colors"].append(mc)
+        materials["loudnesses"].append(loud)
+        materials["vocal_separations"].append(vs)
+
+        source_dur = T.us((clip.asset_out or (clip.audio_end - clip.audio_start)) - clip.asset_in)
+        source_start = T.us(clip.asset_in)
+
+        video_segs.append(T.video_segment(
+            material_id=vm["id"],
+            target_start_us=target_start, target_dur_us=target_dur,
+            source_start_us=source_start, source_dur_us=source_dur,
+            extra_refs=[speed["id"], ph["id"], canvas["id"], anim["id"],
+                        scm["id"], mc["id"], loud["id"], vs["id"]],
+        ))
 
         if clip.text:
-            tm = _text_material(clip.text)
+            tm = T.text_material(clip.text)
+            t_anim = T.sticker_animation_material()
             materials["texts"].append(tm)
-            text_segs.append(_segment(tm["id"], dur_us, start_us, dur_us))
+            materials["material_animations"].append(t_anim)
+            text_segs.append(T.text_segment(
+                material_id=tm["id"],
+                target_start_us=target_start, target_dur_us=target_dur,
+                extra_refs=[t_anim["id"]],
+            ))
+
+    total_us = T.us(plan.clips[-1].audio_end) if plan.clips else 0
 
     if plan.narration_audio:
-        total_us = _us(plan.clips[-1].audio_end) if plan.clips else 0
-        am = _audio_material(Path(plan.narration_audio), total_us)
+        am = T.audio_material(Path(plan.narration_audio), total_us)
+        a_speed = T.speed_material()
+        a_ph = T.placeholder_info_material()
+        a_beats = T.beats_material()
+        a_scm = T.sound_channel_mapping_material()
+        a_vs = T.vocal_separation_material()
         materials["audios"].append(am)
-        audio_segs.append(_segment(am["id"], total_us, 0, total_us))
+        materials["speeds"].append(a_speed)
+        materials["placeholder_infos"].append(a_ph)
+        materials["beats"].append(a_beats)
+        materials["sound_channel_mappings"].append(a_scm)
+        materials["vocal_separations"].append(a_vs)
+        audio_segs.append(T.audio_segment(
+            material_id=am["id"],
+            target_start_us=0, target_dur_us=total_us,
+            source_start_us=0, source_dur_us=total_us,
+            extra_refs=[a_speed["id"], a_ph["id"], a_beats["id"], a_scm["id"], a_vs["id"]],
+        ))
 
-    total_us = _us(plan.clips[-1].audio_end) if plan.clips else 0
+    tracks = [
+        {"id": T.uid(), "type": "video", "attribute": 1, "flag": 0, "name": "", "segments": video_segs},
+        {"id": T.uid(), "type": "text", "attribute": 0, "flag": 0, "name": "", "segments": text_segs},
+        {"id": T.uid(), "type": "audio", "attribute": 0, "flag": 0, "name": "", "segments": audio_segs},
+    ]
 
-    draft = {
-        "canvas_config": {
-            "width": plan.width,
-            "height": plan.height,
-            "ratio": f"{plan.width}:{plan.height}",
-        },
-        "duration": total_us,
-        "fps": plan.fps,
-        "materials": materials,
-        "tracks": [
-            {"id": _uid(), "type": "video", "segments": video_segs},
-            {"id": _uid(), "type": "audio", "segments": audio_segs},
-            {"id": _uid(), "type": "text", "segments": text_segs},
-        ],
-    }
+    draft = T.root_scaffold(width=plan.width, height=plan.height, fps=plan.fps,
+                            total_duration_us=total_us)
+    draft["materials"] = materials
+    draft["tracks"] = tracks
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(draft, ensure_ascii=False, indent=2), encoding="utf-8")
