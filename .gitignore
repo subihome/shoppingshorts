@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.eggs/
+build/
+dist/
+
+# Project
+.env
+.work/
+out/
+tts_out/
+*.mp4
+*.mp3
+*.wav
+analysis.json
+script.json
+plan.json
+narration.json
+!examples/**/*.mp4
+!examples/**/*.wav
+!tests/fixtures/**
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
