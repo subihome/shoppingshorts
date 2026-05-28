@@ -1,15 +1,14 @@
 from __future__ import annotations
 
 import json
+import time
 from pathlib import Path
 
 from ..types import EditPlan
 from . import templates as T
 
 
-def export_capcut_draft(*, plan_path: Path, out_path: Path) -> None:
-    plan = EditPlan.model_validate_json(plan_path.read_text(encoding="utf-8"))
-
+def _build_draft_content(plan: EditPlan) -> dict:
     materials = T.empty_materials()
     video_segs: list[dict] = []
     text_segs: list[dict] = []
@@ -22,8 +21,6 @@ def export_capcut_draft(*, plan_path: Path, out_path: Path) -> None:
         vm = T.video_material(Path(clip.asset_path), plan.width, plan.height)
         materials["videos"].append(vm)
 
-        # Per-video-segment aux materials. CapCut requires each main-track
-        # video segment to point at a private set of these.
         speed = T.speed_material()
         ph = T.placeholder_info_material()
         canvas = T.canvas_material()
@@ -44,12 +41,14 @@ def export_capcut_draft(*, plan_path: Path, out_path: Path) -> None:
         source_dur = T.us((clip.asset_out or (clip.audio_end - clip.audio_start)) - clip.asset_in)
         source_start = T.us(clip.asset_in)
 
+        is_photo = vm["type"] == "photo"
         video_segs.append(T.video_segment(
             material_id=vm["id"],
             target_start_us=target_start, target_dur_us=target_dur,
             source_start_us=source_start, source_dur_us=source_dur,
             extra_refs=[speed["id"], ph["id"], canvas["id"], anim["id"],
                         scm["id"], mc["id"], loud["id"], vs["id"]],
+            volume=0.0 if is_photo else 1.0,
         ))
 
         if clip.text:
@@ -95,6 +94,45 @@ def export_capcut_draft(*, plan_path: Path, out_path: Path) -> None:
                             total_duration_us=total_us)
     draft["materials"] = materials
     draft["tracks"] = tracks
+    return draft
 
+
+def export_capcut_draft(*, plan_path: Path, out_path: Path) -> None:
+    plan = EditPlan.model_validate_json(plan_path.read_text(encoding="utf-8"))
+    draft = _build_draft_content(plan)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(draft, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def export_capcut_project(*, plan_path: Path, project_dir: Path,
+                          windows_root: str = "C:/Users/sub/Downloads/CapCut Drafts") -> None:
+    """Emit both draft_content.json and draft_meta_info.json into project_dir.
+
+    project_dir's basename becomes draft_name. windows_root sets draft_root_path
+    in the meta — must match where CapCut expects projects on the target machine
+    (the user's CapCut Drafts root, NOT the local Linux path).
+    """
+    plan = EditPlan.model_validate_json(plan_path.read_text(encoding="utf-8"))
+    draft = _build_draft_content(plan)
+
+    project_dir.mkdir(parents=True, exist_ok=True)
+    name = project_dir.name
+    folder_path = f"{windows_root.rstrip('/')}/{name}"
+    now_us = int(time.time() * 1_000_000)
+
+    meta = T.meta_scaffold(
+        draft_id=T.uid(),
+        name=name,
+        folder_path=folder_path,
+        root_path=windows_root.rstrip("/"),
+        total_duration_us=draft["duration"],
+        create_us=now_us,
+        modified_us=now_us,
+    )
+
+    (project_dir / "draft_content.json").write_text(
+        json.dumps(draft, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    (project_dir / "draft_meta_info.json").write_text(
+        json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8"
+    )

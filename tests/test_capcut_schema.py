@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from shoppingshorts.capcut.builder import export_capcut_draft
+from shoppingshorts.capcut.builder import export_capcut_draft, export_capcut_project
 from shoppingshorts.plan.planner import build_plan
 from shoppingshorts.types import (
     EditPlan,
@@ -11,7 +11,9 @@ from shoppingshorts.types import (
     TimelineClip,
 )
 
-FIXTURE = Path(__file__).parent / "fixtures" / "sample_capcut" / "minimal" / "draft_content.json"
+FIXTURES = Path(__file__).parent / "fixtures" / "sample_capcut" / "minimal"
+FIXTURE = FIXTURES / "draft_content.json"
+META_FIXTURE = FIXTURES / "draft_meta_info.json"
 
 
 def _sample_plan() -> EditPlan:
@@ -95,6 +97,35 @@ def test_durations_are_microseconds(tmp_path: Path):
     # first video segment: 2.0s -> 2_000_000 us
     first = produced["tracks"][0]["segments"][0]
     assert first["target_timerange"]["duration"] == 2_000_000
+
+
+def test_project_export_emits_both_files_with_matching_duration(tmp_path: Path):
+    p = _write_plan(tmp_path)
+    proj = tmp_path / "myproj"
+    export_capcut_project(plan_path=p, project_dir=proj,
+                          windows_root="C:/CapCut Drafts")
+
+    assert (proj / "draft_content.json").exists()
+    assert (proj / "draft_meta_info.json").exists()
+
+    content = json.loads((proj / "draft_content.json").read_text(encoding="utf-8"))
+    meta = json.loads((proj / "draft_meta_info.json").read_text(encoding="utf-8"))
+
+    assert content["duration"] == meta["tm_duration"], "duration mismatch breaks CapCut on save"
+    assert meta["draft_name"] == "myproj"
+    assert meta["draft_fold_path"] == "C:/CapCut Drafts/myproj"
+
+
+def test_meta_top_level_matches_fixture(tmp_path: Path):
+    p = _write_plan(tmp_path)
+    proj = tmp_path / "myproj"
+    export_capcut_project(plan_path=p, project_dir=proj,
+                          windows_root="C:/CapCut Drafts")
+
+    fixture = json.loads(META_FIXTURE.read_text(encoding="utf-8"))
+    produced = json.loads((proj / "draft_meta_info.json").read_text(encoding="utf-8"))
+    missing = set(fixture.keys()) - set(produced.keys())
+    assert not missing, f"missing meta top-level keys: {sorted(missing)}"
 
 
 def test_text_content_is_valid_json_string(tmp_path: Path):

@@ -632,6 +632,71 @@ def empty_materials() -> dict[str, list]:
 
 # ---------- Root scaffold ----------
 
+# Empty bin shape — type buckets CapCut keeps in draft_meta_info.draft_materials.
+_DRAFT_MATERIAL_TYPES = (0, 1, 2, 3, 6, 7, 8, 18)
+
+
+def empty_draft_materials() -> list[dict]:
+    return [{"type": t, "value": []} for t in _DRAFT_MATERIAL_TYPES]
+
+
+def meta_scaffold(*, draft_id: str, name: str, folder_path: str, root_path: str,
+                  total_duration_us: int, create_us: int, modified_us: int) -> dict:
+    return {
+        "cloud_draft_cover": False,
+        "cloud_draft_sync": False,
+        "cloud_package_completed_time": "",
+        "draft_cloud_capcut_purchase_info": "",
+        "draft_cloud_last_action_download": False,
+        "draft_cloud_package_type": "",
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "draft_cover.jpg",
+        "draft_deeplink_url": "",
+        "draft_enterprise_info": {
+            "draft_enterprise_extra": "",
+            "draft_enterprise_id": "",
+            "draft_enterprise_name": "",
+            "enterprise_material": [],
+        },
+        "draft_fold_path": folder_path,
+        "draft_id": draft_id,
+        "draft_is_ae_produce": False,
+        "draft_is_ai_packaging_used": False,
+        "draft_is_ai_shorts": False,
+        "draft_is_ai_translate": False,
+        "draft_is_article_video_draft": False,
+        "draft_is_cloud_temp_draft": False,
+        "draft_is_from_deeplink": "false",
+        "draft_is_invisible": False,
+        "draft_is_pippit_draft": False,
+        "draft_is_web_article_video": False,
+        "draft_materials": empty_draft_materials(),
+        "draft_materials_copied_info": [],
+        "draft_name": name,
+        "draft_need_rename_folder": False,
+        "draft_new_version": "",
+        "draft_removable_storage_device": "",
+        "draft_root_path": root_path,
+        "draft_segment_extra_info": [],
+        "draft_timeline_materials_size_": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "tm_draft_cloud_completed": 0,
+        "tm_draft_cloud_entry_id": 0,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_parent_entry_id": -1,
+        "tm_draft_cloud_space_id": 0,
+        "tm_draft_cloud_user_id": 0,
+        "tm_draft_create": create_us,
+        "tm_draft_modified": modified_us,
+        "tm_draft_removed": 0,
+        "tm_duration": total_duration_us,
+    }
+
+
 def root_scaffold(*, width: int, height: int, fps: float, total_duration_us: int) -> dict:
     return {
         "id": uid(),
