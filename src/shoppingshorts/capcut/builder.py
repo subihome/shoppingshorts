@@ -90,8 +90,14 @@ def _build_draft_content(plan: EditPlan) -> dict:
     if video_segs:
         tracks.append({"id": T.uid(), "type": "video", "attribute": 1, "flag": 0, "name": "", "segments": video_segs})
     if text_segs:
+        text_track_idx = len(tracks)
+        for s in text_segs:
+            s["track_render_index"] = text_track_idx
         tracks.append({"id": T.uid(), "type": "text", "attribute": 0, "flag": 0, "name": "", "segments": text_segs})
     if audio_segs:
+        audio_track_idx = len(tracks)
+        for s in audio_segs:
+            s["track_render_index"] = audio_track_idx
         tracks.append({"id": T.uid(), "type": "audio", "attribute": 0, "flag": 0, "name": "", "segments": audio_segs})
 
     draft = T.root_scaffold(width=plan.width, height=plan.height, fps=plan.fps,
