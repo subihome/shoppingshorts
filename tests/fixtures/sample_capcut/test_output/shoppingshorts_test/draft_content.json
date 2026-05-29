@@ -1,5 +1,5 @@
 {
-  "id": "4617B1F0-2C9C-4212-9311-9B87AFEAC4CA",
+  "id": "DFE2AB03-8037-494E-BC76-85FDD25ABBD9",
   "version": 360000,
   "new_version": "171.0.0",
   "draft_type": "video",
@@ -76,7 +76,7 @@
     "flowers": [],
     "videos": [
       {
-        "id": "8C96D828-3CED-4C34-B5C7-7524E2624BA7",
+        "id": "60A03426-1B19-4C55-BDDE-6262B3583C61",
         "unique_id": "",
         "type": "photo",
         "duration": 10800000000,
@@ -228,7 +228,7 @@
         }
       },
       {
-        "id": "86F726D5-CA4D-4E8C-BA82-C88D2635308C",
+        "id": "0B011E01-5D16-40B0-8639-D0672394674A",
         "unique_id": "",
         "type": "photo",
         "duration": 10800000000,
@@ -380,7 +380,7 @@
         }
       },
       {
-        "id": "FD64A37D-9F9D-43E3-A483-8DC9EB1081ED",
+        "id": "7DF8AF45-A58E-49EA-B74E-D03D9173BBEC",
         "unique_id": "",
         "type": "photo",
         "duration": 10800000000,
@@ -537,7 +537,7 @@
     "images": [],
     "texts": [
       {
-        "id": "B6FDD3EF-EAB4-4070-B3A8-A77854D6C1A5",
+        "id": "46C955AA-18E4-4BB9-BFDA-014EE82F3E9F",
         "type": "subtitle",
         "content": "{\"text\": \"테스트 1\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
         "name": "",
@@ -693,7 +693,7 @@
         "relevance_segment": []
       },
       {
-        "id": "7D9FC720-853F-4881-A99B-FE2028F37214",
+        "id": "33AA9451-37FC-4A53-AC92-E180262A12EE",
         "type": "subtitle",
         "content": "{\"text\": \"테스트 2\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
         "name": "",
@@ -849,7 +849,7 @@
         "relevance_segment": []
       },
       {
-        "id": "49D71E20-28E8-4E05-921F-B69EB71EAF91",
+        "id": "44C9DCED-8B5B-4EC3-922F-48B28F415767",
         "type": "subtitle",
         "content": "{\"text\": \"테스트 3\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
         "name": "",
@@ -1009,7 +1009,7 @@
     "stickers": [],
     "canvases": [
       {
-        "id": "EA017D2C-180E-4E08-9AE3-8B32A9CE6301",
+        "id": "C1CDEEB9-4277-4470-8C3B-C503F819B440",
         "type": "canvas_color",
         "color": "",
         "blur": 0.0,
@@ -1021,7 +1021,7 @@
         "team_id": ""
       },
       {
-        "id": "EF4467A0-29F8-490F-831D-3C9AC42474A8",
+        "id": "32637AF3-36DF-4D96-B5E2-DB96AD2534B0",
         "type": "canvas_color",
         "color": "",
         "blur": 0.0,
@@ -1033,7 +1033,7 @@
         "team_id": ""
       },
       {
-        "id": "41B9979B-D0D9-4956-AC8C-C39B46C2DFA2",
+        "id": "5113D674-6E73-4A33-8A2A-8109F8A20E0A",
         "type": "canvas_color",
         "color": "",
         "blur": 0.0,
@@ -1051,37 +1051,37 @@
     "beats": [],
     "material_animations": [
       {
-        "id": "01A9891E-3C01-4572-9C9B-1EF615ED8390",
+        "id": "4F0D7345-EEE3-4125-AA2F-285370075699",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "316E7610-7CDC-43FF-9248-085A6B37A85B",
+        "id": "7B5D51C7-2682-4FA8-A9FF-EBA47073EAF8",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "00B0EF29-726A-4EC3-B422-F869AF3E2C30",
+        "id": "FC1AFD2F-4549-4661-81E0-9F1819931842",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "C4F972EF-D18C-4CE1-9B3C-A98743FB184C",
+        "id": "CAA4AB22-4387-4447-B4F4-A70C40A70B8F",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "C6D37F1A-4DFC-4F6B-BD62-27702B8052B3",
+        "id": "FCA69C24-CF69-4887-BCF6-E7E7429A2EED",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "BDC396B3-4815-4DD3-B7B9-E074F5EA8A01",
+        "id": "15B28A4E-0E2D-4C15-86AA-72BAB80AA5C3",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
@@ -1090,7 +1090,7 @@
     "placeholders": [],
     "placeholder_infos": [
       {
-        "id": "FB5BD781-126A-49BD-9B4F-E66FE902BD90",
+        "id": "23F14478-FFFA-463C-B039-0E13EA1FF816",
         "type": "placeholder_info",
         "meta_type": "none",
         "res_path": "",
@@ -1099,7 +1099,7 @@
         "error_text": ""
       },
       {
-        "id": "88408B54-E368-41F7-9FDC-65FC313CFA31",
+        "id": "04A06AB3-2D1B-4F49-8CAC-81236D675EAD",
         "type": "placeholder_info",
         "meta_type": "none",
         "res_path": "",
@@ -1108,7 +1108,7 @@
         "error_text": ""
       },
       {
-        "id": "B6A7A80B-36CA-4743-A3FA-10B1855F5AD2",
+        "id": "F67A6353-530B-4350-9DE7-A901FC0D4E44",
         "type": "placeholder_info",
         "meta_type": "none",
         "res_path": "",
@@ -1119,21 +1119,21 @@
     ],
     "speeds": [
       {
-        "id": "FAF0E08F-1883-477E-89F2-19C18700827F",
+        "id": "B4A653FF-290E-49FC-BA43-2F1597F99B99",
         "type": "speed",
         "mode": 0,
         "speed": 1.0,
         "curve_speed": null
       },
       {
-        "id": "813322C8-1BA0-47F4-9366-FC9B0D02051D",
+        "id": "9783386E-2BDB-46A1-A9D5-C923AE08530D",
         "type": "speed",
         "mode": 0,
         "speed": 1.0,
         "curve_speed": null
       },
       {
-        "id": "F10F448A-4212-4FBF-AB15-4979396CA8A7",
+        "id": "B4F21569-84D4-40C2-82D4-B4D4A65E540D",
         "type": "speed",
         "mode": 0,
         "speed": 1.0,
@@ -1161,19 +1161,19 @@
     "plugin_effects": [],
     "sound_channel_mappings": [
       {
-        "id": "AAAFFC3E-1F99-4A05-9790-EEDA6B148353",
+        "id": "64BBF804-21A6-4E9A-B770-CDB294B53DC8",
         "type": "none",
         "audio_channel_mapping": 0,
         "is_config_open": false
       },
       {
-        "id": "62BB2EDF-56F9-4E82-9567-63F5CC2A57DA",
+        "id": "00B25D96-9512-4E33-BCE3-37314494E088",
         "type": "none",
         "audio_channel_mapping": 0,
         "is_config_open": false
       },
       {
-        "id": "27105356-D3C5-43B8-89C2-5AA27EBA6205",
+        "id": "B9DA3781-B019-488D-970D-FC0236FA2CFF",
         "type": "none",
         "audio_channel_mapping": 0,
         "is_config_open": false
@@ -1183,7 +1183,7 @@
     "shapes": [],
     "material_colors": [
       {
-        "id": "99879155-25C8-47AE-96F3-8C467D46746B",
+        "id": "D7F38C05-1475-4272-BDE8-F1083E431139",
         "is_color_clip": false,
         "is_gradient": false,
         "solid_color": "",
@@ -1194,7 +1194,7 @@
         "height": 0.0
       },
       {
-        "id": "D215B96C-A541-4460-B3C1-18F983332D0C",
+        "id": "4E2C0EBB-BC4B-4AFC-9FC6-FA68D81FBA3F",
         "is_color_clip": false,
         "is_gradient": false,
         "solid_color": "",
@@ -1205,7 +1205,7 @@
         "height": 0.0
       },
       {
-        "id": "ACF7465E-6488-406F-B0EA-5EBFF127BB10",
+        "id": "62E8B026-6EAB-4167-A89E-3C69899A2A9B",
         "is_color_clip": false,
         "is_gradient": false,
         "solid_color": "",
@@ -1223,7 +1223,7 @@
     "audio_track_indexes": [],
     "loudnesses": [
       {
-        "id": "F0A81D15-A474-48B0-89DE-B82F567B25AB",
+        "id": "362D6086-C4E8-4155-8D0D-E1DB9C794618",
         "enable": false,
         "time_range": null,
         "file_id": "",
@@ -1231,7 +1231,7 @@
         "loudness_param": null
       },
       {
-        "id": "49F3780B-453B-4BE1-9890-43DD5C135BC4",
+        "id": "D4DA13A2-1F02-44F6-8B31-87EE02B9509F",
         "enable": false,
         "time_range": null,
         "file_id": "",
@@ -1239,7 +1239,7 @@
         "loudness_param": null
       },
       {
-        "id": "814DFA9A-EC59-4866-8571-9B9AC51CDB52",
+        "id": "9F28EE30-CD1F-4991-8BDA-F5C44EC921DC",
         "enable": false,
         "time_range": null,
         "file_id": "",
@@ -1250,7 +1250,7 @@
     "vocal_beautifys": [],
     "vocal_separations": [
       {
-        "id": "07C12B1B-AA3D-4BD6-97D1-8B980E3132C3",
+        "id": "98E21FF2-ACF5-4A1C-A16A-39254E5E3514",
         "type": "vocal_separation",
         "choice": 0,
         "removed_sounds": [],
@@ -1260,7 +1260,7 @@
         "enter_from": ""
       },
       {
-        "id": "28552EDA-BD5A-4496-9A44-93F16C373B77",
+        "id": "848C3BB8-F949-426F-AFEA-1BF310734B85",
         "type": "vocal_separation",
         "choice": 0,
         "removed_sounds": [],
@@ -1270,7 +1270,7 @@
         "enter_from": ""
       },
       {
-        "id": "D3C9CC1C-3488-49B0-835C-EE1CBE60CD05",
+        "id": "824B8D5D-11A5-4147-908C-EB9EB78063DF",
         "type": "vocal_separation",
         "choice": 0,
         "removed_sounds": [],
@@ -1289,15 +1289,15 @@
   },
   "tracks": [
     {
-      "id": "C0DF83AC-4908-45A8-B5B0-18ECB3107EB7",
+      "id": "4E83752A-0D96-4D3B-807B-B81C2E8BE6EE",
       "type": "video",
       "attribute": 1,
       "flag": 0,
       "name": "",
       "segments": [
         {
-          "id": "04C087EE-5DDB-43AE-81B3-8569964F5677",
-          "material_id": "8C96D828-3CED-4C34-B5C7-7524E2624BA7",
+          "id": "13F48662-5BDE-403B-9DC6-A227B5A6B08E",
+          "material_id": "60A03426-1B19-4C55-BDDE-6262B3583C61",
           "source_timerange": {
             "start": 0,
             "duration": 3000000
@@ -1341,14 +1341,14 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "FAF0E08F-1883-477E-89F2-19C18700827F",
-            "FB5BD781-126A-49BD-9B4F-E66FE902BD90",
-            "EA017D2C-180E-4E08-9AE3-8B32A9CE6301",
-            "01A9891E-3C01-4572-9C9B-1EF615ED8390",
-            "AAAFFC3E-1F99-4A05-9790-EEDA6B148353",
-            "99879155-25C8-47AE-96F3-8C467D46746B",
-            "F0A81D15-A474-48B0-89DE-B82F567B25AB",
-            "07C12B1B-AA3D-4BD6-97D1-8B980E3132C3"
+            "B4A653FF-290E-49FC-BA43-2F1597F99B99",
+            "23F14478-FFFA-463C-B039-0E13EA1FF816",
+            "C1CDEEB9-4277-4470-8C3B-C503F819B440",
+            "4F0D7345-EEE3-4125-AA2F-285370075699",
+            "64BBF804-21A6-4E9A-B770-CDB294B53DC8",
+            "D7F38C05-1475-4272-BDE8-F1083E431139",
+            "362D6086-C4E8-4155-8D0D-E1DB9C794618",
+            "98E21FF2-ACF5-4A1C-A16A-39254E5E3514"
           ],
           "render_index": 0,
           "keyframe_refs": [],
@@ -1394,8 +1394,8 @@
           "enable_color_adjust_pro": false
         },
         {
-          "id": "E6258D0E-C70B-4C62-B2F5-89942E73DB26",
-          "material_id": "86F726D5-CA4D-4E8C-BA82-C88D2635308C",
+          "id": "9013A253-91F8-40CD-9565-98A2FD77D808",
+          "material_id": "0B011E01-5D16-40B0-8639-D0672394674A",
           "source_timerange": {
             "start": 0,
             "duration": 3000000
@@ -1439,14 +1439,14 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "813322C8-1BA0-47F4-9366-FC9B0D02051D",
-            "88408B54-E368-41F7-9FDC-65FC313CFA31",
-            "EF4467A0-29F8-490F-831D-3C9AC42474A8",
-            "00B0EF29-726A-4EC3-B422-F869AF3E2C30",
-            "62BB2EDF-56F9-4E82-9567-63F5CC2A57DA",
-            "D215B96C-A541-4460-B3C1-18F983332D0C",
-            "49F3780B-453B-4BE1-9890-43DD5C135BC4",
-            "28552EDA-BD5A-4496-9A44-93F16C373B77"
+            "9783386E-2BDB-46A1-A9D5-C923AE08530D",
+            "04A06AB3-2D1B-4F49-8CAC-81236D675EAD",
+            "32637AF3-36DF-4D96-B5E2-DB96AD2534B0",
+            "FC1AFD2F-4549-4661-81E0-9F1819931842",
+            "00B25D96-9512-4E33-BCE3-37314494E088",
+            "4E2C0EBB-BC4B-4AFC-9FC6-FA68D81FBA3F",
+            "D4DA13A2-1F02-44F6-8B31-87EE02B9509F",
+            "848C3BB8-F949-426F-AFEA-1BF310734B85"
           ],
           "render_index": 0,
           "keyframe_refs": [],
@@ -1492,8 +1492,8 @@
           "enable_color_adjust_pro": false
         },
         {
-          "id": "4551A0E8-FB31-4334-B2CC-F8C30BFD823C",
-          "material_id": "FD64A37D-9F9D-43E3-A483-8DC9EB1081ED",
+          "id": "C90A0DAC-2912-4D8F-888D-6EBC555FFBD2",
+          "material_id": "7DF8AF45-A58E-49EA-B74E-D03D9173BBEC",
           "source_timerange": {
             "start": 0,
             "duration": 3000000
@@ -1537,14 +1537,14 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "F10F448A-4212-4FBF-AB15-4979396CA8A7",
-            "B6A7A80B-36CA-4743-A3FA-10B1855F5AD2",
-            "41B9979B-D0D9-4956-AC8C-C39B46C2DFA2",
-            "C6D37F1A-4DFC-4F6B-BD62-27702B8052B3",
-            "27105356-D3C5-43B8-89C2-5AA27EBA6205",
-            "ACF7465E-6488-406F-B0EA-5EBFF127BB10",
-            "814DFA9A-EC59-4866-8571-9B9AC51CDB52",
-            "D3C9CC1C-3488-49B0-835C-EE1CBE60CD05"
+            "B4F21569-84D4-40C2-82D4-B4D4A65E540D",
+            "F67A6353-530B-4350-9DE7-A901FC0D4E44",
+            "5113D674-6E73-4A33-8A2A-8109F8A20E0A",
+            "FCA69C24-CF69-4887-BCF6-E7E7429A2EED",
+            "B9DA3781-B019-488D-970D-FC0236FA2CFF",
+            "62E8B026-6EAB-4167-A89E-3C69899A2A9B",
+            "9F28EE30-CD1F-4991-8BDA-F5C44EC921DC",
+            "824B8D5D-11A5-4147-908C-EB9EB78063DF"
           ],
           "render_index": 0,
           "keyframe_refs": [],
@@ -1592,15 +1592,23 @@
       ]
     },
     {
-      "id": "6465BF1C-CC3B-49AC-AA86-F7B1B31E81AC",
+      "id": "41E0D6BE-D2F3-4388-BA24-2DC0073206F2",
+      "type": "video",
+      "attribute": 1,
+      "flag": 2,
+      "name": "",
+      "segments": []
+    },
+    {
+      "id": "B7CB6F31-8367-44CA-BCFF-6047E4D0583A",
       "type": "text",
       "attribute": 0,
-      "flag": 0,
+      "flag": 1,
       "name": "",
       "segments": [
         {
-          "id": "050E1C6E-2F89-4991-96DF-1C38BCC4305A",
-          "material_id": "B6FDD3EF-EAB4-4070-B3A8-A77854D6C1A5",
+          "id": "CF2023D5-02AA-4787-9106-74467B5D9284",
+          "material_id": "46C955AA-18E4-4BB9-BFDA-014EE82F3E9F",
           "source_timerange": null,
           "target_timerange": {
             "start": 0,
@@ -1641,7 +1649,7 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "316E7610-7CDC-43FF-9248-085A6B37A85B"
+            "7B5D51C7-2682-4FA8-A9FF-EBA47073EAF8"
           ],
           "render_index": 14000,
           "keyframe_refs": [],
@@ -1652,7 +1660,7 @@
           "group_id": "",
           "enable_color_curves": true,
           "enable_hsl_curves": true,
-          "track_render_index": 1,
+          "track_render_index": 2,
           "hdr_settings": null,
           "enable_color_wheels": true,
           "track_attribute": 0,
@@ -1683,8 +1691,8 @@
           "enable_color_adjust_pro": false
         },
         {
-          "id": "B8CF3A20-8139-49C9-9B7D-0C1C0AEB9419",
-          "material_id": "7D9FC720-853F-4881-A99B-FE2028F37214",
+          "id": "E7F8743E-03AD-42E8-9CEA-177F04BDED39",
+          "material_id": "33AA9451-37FC-4A53-AC92-E180262A12EE",
           "source_timerange": null,
           "target_timerange": {
             "start": 3000000,
@@ -1725,7 +1733,7 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "C4F972EF-D18C-4CE1-9B3C-A98743FB184C"
+            "CAA4AB22-4387-4447-B4F4-A70C40A70B8F"
           ],
           "render_index": 14001,
           "keyframe_refs": [],
@@ -1736,7 +1744,7 @@
           "group_id": "",
           "enable_color_curves": true,
           "enable_hsl_curves": true,
-          "track_render_index": 1,
+          "track_render_index": 2,
           "hdr_settings": null,
           "enable_color_wheels": true,
           "track_attribute": 0,
@@ -1767,8 +1775,8 @@
           "enable_color_adjust_pro": false
         },
         {
-          "id": "0D78B6B4-669D-4D23-A547-82E5E44CA6F7",
-          "material_id": "49D71E20-28E8-4E05-921F-B69EB71EAF91",
+          "id": "F66893A5-956E-4AE3-BC38-4E00EE3A2D76",
+          "material_id": "44C9DCED-8B5B-4EC3-922F-48B28F415767",
           "source_timerange": null,
           "target_timerange": {
             "start": 6000000,
@@ -1809,7 +1817,7 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "BDC396B3-4815-4DD3-B7B9-E074F5EA8A01"
+            "15B28A4E-0E2D-4C15-86AA-72BAB80AA5C3"
           ],
           "render_index": 14002,
           "keyframe_refs": [],
@@ -1820,7 +1828,7 @@
           "group_id": "",
           "enable_color_curves": true,
           "enable_hsl_curves": true,
-          "track_render_index": 1,
+          "track_render_index": 2,
           "hdr_settings": null,
           "enable_color_wheels": true,
           "track_attribute": 0,

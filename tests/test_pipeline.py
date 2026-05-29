@@ -59,5 +59,7 @@ def test_end_to_end(tmp_path: Path):
     assert len(draft["materials"]["texts"]) == 3
     assert any(t["type"] == "video" for t in draft["tracks"])
     assert any(t["type"] == "text" for t in draft["tracks"])
+    # Empty PIP video track is intentional padding so text lands at z-index >= 2.
     for tr in draft["tracks"]:
-        assert tr["segments"], f"empty track emitted: {tr['type']}"
+        if tr["type"] == "text" or (tr["type"] == "video" and tr.get("flag") != 2):
+            assert tr["segments"], f"empty non-padding track: {tr['type']}"

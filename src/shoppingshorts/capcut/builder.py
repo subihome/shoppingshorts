@@ -90,10 +90,16 @@ def _build_draft_content(plan: EditPlan) -> dict:
     if video_segs:
         tracks.append({"id": T.uid(), "type": "video", "attribute": 1, "flag": 0, "name": "", "segments": video_segs})
     if text_segs:
+        # Pad with an empty PIP video track so text lands at track_render_index >= 2.
+        # CapCut reserves index 0 for main video and index 1 for PIP video; placing
+        # text at index 1 makes the project fail to load.
+        while len(tracks) < 2:
+            tracks.append({"id": T.uid(), "type": "video", "attribute": 1, "flag": 2, "name": "", "segments": []})
         text_track_idx = len(tracks)
         for s in text_segs:
             s["track_render_index"] = text_track_idx
-        tracks.append({"id": T.uid(), "type": "text", "attribute": 0, "flag": 0, "name": "", "segments": text_segs})
+            s["render_index"] = 14000 + (s["render_index"] - 14000)
+        tracks.append({"id": T.uid(), "type": "text", "attribute": 0, "flag": 1, "name": "", "segments": text_segs})
     if audio_segs:
         audio_track_idx = len(tracks)
         for s in audio_segs:
