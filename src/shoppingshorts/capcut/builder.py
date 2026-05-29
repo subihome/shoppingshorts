@@ -86,24 +86,21 @@ def _build_draft_content(plan: EditPlan) -> dict:
             extra_refs=[a_speed["id"], a_ph["id"], a_beats["id"], a_scm["id"], a_vs["id"]],
         ))
 
+    # Empirically: CapCut renders our timeline only when text segments use
+    # track_render_index=0 (matching the video track), even though the user's
+    # multi-track fixture used higher values. Values 1/2 either silently drop
+    # the timeline or refuse to load the project entirely. Leave them all at 0
+    # until we figure out the real rule.
     tracks: list[dict] = []
     if video_segs:
         tracks.append({"id": T.uid(), "type": "video", "attribute": 1, "flag": 0, "name": "", "segments": video_segs})
     if text_segs:
-        # Pad with an empty PIP video track so text lands at track_render_index >= 2.
-        # CapCut reserves index 0 for main video and index 1 for PIP video; placing
-        # text at index 1 makes the project fail to load.
-        while len(tracks) < 2:
-            tracks.append({"id": T.uid(), "type": "video", "attribute": 1, "flag": 2, "name": "", "segments": []})
-        text_track_idx = len(tracks)
         for s in text_segs:
-            s["track_render_index"] = text_track_idx
-            s["render_index"] = 14000 + (s["render_index"] - 14000)
-        tracks.append({"id": T.uid(), "type": "text", "attribute": 0, "flag": 1, "name": "", "segments": text_segs})
+            s["track_render_index"] = 0
+        tracks.append({"id": T.uid(), "type": "text", "attribute": 0, "flag": 0, "name": "", "segments": text_segs})
     if audio_segs:
-        audio_track_idx = len(tracks)
         for s in audio_segs:
-            s["track_render_index"] = audio_track_idx
+            s["track_render_index"] = 0
         tracks.append({"id": T.uid(), "type": "audio", "attribute": 0, "flag": 0, "name": "", "segments": audio_segs})
 
     draft = T.root_scaffold(width=plan.width, height=plan.height, fps=plan.fps,
