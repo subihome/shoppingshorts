@@ -72,4 +72,4 @@ def test_project_export_emits_both_files_with_matching_duration(tmp_path: Path):
     meta = json.loads((proj / "draft_meta_info.json").read_text(encoding="utf-8"))
     assert content["duration"] == meta["tm_duration"]
     assert meta["draft_name"] == "myproj"
-    assert meta["draft_fold_path"] == "C:/CapCut Drafts/myproj"
+    assert meta["draft_fold_path"] == "C:\\CapCut Drafts\\myproj"

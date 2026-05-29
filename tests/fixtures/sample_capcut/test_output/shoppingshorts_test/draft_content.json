@@ -1,2372 +1,25 @@
 {
-  "id": "E26CD8A5-B79F-4971-9B29-62E6D542D844",
+  "id": "CEEFA312-F874-43B3-AD39-40B2CF7A7FE8",
   "version": 360000,
-  "new_version": "171.0.0",
-  "name": "",
+  "new_version": "93.0.0",
+  "fps": 30,
   "duration": 9000000,
-  "create_time": 0,
-  "update_time": 0,
-  "fps": 30.0,
-  "is_drop_frame_timecode": false,
+  "canvas_config": {
+    "width": 1080,
+    "height": 1920,
+    "ratio": "9:16"
+  },
   "color_space": 0,
   "config": {
-    "video_mute": true,
+    "video_mute": false,
     "record_audio_last_index": 1,
     "extract_audio_last_index": 1,
-    "original_sound_last_index": 2,
+    "original_sound_last_index": 1,
     "subtitle_recognition_id": "",
     "subtitle_taskinfo": [],
     "lyrics_recognition_id": "",
-    "lyrics_taskinfo": [],
-    "subtitle_sync": true,
-    "lyrics_sync": true,
-    "voice_change_sync": false,
-    "sticker_max_index": 1,
     "adjust_max_index": 1,
-    "material_save_mode": 0,
-    "export_range": null,
-    "maintrack_adsorb": true,
-    "combination_max_index": 2,
-    "attachment_info": [],
-    "zoom_info_params": null,
-    "system_font_list": [],
-    "multi_language_mode": "none",
-    "multi_language_main": "none",
-    "multi_language_current": "none",
-    "multi_language_list": [],
-    "subtitle_keywords_config": null,
-    "use_float_render": false
-  },
-  "canvas_config": {
-    "ratio": "9:16",
-    "width": 1080,
-    "height": 1920,
-    "background": null
-  },
-  "tracks": [
-    {
-      "id": "0DCE8325-0528-42B9-8CA7-8117E50254CB",
-      "type": "video",
-      "segments": [
-        {
-          "id": "1CED0C24-043D-472A-ABBA-97FD9622AD22",
-          "source_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "target_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 0.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.221981975563709,
-              "y": 1.221981975563709
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": -0.11847988077496274
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "material_id": "6782FD93-767D-46BD-B8FE-051EFFBD5DBC",
-          "extra_material_refs": [
-            "F3EBDE5E-5E83-41F5-8FDF-3798514F945C",
-            "87104C32-ED7E-4B28-8922-8478B9C6A9D0",
-            "2CBEA824-5942-4E89-A70F-3BD89C3F975C",
-            "CB6CECAF-466B-46F0-81D3-BC2AB33EF60E",
-            "02458BC6-C91B-4F40-9343-7CAE1D634EAD",
-            "F6F86945-9052-4D88-ADDC-78DD61EBA589",
-            "9CE300A1-842D-4C8E-BE5A-AF9FDD4BCAB4",
-            "77291F5B-0444-444B-A0BC-994F3E172BF9"
-          ],
-          "render_index": 0,
-          "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
-          "enable_color_wheels": true,
-          "track_attribute": 1,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        },
-        {
-          "id": "090C27CE-93FC-4050-A7C2-31B7FC2F65C8",
-          "source_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "target_timerange": {
-            "start": 3000000,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 0.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.221981975563709,
-              "y": 1.221981975563709
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": -0.11847988077496274
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "material_id": "058BD921-B2E2-423F-8304-FA017CD89AEB",
-          "extra_material_refs": [
-            "8B83F4EF-C340-4262-A87F-C6442BAB5751",
-            "69255F18-5E33-4825-8282-6E39855B0F2B",
-            "FD1EEF10-3039-45AB-9A32-FB59E9F06D73",
-            "596FAC56-DD63-41EB-9A91-832092AD4C24",
-            "99E10412-7F2C-48E1-AB51-79E411FDD561",
-            "189F819B-C3BD-4D67-ABB5-1E72877F2A8D",
-            "75A4677B-6818-49F5-A27E-4C84187EC237",
-            "BCA1E010-C841-4972-A81B-304D69229909"
-          ],
-          "render_index": 0,
-          "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
-          "enable_color_wheels": true,
-          "track_attribute": 1,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        },
-        {
-          "id": "1A5DF57A-DD18-453C-AF40-50D6117D99EB",
-          "source_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "target_timerange": {
-            "start": 6000000,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 0.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.221981975563709,
-              "y": 1.221981975563709
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": -0.11847988077496274
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "material_id": "F8647AF0-0825-413F-80CA-03AFD0032B17",
-          "extra_material_refs": [
-            "1C7D3673-AD02-42B0-BABB-0524FAB2E9EB",
-            "5E84BD97-1B94-4875-8B8F-90C410492967",
-            "B048D4FC-CB21-450A-8706-E35656FB5139",
-            "005C7C03-72B9-4996-8027-221EF5785CA4",
-            "D7896F23-7829-4D1A-8988-B1EE69BCCCF1",
-            "284914A2-4008-47F4-A1A2-E2C5568BC084",
-            "2DC97359-C353-4BA2-9B83-33160CD63EAA",
-            "0FE179ED-1D3A-4F98-A9E3-99D361341DBA"
-          ],
-          "render_index": 0,
-          "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
-          "enable_color_wheels": true,
-          "track_attribute": 1,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        }
-      ],
-      "flag": 0,
-      "attribute": 1,
-      "name": "",
-      "is_default_name": true
-    },
-    {
-      "id": "0FD93D37-8632-440B-8F1E-E6BC8BD025B3",
-      "type": "text",
-      "segments": [
-        {
-          "id": "2947563E-13CE-4BB5-8657-4644AA53CC27",
-          "source_timerange": null,
-          "target_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 1.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.31326378539493294
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "material_id": "89B1E968-F2CD-4846-BB98-16808ED89D26",
-          "extra_material_refs": [
-            "4D50FC71-19A1-4224-A18D-6F1C2AA70914"
-          ],
-          "render_index": 14000,
-          "keyframe_refs": [],
-          "enable_lut": false,
-          "enable_adjust": false,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 2,
-          "hdr_settings": null,
-          "enable_color_wheels": true,
-          "track_attribute": 0,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        },
-        {
-          "id": "D7F48162-A45E-4B43-907E-31ECD5489C98",
-          "source_timerange": null,
-          "target_timerange": {
-            "start": 3000000,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 1.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.31326378539493294
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "material_id": "9C3236C3-D778-4DC6-A51C-3364C29A9ED0",
-          "extra_material_refs": [
-            "C584CDD5-C77A-4933-8CCD-4FD9AD41E1CE"
-          ],
-          "render_index": 14001,
-          "keyframe_refs": [],
-          "enable_lut": false,
-          "enable_adjust": false,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 2,
-          "hdr_settings": null,
-          "enable_color_wheels": true,
-          "track_attribute": 0,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        },
-        {
-          "id": "F149EEBD-B6A5-4825-B2C2-6FAC9F88D896",
-          "source_timerange": null,
-          "target_timerange": {
-            "start": 6000000,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 1.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.31326378539493294
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "material_id": "5F67E169-8D5C-4D9E-B788-B8020F2C78E2",
-          "extra_material_refs": [
-            "B9A1B9C6-0305-4D58-B9D3-FE5D5C3085E2"
-          ],
-          "render_index": 14002,
-          "keyframe_refs": [],
-          "enable_lut": false,
-          "enable_adjust": false,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 2,
-          "hdr_settings": null,
-          "enable_color_wheels": true,
-          "track_attribute": 0,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        }
-      ],
-      "flag": 1,
-      "attribute": 0,
-      "name": "",
-      "is_default_name": true
-    }
-  ],
-  "group_container": null,
-  "materials": {
-    "flowers": [],
-    "videos": [
-      {
-        "id": "6782FD93-767D-46BD-B8FE-051EFFBD5DBC",
-        "unique_id": "",
-        "type": "photo",
-        "duration": 10800000000,
-        "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
-        "media_path": "",
-        "local_id": "",
-        "has_audio": false,
-        "reverse_path": "",
-        "intensifies_path": "",
-        "reverse_intensifies_path": "",
-        "intensifies_audio_path": "",
-        "cartoon_path": "",
-        "width": 1080,
-        "height": 1920,
-        "category_id": "",
-        "category_name": "local",
-        "material_id": "",
-        "material_name": "0512(1)-복사.png",
-        "material_url": "",
-        "crop": {
-          "upper_left_x": 0.0,
-          "upper_left_y": 0.0,
-          "upper_right_x": 1.0,
-          "upper_right_y": 0.0,
-          "lower_left_x": 0.0,
-          "lower_left_y": 1.0,
-          "lower_right_x": 1.0,
-          "lower_right_y": 1.0
-        },
-        "crop_ratio": "free",
-        "audio_fade": null,
-        "crop_scale": 1.0,
-        "extra_type_option": 0,
-        "stable": {
-          "stable_level": 0,
-          "matrix_path": "",
-          "time_range": {
-            "start": 0,
-            "duration": 0
-          }
-        },
-        "matting": {
-          "flag": 0,
-          "path": "",
-          "interactiveTime": [],
-          "has_use_quick_brush": false,
-          "strokes": [],
-          "has_use_quick_eraser": false,
-          "expansion": 0,
-          "feather": 0,
-          "reverse": false,
-          "custom_matting_id": "",
-          "enable_matting_stroke": false,
-          "is_clould": false,
-          "mask_video_path": "",
-          "cloud_product_fps": 0.0
-        },
-        "source": 0,
-        "source_platform": 0,
-        "formula_id": "",
-        "check_flag": 62978047,
-        "video_algorithm": {
-          "algorithms": [],
-          "time_range": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "path": "",
-          "gameplay_configs": [],
-          "ai_in_painting_config": [],
-          "complement_frame_config": null,
-          "motion_blur_config": null,
-          "deflicker": null,
-          "noise_reduction": null,
-          "quality_enhance": null,
-          "super_resolution": null,
-          "ai_background_configs": [],
-          "smart_complement_frame": null,
-          "aigc_generate": null,
-          "aigc_generate_list": [],
-          "mouth_shape_driver": null,
-          "ai_expression_driven": null,
-          "ai_motion_driven": null,
-          "image_interpretation": null,
-          "story_video_modify_video_config": {
-            "task_id": "",
-            "is_overwrite_last_video": false,
-            "tracker_task_id": ""
-          },
-          "skip_algorithm_index": []
-        },
-        "is_unified_beauty_mode": false,
-        "is_set_beauty_mode": false,
-        "object_locked": null,
-        "smart_motion": null,
-        "multi_camera_info": null,
-        "freeze": null,
-        "picture_from": "none",
-        "picture_set_category_id": "",
-        "picture_set_category_name": "",
-        "team_id": "",
-        "local_material_id": "",
-        "origin_material_id": "",
-        "request_id": "",
-        "has_sound_separated": false,
-        "is_text_edit_overdub": false,
-        "is_ai_generate_content": false,
-        "aigc_type": "none",
-        "is_copyright": false,
-        "aigc_history_id": "",
-        "aigc_item_id": "",
-        "local_material_from": "",
-        "smart_match_info": null,
-        "beauty_face_preset_infos": [],
-        "beauty_body_preset_id": "",
-        "beauty_face_auto_preset": {
-          "preset_id": "",
-          "name": "",
-          "rate_map": "",
-          "scene": ""
-        },
-        "beauty_face_auto_preset_infos": [],
-        "beauty_body_auto_preset": null,
-        "live_photo_timestamp": -1,
-        "live_photo_cover_path": "",
-        "content_feature_info": null,
-        "corner_pin": null,
-        "surface_trackings": [],
-        "video_mask_stroke": {
-          "resource_id": "",
-          "path": "",
-          "type": "",
-          "color": "",
-          "size": 0.0,
-          "alpha": 0.0,
-          "distance": 0.0,
-          "texture": 0.0,
-          "horizontal_shift": 0.0,
-          "vertical_shift": 0.0
-        },
-        "video_mask_shadow": {
-          "resource_id": "",
-          "path": "",
-          "color": "",
-          "alpha": 0.0,
-          "blur": 0.0,
-          "distance": 0.0,
-          "angle": 0.0
-        }
-      },
-      {
-        "id": "058BD921-B2E2-423F-8304-FA017CD89AEB",
-        "unique_id": "",
-        "type": "photo",
-        "duration": 10800000000,
-        "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
-        "media_path": "",
-        "local_id": "",
-        "has_audio": false,
-        "reverse_path": "",
-        "intensifies_path": "",
-        "reverse_intensifies_path": "",
-        "intensifies_audio_path": "",
-        "cartoon_path": "",
-        "width": 1080,
-        "height": 1920,
-        "category_id": "",
-        "category_name": "local",
-        "material_id": "",
-        "material_name": "0512(1)-복사.png",
-        "material_url": "",
-        "crop": {
-          "upper_left_x": 0.0,
-          "upper_left_y": 0.0,
-          "upper_right_x": 1.0,
-          "upper_right_y": 0.0,
-          "lower_left_x": 0.0,
-          "lower_left_y": 1.0,
-          "lower_right_x": 1.0,
-          "lower_right_y": 1.0
-        },
-        "crop_ratio": "free",
-        "audio_fade": null,
-        "crop_scale": 1.0,
-        "extra_type_option": 0,
-        "stable": {
-          "stable_level": 0,
-          "matrix_path": "",
-          "time_range": {
-            "start": 0,
-            "duration": 0
-          }
-        },
-        "matting": {
-          "flag": 0,
-          "path": "",
-          "interactiveTime": [],
-          "has_use_quick_brush": false,
-          "strokes": [],
-          "has_use_quick_eraser": false,
-          "expansion": 0,
-          "feather": 0,
-          "reverse": false,
-          "custom_matting_id": "",
-          "enable_matting_stroke": false,
-          "is_clould": false,
-          "mask_video_path": "",
-          "cloud_product_fps": 0.0
-        },
-        "source": 0,
-        "source_platform": 0,
-        "formula_id": "",
-        "check_flag": 62978047,
-        "video_algorithm": {
-          "algorithms": [],
-          "time_range": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "path": "",
-          "gameplay_configs": [],
-          "ai_in_painting_config": [],
-          "complement_frame_config": null,
-          "motion_blur_config": null,
-          "deflicker": null,
-          "noise_reduction": null,
-          "quality_enhance": null,
-          "super_resolution": null,
-          "ai_background_configs": [],
-          "smart_complement_frame": null,
-          "aigc_generate": null,
-          "aigc_generate_list": [],
-          "mouth_shape_driver": null,
-          "ai_expression_driven": null,
-          "ai_motion_driven": null,
-          "image_interpretation": null,
-          "story_video_modify_video_config": {
-            "task_id": "",
-            "is_overwrite_last_video": false,
-            "tracker_task_id": ""
-          },
-          "skip_algorithm_index": []
-        },
-        "is_unified_beauty_mode": false,
-        "is_set_beauty_mode": false,
-        "object_locked": null,
-        "smart_motion": null,
-        "multi_camera_info": null,
-        "freeze": null,
-        "picture_from": "none",
-        "picture_set_category_id": "",
-        "picture_set_category_name": "",
-        "team_id": "",
-        "local_material_id": "",
-        "origin_material_id": "",
-        "request_id": "",
-        "has_sound_separated": false,
-        "is_text_edit_overdub": false,
-        "is_ai_generate_content": false,
-        "aigc_type": "none",
-        "is_copyright": false,
-        "aigc_history_id": "",
-        "aigc_item_id": "",
-        "local_material_from": "",
-        "smart_match_info": null,
-        "beauty_face_preset_infos": [],
-        "beauty_body_preset_id": "",
-        "beauty_face_auto_preset": {
-          "preset_id": "",
-          "name": "",
-          "rate_map": "",
-          "scene": ""
-        },
-        "beauty_face_auto_preset_infos": [],
-        "beauty_body_auto_preset": null,
-        "live_photo_timestamp": -1,
-        "live_photo_cover_path": "",
-        "content_feature_info": null,
-        "corner_pin": null,
-        "surface_trackings": [],
-        "video_mask_stroke": {
-          "resource_id": "",
-          "path": "",
-          "type": "",
-          "color": "",
-          "size": 0.0,
-          "alpha": 0.0,
-          "distance": 0.0,
-          "texture": 0.0,
-          "horizontal_shift": 0.0,
-          "vertical_shift": 0.0
-        },
-        "video_mask_shadow": {
-          "resource_id": "",
-          "path": "",
-          "color": "",
-          "alpha": 0.0,
-          "blur": 0.0,
-          "distance": 0.0,
-          "angle": 0.0
-        }
-      },
-      {
-        "id": "F8647AF0-0825-413F-80CA-03AFD0032B17",
-        "unique_id": "",
-        "type": "photo",
-        "duration": 10800000000,
-        "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
-        "media_path": "",
-        "local_id": "",
-        "has_audio": false,
-        "reverse_path": "",
-        "intensifies_path": "",
-        "reverse_intensifies_path": "",
-        "intensifies_audio_path": "",
-        "cartoon_path": "",
-        "width": 1080,
-        "height": 1920,
-        "category_id": "",
-        "category_name": "local",
-        "material_id": "",
-        "material_name": "0512(1)-복사.png",
-        "material_url": "",
-        "crop": {
-          "upper_left_x": 0.0,
-          "upper_left_y": 0.0,
-          "upper_right_x": 1.0,
-          "upper_right_y": 0.0,
-          "lower_left_x": 0.0,
-          "lower_left_y": 1.0,
-          "lower_right_x": 1.0,
-          "lower_right_y": 1.0
-        },
-        "crop_ratio": "free",
-        "audio_fade": null,
-        "crop_scale": 1.0,
-        "extra_type_option": 0,
-        "stable": {
-          "stable_level": 0,
-          "matrix_path": "",
-          "time_range": {
-            "start": 0,
-            "duration": 0
-          }
-        },
-        "matting": {
-          "flag": 0,
-          "path": "",
-          "interactiveTime": [],
-          "has_use_quick_brush": false,
-          "strokes": [],
-          "has_use_quick_eraser": false,
-          "expansion": 0,
-          "feather": 0,
-          "reverse": false,
-          "custom_matting_id": "",
-          "enable_matting_stroke": false,
-          "is_clould": false,
-          "mask_video_path": "",
-          "cloud_product_fps": 0.0
-        },
-        "source": 0,
-        "source_platform": 0,
-        "formula_id": "",
-        "check_flag": 62978047,
-        "video_algorithm": {
-          "algorithms": [],
-          "time_range": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "path": "",
-          "gameplay_configs": [],
-          "ai_in_painting_config": [],
-          "complement_frame_config": null,
-          "motion_blur_config": null,
-          "deflicker": null,
-          "noise_reduction": null,
-          "quality_enhance": null,
-          "super_resolution": null,
-          "ai_background_configs": [],
-          "smart_complement_frame": null,
-          "aigc_generate": null,
-          "aigc_generate_list": [],
-          "mouth_shape_driver": null,
-          "ai_expression_driven": null,
-          "ai_motion_driven": null,
-          "image_interpretation": null,
-          "story_video_modify_video_config": {
-            "task_id": "",
-            "is_overwrite_last_video": false,
-            "tracker_task_id": ""
-          },
-          "skip_algorithm_index": []
-        },
-        "is_unified_beauty_mode": false,
-        "is_set_beauty_mode": false,
-        "object_locked": null,
-        "smart_motion": null,
-        "multi_camera_info": null,
-        "freeze": null,
-        "picture_from": "none",
-        "picture_set_category_id": "",
-        "picture_set_category_name": "",
-        "team_id": "",
-        "local_material_id": "",
-        "origin_material_id": "",
-        "request_id": "",
-        "has_sound_separated": false,
-        "is_text_edit_overdub": false,
-        "is_ai_generate_content": false,
-        "aigc_type": "none",
-        "is_copyright": false,
-        "aigc_history_id": "",
-        "aigc_item_id": "",
-        "local_material_from": "",
-        "smart_match_info": null,
-        "beauty_face_preset_infos": [],
-        "beauty_body_preset_id": "",
-        "beauty_face_auto_preset": {
-          "preset_id": "",
-          "name": "",
-          "rate_map": "",
-          "scene": ""
-        },
-        "beauty_face_auto_preset_infos": [],
-        "beauty_body_auto_preset": null,
-        "live_photo_timestamp": -1,
-        "live_photo_cover_path": "",
-        "content_feature_info": null,
-        "corner_pin": null,
-        "surface_trackings": [],
-        "video_mask_stroke": {
-          "resource_id": "",
-          "path": "",
-          "type": "",
-          "color": "",
-          "size": 0.0,
-          "alpha": 0.0,
-          "distance": 0.0,
-          "texture": 0.0,
-          "horizontal_shift": 0.0,
-          "vertical_shift": 0.0
-        },
-        "video_mask_shadow": {
-          "resource_id": "",
-          "path": "",
-          "color": "",
-          "alpha": 0.0,
-          "blur": 0.0,
-          "distance": 0.0,
-          "angle": 0.0
-        }
-      }
-    ],
-    "tail_leaders": [],
-    "audios": [],
-    "images": [],
-    "texts": [
-      {
-        "recognize_task_id": "",
-        "id": "89B1E968-F2CD-4846-BB98-16808ED89D26",
-        "name": "",
-        "recognize_text": "",
-        "recognize_model": "",
-        "punc_model": "",
-        "type": "subtitle",
-        "content": "{\"text\": \"테스트 1\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"C:/Users/sub/AppData/Local/Microsoft/Windows/Fonts/온글잎 쑴체.ttf\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.020809248089790344, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"shadows\": [{\"thickness_projection_angle\": -45, \"thickness_projection_enable\": false, \"diffuse\": 0.05587668716907501, \"alpha\": 0.39499035477638245, \"distance\": 4.999999523162842, \"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"angle\": -45, \"thickness_projection_distance\": 0}], \"range\": [0, 5]}]}",
-        "base_content": "",
-        "words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "current_words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "global_alpha": 1.0,
-        "combo_info": {
-          "text_templates": []
-        },
-        "caption_template_info": {
-          "resource_id": "",
-          "third_resource_id": "",
-          "resource_name": "",
-          "category_id": "",
-          "category_name": "",
-          "effect_id": "",
-          "request_id": "",
-          "path": "",
-          "is_new": false,
-          "source_platform": 0
-        },
-        "layer_weight": 1,
-        "letter_spacing": 0.0,
-        "text_curve": null,
-        "text_loop_on_path": false,
-        "offset_on_path": 0.0,
-        "enable_path_typesetting": false,
-        "text_exceeds_path_process_type": 0,
-        "text_typesetting_paths": null,
-        "text_typesetting_paths_file": "",
-        "text_typesetting_path_index": 0,
-        "line_spacing": 0.02,
-        "has_shadow": true,
-        "shadow_color": "#000000",
-        "shadow_alpha": 0.3949903547763825,
-        "shadow_smoothing": 1.0057803690433502,
-        "shadow_distance": 5.0,
-        "shadow_point": {
-          "x": 0.6363961030678928,
-          "y": -0.6363961030678928
-        },
-        "shadow_angle": -45.0,
-        "shadow_thickness_projection_enable": false,
-        "shadow_thickness_projection_angle": 0.0,
-        "shadow_thickness_projection_distance": 0.0,
-        "border_alpha": 1.0,
-        "border_color": "#000000",
-        "border_width": 0.020809248089790344,
-        "border_mode": 0,
-        "style_name": "",
-        "text_color": "#ffffff",
-        "text_alpha": 1.0,
-        "font_name": "",
-        "font_title": "none",
-        "font_size": 12.0,
-        "font_path": "C:/Users/sub/AppData/Local/Microsoft/Windows/Fonts/온글잎 쑴체.ttf",
-        "font_id": "",
-        "font_resource_id": "",
-        "initial_scale": 1.0,
-        "font_url": "",
-        "typesetting": 0,
-        "alignment": 1,
-        "line_feed": 1,
-        "use_effect_default_color": true,
-        "is_rich_text": false,
-        "shape_clip_x": false,
-        "shape_clip_y": false,
-        "ktv_color": "",
-        "text_to_audio_ids": [],
-        "bold_width": 0.0,
-        "italic_degree": 0,
-        "underline": false,
-        "underline_width": 0.05,
-        "underline_offset": 0.22,
-        "sub_type": 0,
-        "check_flag": 47,
-        "text_size": 30,
-        "font_category_name": "",
-        "font_source_platform": 0,
-        "font_third_resource_id": "",
-        "font_category_id": "",
-        "add_type": 2,
-        "operation_type": 0,
-        "recognize_type": 0,
-        "fonts": [],
-        "background_color": "#000000",
-        "background_alpha": 1.0,
-        "background_style": 0,
-        "background_round_radius": 0.0,
-        "background_width": 0.14,
-        "background_height": 0.14,
-        "background_vertical_offset": 0.0,
-        "background_horizontal_offset": 0.0,
-        "background_fill": "",
-        "single_char_bg_enable": false,
-        "single_char_bg_color": "",
-        "single_char_bg_alpha": 1.0,
-        "single_char_bg_round_radius": 0.3,
-        "single_char_bg_width": 0.0,
-        "single_char_bg_height": 0.0,
-        "single_char_bg_vertical_offset": 0.0,
-        "single_char_bg_horizontal_offset": 0.0,
-        "font_team_id": "",
-        "tts_auto_update": false,
-        "text_preset_resource_id": "",
-        "group_id": "import_1778651287880",
-        "preset_id": "",
-        "preset_name": "",
-        "preset_category": "",
-        "preset_category_id": "",
-        "preset_index": 0,
-        "preset_has_set_alignment": false,
-        "force_apply_line_max_width": false,
-        "language": "",
-        "relevance_segment": [],
-        "original_size": [],
-        "fixed_width": -1.0,
-        "fixed_height": -1.0,
-        "line_max_width": 0.82,
-        "oneline_cutoff": false,
-        "cutoff_postfix": "",
-        "subtitle_template_original_fontsize": 0.0,
-        "subtitle_keywords": null,
-        "inner_padding": -1.0,
-        "multi_language_current": "none",
-        "source_from": "",
-        "is_lyric_effect": false,
-        "lyric_group_id": "",
-        "lyrics_template": {
-          "resource_id": "",
-          "resource_name": "",
-          "panel": "",
-          "effect_id": "",
-          "path": "",
-          "category_id": "",
-          "category_name": "",
-          "request_id": ""
-        },
-        "is_batch_replace": false,
-        "is_words_linear": false,
-        "ssml_content": "",
-        "subtitle_keywords_config": null,
-        "sub_template_id": -1,
-        "translate_original_text": ""
-      },
-      {
-        "recognize_task_id": "",
-        "id": "9C3236C3-D778-4DC6-A51C-3364C29A9ED0",
-        "name": "",
-        "recognize_text": "",
-        "recognize_model": "",
-        "punc_model": "",
-        "type": "subtitle",
-        "content": "{\"text\": \"테스트 2\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"C:/Users/sub/AppData/Local/Microsoft/Windows/Fonts/온글잎 쑴체.ttf\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.020809248089790344, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"shadows\": [{\"thickness_projection_angle\": -45, \"thickness_projection_enable\": false, \"diffuse\": 0.05587668716907501, \"alpha\": 0.39499035477638245, \"distance\": 4.999999523162842, \"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"angle\": -45, \"thickness_projection_distance\": 0}], \"range\": [0, 5]}]}",
-        "base_content": "",
-        "words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "current_words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "global_alpha": 1.0,
-        "combo_info": {
-          "text_templates": []
-        },
-        "caption_template_info": {
-          "resource_id": "",
-          "third_resource_id": "",
-          "resource_name": "",
-          "category_id": "",
-          "category_name": "",
-          "effect_id": "",
-          "request_id": "",
-          "path": "",
-          "is_new": false,
-          "source_platform": 0
-        },
-        "layer_weight": 1,
-        "letter_spacing": 0.0,
-        "text_curve": null,
-        "text_loop_on_path": false,
-        "offset_on_path": 0.0,
-        "enable_path_typesetting": false,
-        "text_exceeds_path_process_type": 0,
-        "text_typesetting_paths": null,
-        "text_typesetting_paths_file": "",
-        "text_typesetting_path_index": 0,
-        "line_spacing": 0.02,
-        "has_shadow": true,
-        "shadow_color": "#000000",
-        "shadow_alpha": 0.3949903547763825,
-        "shadow_smoothing": 1.0057803690433502,
-        "shadow_distance": 5.0,
-        "shadow_point": {
-          "x": 0.6363961030678928,
-          "y": -0.6363961030678928
-        },
-        "shadow_angle": -45.0,
-        "shadow_thickness_projection_enable": false,
-        "shadow_thickness_projection_angle": 0.0,
-        "shadow_thickness_projection_distance": 0.0,
-        "border_alpha": 1.0,
-        "border_color": "#000000",
-        "border_width": 0.020809248089790344,
-        "border_mode": 0,
-        "style_name": "",
-        "text_color": "#ffffff",
-        "text_alpha": 1.0,
-        "font_name": "",
-        "font_title": "none",
-        "font_size": 12.0,
-        "font_path": "C:/Users/sub/AppData/Local/Microsoft/Windows/Fonts/온글잎 쑴체.ttf",
-        "font_id": "",
-        "font_resource_id": "",
-        "initial_scale": 1.0,
-        "font_url": "",
-        "typesetting": 0,
-        "alignment": 1,
-        "line_feed": 1,
-        "use_effect_default_color": true,
-        "is_rich_text": false,
-        "shape_clip_x": false,
-        "shape_clip_y": false,
-        "ktv_color": "",
-        "text_to_audio_ids": [],
-        "bold_width": 0.0,
-        "italic_degree": 0,
-        "underline": false,
-        "underline_width": 0.05,
-        "underline_offset": 0.22,
-        "sub_type": 0,
-        "check_flag": 47,
-        "text_size": 30,
-        "font_category_name": "",
-        "font_source_platform": 0,
-        "font_third_resource_id": "",
-        "font_category_id": "",
-        "add_type": 2,
-        "operation_type": 0,
-        "recognize_type": 0,
-        "fonts": [],
-        "background_color": "#000000",
-        "background_alpha": 1.0,
-        "background_style": 0,
-        "background_round_radius": 0.0,
-        "background_width": 0.14,
-        "background_height": 0.14,
-        "background_vertical_offset": 0.0,
-        "background_horizontal_offset": 0.0,
-        "background_fill": "",
-        "single_char_bg_enable": false,
-        "single_char_bg_color": "",
-        "single_char_bg_alpha": 1.0,
-        "single_char_bg_round_radius": 0.3,
-        "single_char_bg_width": 0.0,
-        "single_char_bg_height": 0.0,
-        "single_char_bg_vertical_offset": 0.0,
-        "single_char_bg_horizontal_offset": 0.0,
-        "font_team_id": "",
-        "tts_auto_update": false,
-        "text_preset_resource_id": "",
-        "group_id": "import_1778651287880",
-        "preset_id": "",
-        "preset_name": "",
-        "preset_category": "",
-        "preset_category_id": "",
-        "preset_index": 0,
-        "preset_has_set_alignment": false,
-        "force_apply_line_max_width": false,
-        "language": "",
-        "relevance_segment": [],
-        "original_size": [],
-        "fixed_width": -1.0,
-        "fixed_height": -1.0,
-        "line_max_width": 0.82,
-        "oneline_cutoff": false,
-        "cutoff_postfix": "",
-        "subtitle_template_original_fontsize": 0.0,
-        "subtitle_keywords": null,
-        "inner_padding": -1.0,
-        "multi_language_current": "none",
-        "source_from": "",
-        "is_lyric_effect": false,
-        "lyric_group_id": "",
-        "lyrics_template": {
-          "resource_id": "",
-          "resource_name": "",
-          "panel": "",
-          "effect_id": "",
-          "path": "",
-          "category_id": "",
-          "category_name": "",
-          "request_id": ""
-        },
-        "is_batch_replace": false,
-        "is_words_linear": false,
-        "ssml_content": "",
-        "subtitle_keywords_config": null,
-        "sub_template_id": -1,
-        "translate_original_text": ""
-      },
-      {
-        "recognize_task_id": "",
-        "id": "5F67E169-8D5C-4D9E-B788-B8020F2C78E2",
-        "name": "",
-        "recognize_text": "",
-        "recognize_model": "",
-        "punc_model": "",
-        "type": "subtitle",
-        "content": "{\"text\": \"테스트 3\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"C:/Users/sub/AppData/Local/Microsoft/Windows/Fonts/온글잎 쑴체.ttf\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.020809248089790344, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"shadows\": [{\"thickness_projection_angle\": -45, \"thickness_projection_enable\": false, \"diffuse\": 0.05587668716907501, \"alpha\": 0.39499035477638245, \"distance\": 4.999999523162842, \"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"angle\": -45, \"thickness_projection_distance\": 0}], \"range\": [0, 5]}]}",
-        "base_content": "",
-        "words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "current_words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "global_alpha": 1.0,
-        "combo_info": {
-          "text_templates": []
-        },
-        "caption_template_info": {
-          "resource_id": "",
-          "third_resource_id": "",
-          "resource_name": "",
-          "category_id": "",
-          "category_name": "",
-          "effect_id": "",
-          "request_id": "",
-          "path": "",
-          "is_new": false,
-          "source_platform": 0
-        },
-        "layer_weight": 1,
-        "letter_spacing": 0.0,
-        "text_curve": null,
-        "text_loop_on_path": false,
-        "offset_on_path": 0.0,
-        "enable_path_typesetting": false,
-        "text_exceeds_path_process_type": 0,
-        "text_typesetting_paths": null,
-        "text_typesetting_paths_file": "",
-        "text_typesetting_path_index": 0,
-        "line_spacing": 0.02,
-        "has_shadow": true,
-        "shadow_color": "#000000",
-        "shadow_alpha": 0.3949903547763825,
-        "shadow_smoothing": 1.0057803690433502,
-        "shadow_distance": 5.0,
-        "shadow_point": {
-          "x": 0.6363961030678928,
-          "y": -0.6363961030678928
-        },
-        "shadow_angle": -45.0,
-        "shadow_thickness_projection_enable": false,
-        "shadow_thickness_projection_angle": 0.0,
-        "shadow_thickness_projection_distance": 0.0,
-        "border_alpha": 1.0,
-        "border_color": "#000000",
-        "border_width": 0.020809248089790344,
-        "border_mode": 0,
-        "style_name": "",
-        "text_color": "#ffffff",
-        "text_alpha": 1.0,
-        "font_name": "",
-        "font_title": "none",
-        "font_size": 12.0,
-        "font_path": "C:/Users/sub/AppData/Local/Microsoft/Windows/Fonts/온글잎 쑴체.ttf",
-        "font_id": "",
-        "font_resource_id": "",
-        "initial_scale": 1.0,
-        "font_url": "",
-        "typesetting": 0,
-        "alignment": 1,
-        "line_feed": 1,
-        "use_effect_default_color": true,
-        "is_rich_text": false,
-        "shape_clip_x": false,
-        "shape_clip_y": false,
-        "ktv_color": "",
-        "text_to_audio_ids": [],
-        "bold_width": 0.0,
-        "italic_degree": 0,
-        "underline": false,
-        "underline_width": 0.05,
-        "underline_offset": 0.22,
-        "sub_type": 0,
-        "check_flag": 47,
-        "text_size": 30,
-        "font_category_name": "",
-        "font_source_platform": 0,
-        "font_third_resource_id": "",
-        "font_category_id": "",
-        "add_type": 2,
-        "operation_type": 0,
-        "recognize_type": 0,
-        "fonts": [],
-        "background_color": "#000000",
-        "background_alpha": 1.0,
-        "background_style": 0,
-        "background_round_radius": 0.0,
-        "background_width": 0.14,
-        "background_height": 0.14,
-        "background_vertical_offset": 0.0,
-        "background_horizontal_offset": 0.0,
-        "background_fill": "",
-        "single_char_bg_enable": false,
-        "single_char_bg_color": "",
-        "single_char_bg_alpha": 1.0,
-        "single_char_bg_round_radius": 0.3,
-        "single_char_bg_width": 0.0,
-        "single_char_bg_height": 0.0,
-        "single_char_bg_vertical_offset": 0.0,
-        "single_char_bg_horizontal_offset": 0.0,
-        "font_team_id": "",
-        "tts_auto_update": false,
-        "text_preset_resource_id": "",
-        "group_id": "import_1778651287880",
-        "preset_id": "",
-        "preset_name": "",
-        "preset_category": "",
-        "preset_category_id": "",
-        "preset_index": 0,
-        "preset_has_set_alignment": false,
-        "force_apply_line_max_width": false,
-        "language": "",
-        "relevance_segment": [],
-        "original_size": [],
-        "fixed_width": -1.0,
-        "fixed_height": -1.0,
-        "line_max_width": 0.82,
-        "oneline_cutoff": false,
-        "cutoff_postfix": "",
-        "subtitle_template_original_fontsize": 0.0,
-        "subtitle_keywords": null,
-        "inner_padding": -1.0,
-        "multi_language_current": "none",
-        "source_from": "",
-        "is_lyric_effect": false,
-        "lyric_group_id": "",
-        "lyrics_template": {
-          "resource_id": "",
-          "resource_name": "",
-          "panel": "",
-          "effect_id": "",
-          "path": "",
-          "category_id": "",
-          "category_name": "",
-          "request_id": ""
-        },
-        "is_batch_replace": false,
-        "is_words_linear": false,
-        "ssml_content": "",
-        "subtitle_keywords_config": null,
-        "sub_template_id": -1,
-        "translate_original_text": ""
-      }
-    ],
-    "effects": [],
-    "stickers": [
-      {
-        "id": "120657C0-7A27-41b3-AFA3-738866384C89",
-        "unique_id": "",
-        "type": "sticker",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/artistEffect/7514644221949758781/ffad5286efd868e7d0319e88854ab6f5",
-        "icon_url": "https://p16-heycan-img-sign-sg.ibyteimg.com/tos-alisg-i-j6daoa426t-sg/a3404a8701744e22adccbaa932851f8f~tplv-j6daoa426t-resize:0:0.webp?x-expires=1810188280&x-signature=7IqnaTBX%2FQeVjfbgSyFwGZGgFBI%3D",
-        "preview_cover_url": "https://p16-heycan-img-sign-sg.ibyteimg.com/tos-alisg-i-j6daoa426t-sg/a3404a8701744e22adccbaa932851f8f~tplv-j6daoa426t-resize:0:0.webp?x-expires=1810188280&x-signature=7IqnaTBX%2FQeVjfbgSyFwGZGgFBI%3D",
-        "sticker_id": "7514644221949758781",
-        "resource_id": "7514644221949758781",
-        "name": "Heart EN Scribble Heart Pink",
-        "category_id": "1003",
-        "category_name": "인기",
-        "platform": "all",
-        "unicode": "",
-        "source_platform": 1,
-        "formula_id": "",
-        "check_flag": 1,
-        "team_id": "",
-        "request_id": "20260511161840755EE85EE331CE95CBC6",
-        "combo_info": {
-          "text_templates": []
-        },
-        "sub_type": 0,
-        "radius": {
-          "top_left": 0.0,
-          "top_right": 0.0,
-          "bottom_left": 0.0,
-          "bottom_right": 0.0
-        },
-        "global_alpha": 1.0,
-        "background_color": "",
-        "background_alpha": 1.0,
-        "border_line_style": 0,
-        "border_width": 0.0,
-        "border_color": "",
-        "has_shadow": false,
-        "shadow_color": "",
-        "shadow_alpha": 0.8,
-        "shadow_smoothing": 0.0,
-        "shadow_distance": 0.0,
-        "shadow_point": {
-          "x": 0.0,
-          "y": 0.0
-        },
-        "shadow_angle": 0.0,
-        "shape_param": {
-          "shape_type": 0,
-          "roundness": [],
-          "custom_points": [],
-          "shape_size": []
-        },
-        "original_size": [],
-        "aigc_type": "none",
-        "sequence_type": false,
-        "cycle_setting": true,
-        "shape_fill_render_style": {
-          "color": {
-            "solid": {
-              "color": "#FFFFFF",
-              "alpha": 1.0
-            },
-            "gradient": {
-              "color": [],
-              "alpha": [],
-              "percent": [],
-              "angle": 90.0,
-              "mode": "all",
-              "style": "linear"
-            },
-            "texture": {
-              "path": "",
-              "flip": [],
-              "scale": 1.0,
-              "alpha": 1.0,
-              "angle": 90.0,
-              "blend": "no",
-              "range": 4,
-              "fill": "tile",
-              "resource_id": "",
-              "effect_id": "",
-              "play_speed": 1.0
-            },
-            "render_type": "solid"
-          },
-          "alpha": 1.0
-        },
-        "shape_fill_use_flower_color": false,
-        "multi_language_current": "none",
-        "corner_pin": null
-      }
-    ],
-    "canvases": [
-      {
-        "id": "2CBEA824-5942-4E89-A70F-3BD89C3F975C",
-        "type": "canvas_color",
-        "color": "",
-        "blur": 0.0,
-        "image": "",
-        "album_image": "",
-        "image_id": "",
-        "image_name": "",
-        "source_platform": 0,
-        "team_id": ""
-      },
-      {
-        "id": "FD1EEF10-3039-45AB-9A32-FB59E9F06D73",
-        "type": "canvas_color",
-        "color": "",
-        "blur": 0.0,
-        "image": "",
-        "album_image": "",
-        "image_id": "",
-        "image_name": "",
-        "source_platform": 0,
-        "team_id": ""
-      },
-      {
-        "id": "B048D4FC-CB21-450A-8706-E35656FB5139",
-        "type": "canvas_color",
-        "color": "",
-        "blur": 0.0,
-        "image": "",
-        "album_image": "",
-        "image_id": "",
-        "image_name": "",
-        "source_platform": 0,
-        "team_id": ""
-      }
-    ],
-    "transitions": [],
-    "audio_effects": [
-      {
-        "id": "EE7FA4AE-3936-42d4-AE77-19787B6B123F",
-        "constant_material_id": "C71E9DCA-34F9-49f7-AB84-65C9BECE406E",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "79D5A6E2-436C-442c-BC17-10B1D41C369A",
-        "constant_material_id": "4BC7BB26-6245-4699-A9A6-91721ED59954",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "81AFCE74-41CA-4118-9550-1B86DDBA8F5E",
-        "constant_material_id": "135429F4-1728-4066-B692-7F04ACF80259",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "50F28F9A-0CED-4e9a-A332-C464651C9444",
-        "constant_material_id": "A596F4ED-AF3F-4263-9C25-47B579D96F39",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "E4A3FB74-1469-4a4f-B82D-EDE9277EA080",
-        "constant_material_id": "22454A03-9CBA-4d24-85FC-951DE99FA5A0",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "B42CD0E4-DD1A-4f85-9C6B-E6B2A870EE75",
-        "constant_material_id": "45C99CEA-9AA7-42f7-9DB0-C13E8EE07A9D",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "96C2DFEF-FD87-486a-B657-C77721432B64",
-        "constant_material_id": "015E210A-E5AC-4720-9630-EC12505A9645",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "1732CC65-573A-4e42-B50A-447BEB65130D",
-        "constant_material_id": "72829D3D-DF88-493d-B79F-552A9EBBCFBD",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "E7825D1D-18CA-43c4-BF14-344286BBA614",
-        "constant_material_id": "C88FAADD-1ABD-4882-AACF-6C2982C0DA6E",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "26852E30-176D-4ac4-8ACD-90198317F80C",
-        "constant_material_id": "DFEEAA1F-FC3B-43a4-B88C-23C98551A3F2",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "FF98F77A-6D24-4535-BE34-F05731671045",
-        "constant_material_id": "A44820A4-4845-4c90-ABCF-7EE55EC65B06",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "609C50FD-DCA1-4de0-8BCF-D48297152379",
-        "constant_material_id": "7513DE8A-BBAE-45fb-8949-A288D6D40CA8",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      },
-      {
-        "id": "EB230B36-23C0-4aa8-B0E5-26FACD3672A8",
-        "constant_material_id": "8B39729A-03D1-4c20-B81C-D93350086156",
-        "type": "audio_effect",
-        "name": "선명한 음성",
-        "path": "C:/Users/sub/AppData/Local/CapCut/User Data/Cache/effect/7491147795483659521/afa899afa9b93e99cce244324bffe563",
-        "production_path": "",
-        "sub_type": 1,
-        "time_range": {
-          "start": 0,
-          "duration": 0
-        },
-        "speaker_id": "",
-        "resource_id": "7491147795483659521",
-        "third_resource_id": "0",
-        "source_platform": 1,
-        "category_id": "sound_effect",
-        "category_name": "음성 필터",
-        "audio_adjust_params": [
-          {
-            "value": 1.0,
-            "default_value": 1.0,
-            "parameterIndex": 0,
-            "portIndex": 0,
-            "name": "strength",
-            "min_value": 0.0,
-            "max_value": 1.0
-          }
-        ],
-        "is_vc_clone_tone": false,
-        "vc_type": "none",
-        "is_ugc": false
-      }
-    ],
-    "audio_fades": [
-      {
-        "id": "AC2A4C61-482C-4156-8BAA-3EC95EA8786F",
-        "type": "audio_fade",
-        "fade_type": 0,
-        "fade_in_duration": 0,
-        "fade_out_duration": 1300000
-      }
-    ],
-    "beats": [],
-    "material_animations": [
-      {
-        "id": "CB6CECAF-466B-46F0-81D3-BC2AB33EF60E",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "4D50FC71-19A1-4224-A18D-6F1C2AA70914",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "596FAC56-DD63-41EB-9A91-832092AD4C24",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "C584CDD5-C77A-4933-8CCD-4FD9AD41E1CE",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "005C7C03-72B9-4996-8027-221EF5785CA4",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "B9A1B9C6-0305-4D58-B9D3-FE5D5C3085E2",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      }
-    ],
-    "placeholders": [],
-    "placeholder_infos": [
-      {
-        "id": "87104C32-ED7E-4B28-8922-8478B9C6A9D0",
-        "type": "placeholder_info",
-        "meta_type": "none",
-        "res_path": "",
-        "res_text": "",
-        "error_path": "",
-        "error_text": ""
-      },
-      {
-        "id": "69255F18-5E33-4825-8282-6E39855B0F2B",
-        "type": "placeholder_info",
-        "meta_type": "none",
-        "res_path": "",
-        "res_text": "",
-        "error_path": "",
-        "error_text": ""
-      },
-      {
-        "id": "5E84BD97-1B94-4875-8B8F-90C410492967",
-        "type": "placeholder_info",
-        "meta_type": "none",
-        "res_path": "",
-        "res_text": "",
-        "error_path": "",
-        "error_text": ""
-      }
-    ],
-    "speeds": [
-      {
-        "id": "F3EBDE5E-5E83-41F5-8FDF-3798514F945C",
-        "type": "speed",
-        "mode": 0,
-        "speed": 1.0,
-        "curve_speed": null
-      },
-      {
-        "id": "8B83F4EF-C340-4262-A87F-C6442BAB5751",
-        "type": "speed",
-        "mode": 0,
-        "speed": 1.0,
-        "curve_speed": null
-      },
-      {
-        "id": "1C7D3673-AD02-42B0-BABB-0524FAB2E9EB",
-        "type": "speed",
-        "mode": 0,
-        "speed": 1.0,
-        "curve_speed": null
-      }
-    ],
-    "common_mask": [],
-    "chromas": [],
-    "text_templates": [],
-    "realtime_denoises": [],
-    "audio_pannings": [],
-    "audio_pitch_shifts": [],
-    "video_trackings": [],
-    "hsl": [],
-    "drafts": [],
-    "color_curves": [],
-    "hsl_curves": [],
-    "primary_color_wheels": [],
-    "log_color_wheels": [],
-    "video_effects": [],
-    "audio_balances": [],
-    "handwrites": [],
-    "manual_deformations": [],
-    "manual_beautys": [],
-    "plugin_effects": [],
-    "sound_channel_mappings": [
-      {
-        "id": "02458BC6-C91B-4F40-9343-7CAE1D634EAD",
-        "type": "none",
-        "audio_channel_mapping": 0,
-        "is_config_open": false
-      },
-      {
-        "id": "99E10412-7F2C-48E1-AB51-79E411FDD561",
-        "type": "none",
-        "audio_channel_mapping": 0,
-        "is_config_open": false
-      },
-      {
-        "id": "D7896F23-7829-4D1A-8988-B1EE69BCCCF1",
-        "type": "none",
-        "audio_channel_mapping": 0,
-        "is_config_open": false
-      }
-    ],
-    "green_screens": [],
-    "shapes": [],
-    "material_colors": [
-      {
-        "id": "F6F86945-9052-4D88-ADDC-78DD61EBA589",
-        "is_color_clip": false,
-        "is_gradient": false,
-        "solid_color": "",
-        "gradient_colors": [],
-        "gradient_percents": [],
-        "gradient_angle": 90.0,
-        "width": 0.0,
-        "height": 0.0
-      },
-      {
-        "id": "189F819B-C3BD-4D67-ABB5-1E72877F2A8D",
-        "is_color_clip": false,
-        "is_gradient": false,
-        "solid_color": "",
-        "gradient_colors": [],
-        "gradient_percents": [],
-        "gradient_angle": 90.0,
-        "width": 0.0,
-        "height": 0.0
-      },
-      {
-        "id": "284914A2-4008-47F4-A1A2-E2C5568BC084",
-        "is_color_clip": false,
-        "is_gradient": false,
-        "solid_color": "",
-        "gradient_colors": [],
-        "gradient_percents": [],
-        "gradient_angle": 90.0,
-        "width": 0.0,
-        "height": 0.0
-      }
-    ],
-    "digital_humans": [],
-    "digital_human_model_dressing": [],
-    "smart_crops": [],
-    "ai_translates": [],
-    "audio_track_indexes": [],
-    "loudnesses": [
-      {
-        "id": "9CE300A1-842D-4C8E-BE5A-AF9FDD4BCAB4",
-        "enable": false,
-        "time_range": null,
-        "file_id": "",
-        "target_loudness": 0.0,
-        "loudness_param": null
-      },
-      {
-        "id": "75A4677B-6818-49F5-A27E-4C84187EC237",
-        "enable": false,
-        "time_range": null,
-        "file_id": "",
-        "target_loudness": 0.0,
-        "loudness_param": null
-      },
-      {
-        "id": "2DC97359-C353-4BA2-9B83-33160CD63EAA",
-        "enable": false,
-        "time_range": null,
-        "file_id": "",
-        "target_loudness": 0.0,
-        "loudness_param": null
-      }
-    ],
-    "vocal_beautifys": [],
-    "vocal_separations": [
-      {
-        "id": "77291F5B-0444-444B-A0BC-994F3E172BF9",
-        "type": "vocal_separation",
-        "choice": 0,
-        "removed_sounds": [],
-        "time_range": null,
-        "production_path": "",
-        "final_algorithm": "",
-        "enter_from": ""
-      },
-      {
-        "id": "BCA1E010-C841-4972-A81B-304D69229909",
-        "type": "vocal_separation",
-        "choice": 0,
-        "removed_sounds": [],
-        "time_range": null,
-        "production_path": "",
-        "final_algorithm": "",
-        "enter_from": ""
-      },
-      {
-        "id": "0FE179ED-1D3A-4F98-A9E3-99D361341DBA",
-        "type": "vocal_separation",
-        "choice": 0,
-        "removed_sounds": [],
-        "time_range": null,
-        "production_path": "",
-        "final_algorithm": "",
-        "enter_from": ""
-      }
-    ],
-    "smart_relights": [],
-    "time_marks": [],
-    "multi_language_refs": [],
-    "video_shadows": [],
-    "video_strokes": [],
-    "video_radius": []
+    "lyrics_taskinfo": []
   },
   "keyframes": {
     "videos": [],
@@ -2378,91 +31,524 @@
     "handwrites": [],
     "effects": []
   },
-  "keyframe_graph_list": [],
-  "platform": {
-    "os": "windows",
-    "os_version": "10.0.26100",
-    "app_id": 359289,
-    "app_version": "8.5.0",
-    "app_source": "cc",
-    "device_id": "55f3e838d45ea3e4aa1e781d0bc01b97",
-    "hard_disk_id": "",
-    "mac_address": "a5e801d9533f0200fdb06f451cdf6208"
+  "materials": {
+    "videos": [
+      {
+        "id": "CFE7D7FB-F1C6-4214-9D6E-2C897228ADA9",
+        "type": "photo",
+        "path": "C:\\Users\\sub\\Downloads\\0512(1)-복사.png",
+        "material_name": "0512(1)-복사.png",
+        "duration": 10800000000,
+        "width": 1080,
+        "height": 1920,
+        "has_audio": false,
+        "has_sound_separated": false,
+        "crop": {
+          "lower_left_x": 0.0,
+          "lower_left_y": 1.0,
+          "lower_right_x": 1.0,
+          "lower_right_y": 1.0,
+          "upper_left_x": 0.0,
+          "upper_left_y": 0.0,
+          "upper_right_x": 1.0,
+          "upper_right_y": 0.0
+        },
+        "crop_ratio": "free",
+        "crop_scale": 1.0,
+        "category_id": "",
+        "category_name": "local",
+        "extra_type_option": 0,
+        "check_flag": 63487,
+        "local_material_id": "9983FFB4-E5F5-476D-95D7-0602B79378FE",
+        "source_platform": 0,
+        "stable": {
+          "matrix_path": "",
+          "stable_level": 0,
+          "time_range": {
+            "duration": 0,
+            "start": 0
+          }
+        },
+        "team_id": "",
+        "type_specific_id": ""
+      },
+      {
+        "id": "632194E6-729D-4434-ABA2-A5B34573CDD5",
+        "type": "photo",
+        "path": "C:\\Users\\sub\\Downloads\\0512(1)-복사.png",
+        "material_name": "0512(1)-복사.png",
+        "duration": 10800000000,
+        "width": 1080,
+        "height": 1920,
+        "has_audio": false,
+        "has_sound_separated": false,
+        "crop": {
+          "lower_left_x": 0.0,
+          "lower_left_y": 1.0,
+          "lower_right_x": 1.0,
+          "lower_right_y": 1.0,
+          "upper_left_x": 0.0,
+          "upper_left_y": 0.0,
+          "upper_right_x": 1.0,
+          "upper_right_y": 0.0
+        },
+        "crop_ratio": "free",
+        "crop_scale": 1.0,
+        "category_id": "",
+        "category_name": "local",
+        "extra_type_option": 0,
+        "check_flag": 63487,
+        "local_material_id": "4F7D0601-92B7-4080-A181-8B9BC121C9CB",
+        "source_platform": 0,
+        "stable": {
+          "matrix_path": "",
+          "stable_level": 0,
+          "time_range": {
+            "duration": 0,
+            "start": 0
+          }
+        },
+        "team_id": "",
+        "type_specific_id": ""
+      },
+      {
+        "id": "EBEE220C-B9E6-483F-AA85-F74CC91D09A7",
+        "type": "photo",
+        "path": "C:\\Users\\sub\\Downloads\\0512(1)-복사.png",
+        "material_name": "0512(1)-복사.png",
+        "duration": 10800000000,
+        "width": 1080,
+        "height": 1920,
+        "has_audio": false,
+        "has_sound_separated": false,
+        "crop": {
+          "lower_left_x": 0.0,
+          "lower_left_y": 1.0,
+          "lower_right_x": 1.0,
+          "lower_right_y": 1.0,
+          "upper_left_x": 0.0,
+          "upper_left_y": 0.0,
+          "upper_right_x": 1.0,
+          "upper_right_y": 0.0
+        },
+        "crop_ratio": "free",
+        "crop_scale": 1.0,
+        "category_id": "",
+        "category_name": "local",
+        "extra_type_option": 0,
+        "check_flag": 63487,
+        "local_material_id": "B087FD38-5764-4ADF-9EB9-4B6D6C16E273",
+        "source_platform": 0,
+        "stable": {
+          "matrix_path": "",
+          "stable_level": 0,
+          "time_range": {
+            "duration": 0,
+            "start": 0
+          }
+        },
+        "team_id": "",
+        "type_specific_id": ""
+      }
+    ],
+    "audios": [],
+    "texts": [
+      {
+        "id": "A74195DF-3267-491C-B92B-3D1F4F248E91",
+        "type": "subtitle",
+        "content": "{\"text\": \"테스트 1\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1.0, 1.0, 1.0]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0.0, 0.0, 0.0]}}, \"width\": 0.08, \"mode\": 0}], \"size\": 15, \"useLetterColor\": true, \"range\": [0, 5]}]}",
+        "text": "테스트 1",
+        "font_name": "",
+        "font_path": "",
+        "font_size": 15.0,
+        "text_color": "#FFFFFF",
+        "text_alpha": 1.0,
+        "border_color": "#000000",
+        "border_width": 0.08,
+        "border_alpha": 1.0,
+        "has_shadow": false,
+        "shadow_color": "#000000",
+        "shadow_alpha": 0.0,
+        "alignment": 1,
+        "background_color": "",
+        "background_alpha": 0.0,
+        "letter_spacing": 0.0,
+        "line_spacing": 0.0,
+        "italic_degree": 0,
+        "bold_width": 0.0,
+        "underline": false,
+        "style_name": ""
+      },
+      {
+        "id": "BFE3BC78-EAD1-488D-B2C2-46E70A76CC91",
+        "type": "subtitle",
+        "content": "{\"text\": \"테스트 2\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1.0, 1.0, 1.0]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0.0, 0.0, 0.0]}}, \"width\": 0.08, \"mode\": 0}], \"size\": 15, \"useLetterColor\": true, \"range\": [0, 5]}]}",
+        "text": "테스트 2",
+        "font_name": "",
+        "font_path": "",
+        "font_size": 15.0,
+        "text_color": "#FFFFFF",
+        "text_alpha": 1.0,
+        "border_color": "#000000",
+        "border_width": 0.08,
+        "border_alpha": 1.0,
+        "has_shadow": false,
+        "shadow_color": "#000000",
+        "shadow_alpha": 0.0,
+        "alignment": 1,
+        "background_color": "",
+        "background_alpha": 0.0,
+        "letter_spacing": 0.0,
+        "line_spacing": 0.0,
+        "italic_degree": 0,
+        "bold_width": 0.0,
+        "underline": false,
+        "style_name": ""
+      },
+      {
+        "id": "2076F3C7-A331-4191-BC98-FC57DAEB28E9",
+        "type": "subtitle",
+        "content": "{\"text\": \"테스트 3\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1.0, 1.0, 1.0]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0.0, 0.0, 0.0]}}, \"width\": 0.08, \"mode\": 0}], \"size\": 15, \"useLetterColor\": true, \"range\": [0, 5]}]}",
+        "text": "테스트 3",
+        "font_name": "",
+        "font_path": "",
+        "font_size": 15.0,
+        "text_color": "#FFFFFF",
+        "text_alpha": 1.0,
+        "border_color": "#000000",
+        "border_width": 0.08,
+        "border_alpha": 1.0,
+        "has_shadow": false,
+        "shadow_color": "#000000",
+        "shadow_alpha": 0.0,
+        "alignment": 1,
+        "background_color": "",
+        "background_alpha": 0.0,
+        "letter_spacing": 0.0,
+        "line_spacing": 0.0,
+        "italic_degree": 0,
+        "bold_width": 0.0,
+        "underline": false,
+        "style_name": ""
+      }
+    ],
+    "canvases": [
+      {
+        "id": "546152DD-F96D-4E44-A784-00D78B76F941",
+        "type": "canvas_color",
+        "color": "",
+        "blur": 0.0,
+        "image": "",
+        "album_image": "",
+        "source_platform": 0,
+        "team_id": ""
+      },
+      {
+        "id": "C231CDB7-3A5A-4F7A-8908-C3A1B10AEAB0",
+        "type": "canvas_color",
+        "color": "",
+        "blur": 0.0,
+        "image": "",
+        "album_image": "",
+        "source_platform": 0,
+        "team_id": ""
+      },
+      {
+        "id": "0D8EBB21-3FB8-4190-8131-E82634566559",
+        "type": "canvas_color",
+        "color": "",
+        "blur": 0.0,
+        "image": "",
+        "album_image": "",
+        "source_platform": 0,
+        "team_id": ""
+      }
+    ],
+    "effects": [],
+    "stickers": [],
+    "transitions": [],
+    "audio_effects": [],
+    "audio_fades": [],
+    "beats": [],
+    "speeds": [],
+    "masks": [],
+    "placeholder_infos": [],
+    "sound_channel_mappings": [],
+    "video_effects": [],
+    "loudnesses": []
   },
-  "last_modified_platform": {
-    "os": "windows",
-    "os_version": "10.0.26100",
-    "app_id": 359289,
-    "app_version": "8.7.0",
-    "app_source": "cc",
-    "device_id": "55f3e838d45ea3e4aa1e781d0bc01b97",
-    "hard_disk_id": "",
-    "mac_address": "a5e801d9533f0200fdb06f451cdf6208"
-  },
-  "mutable_config": null,
-  "cover": null,
-  "retouch_cover": null,
-  "extra_info": null,
-  "relationships": [],
-  "render_index_track_mode_on": true,
-  "free_render_index_mode_on": false,
-  "static_cover_image_path": "",
-  "source": "default",
-  "time_marks": null,
-  "path": "",
-  "lyrics_effects": [],
-  "uneven_animation_template_info": {
-    "composition": "",
-    "content": "",
-    "order": "",
-    "sub_template_info_list": []
-  },
-  "draft_type": "video",
-  "smart_ads_info": {
-    "page_from": "",
-    "routine": "",
-    "draft_url": ""
-  },
-  "function_assistant_info": {
-    "smart_rec_applied": false,
-    "fixed_rec_applied": false,
-    "auto_adjust": false,
-    "auto_adjust_segid_list": [],
-    "color_correction": false,
-    "color_correction_segid_list": [],
-    "enhance_quality": false,
-    "smooth_slow_motion": false,
-    "deflicker_segid_list": [],
-    "video_noise_segid_list": [],
-    "enhance_quality_segid_list": [],
-    "smart_segid_list": [],
-    "retouch": false,
-    "retouch_segid_list": [],
-    "enhande_voice": false,
-    "enhance_voice_segid_list": [],
-    "audio_noise_segid_list": [],
-    "auto_caption": false,
-    "auto_caption_segid_list": [],
-    "auto_caption_template_id": "",
-    "caption_opt": false,
-    "caption_opt_segid_list": [],
-    "eye_correction": false,
-    "eye_correction_segid_list": [],
-    "normalize_loudness": false,
-    "normalize_loudness_segid_list": [],
-    "normalize_loudness_audio_denoise_segid_list": [],
-    "auto_adjust_fixed": false,
-    "auto_adjust_fixed_value": 50.0,
-    "color_correction_fixed": false,
-    "color_correction_fixed_value": 50.0,
-    "normalize_loudness_fixed": false,
-    "enhande_voice_fixed": false,
-    "retouch_fixed": false,
-    "enhance_quality_fixed": false,
-    "smooth_slow_motion_fixed": false,
-    "fps": {
-      "num": 0,
-      "den": 1
+  "tracks": [
+    {
+      "id": "CEA15B29-AE2A-475F-AC9E-391A2D5173B3",
+      "type": "video",
+      "attribute": 0,
+      "flag": 0,
+      "is_default_name": true,
+      "name": "",
+      "segments": [
+        {
+          "id": "B1B932C1-42CB-43DC-B728-C12534081A70",
+          "material_id": "CFE7D7FB-F1C6-4214-9D6E-2C897228ADA9",
+          "source_timerange": {
+            "start": 0,
+            "duration": 3000000
+          },
+          "target_timerange": {
+            "start": 0,
+            "duration": 3000000
+          },
+          "extra_material_refs": [
+            "546152DD-F96D-4E44-A784-00D78B76F941"
+          ],
+          "speed": 1.0,
+          "volume": 0.0,
+          "visible": true,
+          "clip": {
+            "alpha": 1.0,
+            "flip": {
+              "horizontal": false,
+              "vertical": false
+            },
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "transform": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          },
+          "enable_adjust": true,
+          "enable_color_curves": true,
+          "enable_color_wheels": true,
+          "enable_lut": true,
+          "enable_smart_color_adjust": false,
+          "last_nonzero_volume": 1.0,
+          "reverse": false,
+          "track_attribute": 0,
+          "track_render_index": 0,
+          "uniform_scale": {
+            "on": true,
+            "value": 1.0
+          }
+        },
+        {
+          "id": "B5BB72C2-0BCB-4B4B-884B-7F2020881646",
+          "material_id": "632194E6-729D-4434-ABA2-A5B34573CDD5",
+          "source_timerange": {
+            "start": 0,
+            "duration": 3000000
+          },
+          "target_timerange": {
+            "start": 3000000,
+            "duration": 3000000
+          },
+          "extra_material_refs": [
+            "C231CDB7-3A5A-4F7A-8908-C3A1B10AEAB0"
+          ],
+          "speed": 1.0,
+          "volume": 0.0,
+          "visible": true,
+          "clip": {
+            "alpha": 1.0,
+            "flip": {
+              "horizontal": false,
+              "vertical": false
+            },
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "transform": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          },
+          "enable_adjust": true,
+          "enable_color_curves": true,
+          "enable_color_wheels": true,
+          "enable_lut": true,
+          "enable_smart_color_adjust": false,
+          "last_nonzero_volume": 1.0,
+          "reverse": false,
+          "track_attribute": 0,
+          "track_render_index": 0,
+          "uniform_scale": {
+            "on": true,
+            "value": 1.0
+          }
+        },
+        {
+          "id": "A4F26BAB-D8BB-4A67-9CD2-3A317B905615",
+          "material_id": "EBEE220C-B9E6-483F-AA85-F74CC91D09A7",
+          "source_timerange": {
+            "start": 0,
+            "duration": 3000000
+          },
+          "target_timerange": {
+            "start": 6000000,
+            "duration": 3000000
+          },
+          "extra_material_refs": [
+            "0D8EBB21-3FB8-4190-8131-E82634566559"
+          ],
+          "speed": 1.0,
+          "volume": 0.0,
+          "visible": true,
+          "clip": {
+            "alpha": 1.0,
+            "flip": {
+              "horizontal": false,
+              "vertical": false
+            },
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "transform": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          },
+          "enable_adjust": true,
+          "enable_color_curves": true,
+          "enable_color_wheels": true,
+          "enable_lut": true,
+          "enable_smart_color_adjust": false,
+          "last_nonzero_volume": 1.0,
+          "reverse": false,
+          "track_attribute": 0,
+          "track_render_index": 0,
+          "uniform_scale": {
+            "on": true,
+            "value": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "536A046D-093A-40CD-AF9B-C37C4C3F3416",
+      "type": "text",
+      "attribute": 0,
+      "flag": 0,
+      "is_default_name": true,
+      "name": "",
+      "segments": [
+        {
+          "id": "81BD4CC0-3549-47F3-A63F-378BBE81E809",
+          "material_id": "A74195DF-3267-491C-B92B-3D1F4F248E91",
+          "source_timerange": null,
+          "target_timerange": {
+            "start": 0,
+            "duration": 3000000
+          },
+          "extra_material_refs": [],
+          "speed": 1.0,
+          "volume": 1.0,
+          "visible": true,
+          "clip": {
+            "alpha": 1.0,
+            "flip": {
+              "horizontal": false,
+              "vertical": false
+            },
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "transform": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          },
+          "render_index": 14000,
+          "track_render_index": 1
+        },
+        {
+          "id": "32367B8A-DE0B-4469-9400-415EF3BC82D2",
+          "material_id": "BFE3BC78-EAD1-488D-B2C2-46E70A76CC91",
+          "source_timerange": null,
+          "target_timerange": {
+            "start": 3000000,
+            "duration": 3000000
+          },
+          "extra_material_refs": [],
+          "speed": 1.0,
+          "volume": 1.0,
+          "visible": true,
+          "clip": {
+            "alpha": 1.0,
+            "flip": {
+              "horizontal": false,
+              "vertical": false
+            },
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "transform": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          },
+          "render_index": 14001,
+          "track_render_index": 1
+        },
+        {
+          "id": "D1F81917-8CDF-46C3-9FC3-24BCD8CCF09D",
+          "material_id": "2076F3C7-A331-4191-BC98-FC57DAEB28E9",
+          "source_timerange": null,
+          "target_timerange": {
+            "start": 6000000,
+            "duration": 3000000
+          },
+          "extra_material_refs": [],
+          "speed": 1.0,
+          "volume": 1.0,
+          "visible": true,
+          "clip": {
+            "alpha": 1.0,
+            "flip": {
+              "horizontal": false,
+              "vertical": false
+            },
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "transform": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          },
+          "render_index": 14002,
+          "track_render_index": 1
+        }
+      ]
     }
-  }
+  ],
+  "platform": {
+    "app_id": 359,
+    "app_source": "cc",
+    "app_version": "5.1.0",
+    "os": "windows",
+    "os_version": "10",
+    "device_id": "",
+    "hard_disk_id": "",
+    "mac_address": ""
+  },
+  "create_time": 0,
+  "update_time": 0,
+  "name": "",
+  "path": "",
+  "relationships": [],
+  "static_cover_image_path": "",
+  "extra_info": null,
+  "mutable_config": null
 }
