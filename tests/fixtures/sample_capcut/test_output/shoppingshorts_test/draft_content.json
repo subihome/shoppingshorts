@@ -1,5 +1,5 @@
 {
-  "id": "B8FA9EEF-01CE-4020-B80B-421F77BE4332",
+  "id": "A7BE730D-0519-4D94-BB5C-4BFF1F3BA8FE",
   "version": 360000,
   "new_version": "171.0.0",
   "draft_type": "video",
@@ -76,7 +76,7 @@
     "flowers": [],
     "videos": [
       {
-        "id": "59037A0A-0423-4003-BD3B-AC61E8D91F5E",
+        "id": "37581C00-4A2F-49BD-9B0D-7D704D13F6D1",
         "unique_id": "",
         "type": "photo",
         "duration": 10800000000,
@@ -179,7 +179,7 @@
           "algorithms": [],
           "time_range": {
             "start": 0,
-            "duration": 0
+            "duration": 3000000
           },
           "path": "",
           "gameplay_configs": [],
@@ -228,7 +228,7 @@
         }
       },
       {
-        "id": "1C536D17-558A-49BD-BDB8-40E35DBE9D50",
+        "id": "D7F16D4E-634B-4559-A654-C61EB986E9FC",
         "unique_id": "",
         "type": "photo",
         "duration": 10800000000,
@@ -331,7 +331,7 @@
           "algorithms": [],
           "time_range": {
             "start": 0,
-            "duration": 0
+            "duration": 3000000
           },
           "path": "",
           "gameplay_configs": [],
@@ -380,7 +380,7 @@
         }
       },
       {
-        "id": "85DA9E25-0891-443E-BEBC-B56463B4F448",
+        "id": "E4D81A9E-2B27-4BA4-8C72-E4CF43630681",
         "unique_id": "",
         "type": "photo",
         "duration": 10800000000,
@@ -483,7 +483,7 @@
           "algorithms": [],
           "time_range": {
             "start": 0,
-            "duration": 0
+            "duration": 3000000
           },
           "path": "",
           "gameplay_configs": [],
@@ -537,7 +537,7 @@
     "images": [],
     "texts": [
       {
-        "id": "D50A34EE-191B-474E-993B-2A2EDF8CBD53",
+        "id": "6E5A5319-CE0B-441D-B63C-78E672FAA42D",
         "type": "subtitle",
         "content": "{\"text\": \"테스트 1\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
         "name": "",
@@ -693,7 +693,7 @@
         "relevance_segment": []
       },
       {
-        "id": "D0BA477E-8A4C-4ECE-8CDD-A019DF6A959D",
+        "id": "7EC007F7-120F-40E0-AC1E-551D376D7F4C",
         "type": "subtitle",
         "content": "{\"text\": \"테스트 2\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
         "name": "",
@@ -849,7 +849,7 @@
         "relevance_segment": []
       },
       {
-        "id": "B8B82E53-EBF5-46FD-9F58-89C6214AC399",
+        "id": "D00F5A3D-A6EE-4C8E-AB9D-547A66B62FD2",
         "type": "subtitle",
         "content": "{\"text\": \"테스트 3\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
         "name": "",
@@ -1009,7 +1009,7 @@
     "stickers": [],
     "canvases": [
       {
-        "id": "58ADD87C-9EE1-47C9-A46C-8FA3B45F2FEC",
+        "id": "1B5B12EF-4DCF-42CE-ACC9-AF26DA193A75",
         "type": "canvas_color",
         "color": "",
         "blur": 0.0,
@@ -1021,7 +1021,7 @@
         "team_id": ""
       },
       {
-        "id": "F277F29A-C837-4905-B44A-490778050FCB",
+        "id": "4086D77F-FD89-4C80-84BA-AC9474E0BEE7",
         "type": "canvas_color",
         "color": "",
         "blur": 0.0,
@@ -1033,7 +1033,7 @@
         "team_id": ""
       },
       {
-        "id": "8F854880-E2B1-4373-B70D-7DA817EAC408",
+        "id": "485F150E-E230-404D-BCA5-76162082BCB4",
         "type": "canvas_color",
         "color": "",
         "blur": 0.0,
@@ -1051,37 +1051,37 @@
     "beats": [],
     "material_animations": [
       {
-        "id": "CBFC901E-E5D2-406D-A928-9436F6D788F2",
+        "id": "1D6BF79B-FCC5-4DD7-9D1B-80D2158BB15D",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "83B339B0-D643-4FDC-AD52-F19CEFC0793D",
+        "id": "B05EC5FA-F0FF-4354-A4E6-E6F7133CC17C",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "37B93B4A-02F6-4235-8FB4-DB63DE8BD9E3",
+        "id": "F9F55C88-4552-4040-BF99-AAA052992594",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "78589AE7-2774-47D1-87B0-30523ADD484D",
+        "id": "D08F7F10-7C11-44BD-8618-B40164F502D5",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "3DB48746-E1F9-494C-A3E1-EBE75466784B",
+        "id": "73A52A8A-EBD2-489D-BA1D-D163C4E0AD51",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
       },
       {
-        "id": "51FE89C9-8C8F-4B00-85D4-3BD9297399DD",
+        "id": "57D3F350-A890-4767-925A-48C337FF587E",
         "type": "sticker_animation",
         "animations": [],
         "multi_language_current": "none"
@@ -1090,7 +1090,7 @@
     "placeholders": [],
     "placeholder_infos": [
       {
-        "id": "0DA5983A-09AA-4C7B-8279-7B7A9EFC302A",
+        "id": "E0987D96-0D6D-4843-8D5D-6E0CAF83C334",
         "type": "placeholder_info",
         "meta_type": "none",
         "res_path": "",
@@ -1099,7 +1099,7 @@
         "error_text": ""
       },
       {
-        "id": "A3CE1FF2-E784-425C-A769-844B7C7EDE99",
+        "id": "51987626-73EC-4D0B-927C-E9A35702BBEB",
         "type": "placeholder_info",
         "meta_type": "none",
         "res_path": "",
@@ -1108,7 +1108,7 @@
         "error_text": ""
       },
       {
-        "id": "B773DEDD-2111-4B98-BFF1-1EFCFE9DCE85",
+        "id": "CC0088A1-22EE-4DDE-A627-3A31EE10DBB6",
         "type": "placeholder_info",
         "meta_type": "none",
         "res_path": "",
@@ -1119,21 +1119,21 @@
     ],
     "speeds": [
       {
-        "id": "0C9100C1-922B-4C25-B458-A999159C3FEC",
+        "id": "0235C6EA-2C7A-48B1-A6A8-C1FA46BE9F2A",
         "type": "speed",
         "mode": 0,
         "speed": 1.0,
         "curve_speed": null
       },
       {
-        "id": "61DE40C2-D9EB-4B98-98D0-B4858F340C0A",
+        "id": "B30DE6E9-FF4A-47FD-89E0-77FF8B500239",
         "type": "speed",
         "mode": 0,
         "speed": 1.0,
         "curve_speed": null
       },
       {
-        "id": "2FE787C6-E5D2-4618-ACB5-F7DB96ACE827",
+        "id": "44736C77-EACF-4A92-85A3-55D142772434",
         "type": "speed",
         "mode": 0,
         "speed": 1.0,
@@ -1161,19 +1161,19 @@
     "plugin_effects": [],
     "sound_channel_mappings": [
       {
-        "id": "46A78B60-7F66-47C7-8663-C1A38C9C0CAC",
+        "id": "FD7BA744-19FA-4B29-B9A8-4186EC8DFE0D",
         "type": "none",
         "audio_channel_mapping": 0,
         "is_config_open": false
       },
       {
-        "id": "B3C3EE22-ADC8-4B4A-8A31-5865C14196EF",
+        "id": "97178DA8-FCB2-4A7A-A867-CF3ABCC02C52",
         "type": "none",
         "audio_channel_mapping": 0,
         "is_config_open": false
       },
       {
-        "id": "F0612231-2CCF-413A-BA5D-2AED273C0E48",
+        "id": "AC271D46-70E2-4E3C-907B-71EB255CDD27",
         "type": "none",
         "audio_channel_mapping": 0,
         "is_config_open": false
@@ -1183,7 +1183,7 @@
     "shapes": [],
     "material_colors": [
       {
-        "id": "777CBC59-F713-4B7C-B69E-1E19C405DA5A",
+        "id": "B8E74183-2DC9-405A-AABC-CDEA8170483E",
         "is_color_clip": false,
         "is_gradient": false,
         "solid_color": "",
@@ -1194,7 +1194,7 @@
         "height": 0.0
       },
       {
-        "id": "04EE3955-5818-48EE-8035-F03C202345BB",
+        "id": "26DA9BE0-9A8D-4126-A1F3-D55AC39ADA49",
         "is_color_clip": false,
         "is_gradient": false,
         "solid_color": "",
@@ -1205,7 +1205,7 @@
         "height": 0.0
       },
       {
-        "id": "76E9FBAC-98B2-4651-A5C1-16C4C90E28A8",
+        "id": "448917BF-06E6-468D-8679-3314AA858751",
         "is_color_clip": false,
         "is_gradient": false,
         "solid_color": "",
@@ -1223,7 +1223,7 @@
     "audio_track_indexes": [],
     "loudnesses": [
       {
-        "id": "093B2DE6-8A41-4305-ABB3-26D0E2BD9282",
+        "id": "80210EE1-04B4-4F8B-9EE5-DA243B887C74",
         "enable": false,
         "time_range": null,
         "file_id": "",
@@ -1231,7 +1231,7 @@
         "loudness_param": null
       },
       {
-        "id": "42124B4B-AF75-4A79-AB8A-8EF4C7E2BCFA",
+        "id": "BF4E7F53-0518-48F0-B87F-12E805E8C736",
         "enable": false,
         "time_range": null,
         "file_id": "",
@@ -1239,7 +1239,7 @@
         "loudness_param": null
       },
       {
-        "id": "8A2CE79A-27F0-4D0B-B13E-F3D71F9F353F",
+        "id": "2FA161EB-7047-408F-A65F-6A6F9BA76E30",
         "enable": false,
         "time_range": null,
         "file_id": "",
@@ -1250,7 +1250,7 @@
     "vocal_beautifys": [],
     "vocal_separations": [
       {
-        "id": "9AC35F6E-B591-4136-AE94-29C7ABF74775",
+        "id": "9350EBE1-32CE-4564-ACC0-31DB613E74BB",
         "type": "vocal_separation",
         "choice": 0,
         "removed_sounds": [],
@@ -1260,7 +1260,7 @@
         "enter_from": ""
       },
       {
-        "id": "9600BBA0-877C-4A2A-8E94-B973A152981F",
+        "id": "A6237185-65B8-4441-8829-0D947272F757",
         "type": "vocal_separation",
         "choice": 0,
         "removed_sounds": [],
@@ -1270,7 +1270,7 @@
         "enter_from": ""
       },
       {
-        "id": "B554F7B2-3FD1-4562-83C5-3DE64EAAF8B3",
+        "id": "51B3FE54-011A-4542-AD5B-FEBB0E436BE8",
         "type": "vocal_separation",
         "choice": 0,
         "removed_sounds": [],
@@ -1289,15 +1289,15 @@
   },
   "tracks": [
     {
-      "id": "EAF8AB2C-0BC4-4705-9BE4-CDFA0D3BFE7E",
+      "id": "47977832-5ECC-4996-A853-DE6C9007B3DD",
       "type": "video",
       "attribute": 1,
       "flag": 0,
       "name": "",
       "segments": [
         {
-          "id": "28D4DFD5-5551-4F9D-9BDE-2C391E5C0686",
-          "material_id": "59037A0A-0423-4003-BD3B-AC61E8D91F5E",
+          "id": "93813DFA-4879-4478-8B7A-32B6877ECD56",
+          "material_id": "37581C00-4A2F-49BD-9B0D-7D704D13F6D1",
           "source_timerange": {
             "start": 0,
             "duration": 3000000
@@ -1341,14 +1341,14 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "0C9100C1-922B-4C25-B458-A999159C3FEC",
-            "0DA5983A-09AA-4C7B-8279-7B7A9EFC302A",
-            "58ADD87C-9EE1-47C9-A46C-8FA3B45F2FEC",
-            "CBFC901E-E5D2-406D-A928-9436F6D788F2",
-            "46A78B60-7F66-47C7-8663-C1A38C9C0CAC",
-            "777CBC59-F713-4B7C-B69E-1E19C405DA5A",
-            "093B2DE6-8A41-4305-ABB3-26D0E2BD9282",
-            "9AC35F6E-B591-4136-AE94-29C7ABF74775"
+            "0235C6EA-2C7A-48B1-A6A8-C1FA46BE9F2A",
+            "E0987D96-0D6D-4843-8D5D-6E0CAF83C334",
+            "1B5B12EF-4DCF-42CE-ACC9-AF26DA193A75",
+            "1D6BF79B-FCC5-4DD7-9D1B-80D2158BB15D",
+            "FD7BA744-19FA-4B29-B9A8-4186EC8DFE0D",
+            "B8E74183-2DC9-405A-AABC-CDEA8170483E",
+            "80210EE1-04B4-4F8B-9EE5-DA243B887C74",
+            "9350EBE1-32CE-4564-ACC0-31DB613E74BB"
           ],
           "render_index": 0,
           "keyframe_refs": [],
@@ -1394,8 +1394,8 @@
           "enable_color_adjust_pro": false
         },
         {
-          "id": "F030B32A-D90C-43F2-8E51-1E930B326FCB",
-          "material_id": "1C536D17-558A-49BD-BDB8-40E35DBE9D50",
+          "id": "65CA62B9-C97F-4300-9C18-F792F21EB8AC",
+          "material_id": "D7F16D4E-634B-4559-A654-C61EB986E9FC",
           "source_timerange": {
             "start": 0,
             "duration": 3000000
@@ -1439,14 +1439,14 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "61DE40C2-D9EB-4B98-98D0-B4858F340C0A",
-            "A3CE1FF2-E784-425C-A769-844B7C7EDE99",
-            "F277F29A-C837-4905-B44A-490778050FCB",
-            "37B93B4A-02F6-4235-8FB4-DB63DE8BD9E3",
-            "B3C3EE22-ADC8-4B4A-8A31-5865C14196EF",
-            "04EE3955-5818-48EE-8035-F03C202345BB",
-            "42124B4B-AF75-4A79-AB8A-8EF4C7E2BCFA",
-            "9600BBA0-877C-4A2A-8E94-B973A152981F"
+            "B30DE6E9-FF4A-47FD-89E0-77FF8B500239",
+            "51987626-73EC-4D0B-927C-E9A35702BBEB",
+            "4086D77F-FD89-4C80-84BA-AC9474E0BEE7",
+            "F9F55C88-4552-4040-BF99-AAA052992594",
+            "97178DA8-FCB2-4A7A-A867-CF3ABCC02C52",
+            "26DA9BE0-9A8D-4126-A1F3-D55AC39ADA49",
+            "BF4E7F53-0518-48F0-B87F-12E805E8C736",
+            "A6237185-65B8-4441-8829-0D947272F757"
           ],
           "render_index": 0,
           "keyframe_refs": [],
@@ -1492,8 +1492,8 @@
           "enable_color_adjust_pro": false
         },
         {
-          "id": "1059A98D-6976-4AB8-A5F1-AFA3E46F8FD8",
-          "material_id": "85DA9E25-0891-443E-BEBC-B56463B4F448",
+          "id": "7AABCBEC-A9DD-4FB7-9F7C-9616241DACA1",
+          "material_id": "E4D81A9E-2B27-4BA4-8C72-E4CF43630681",
           "source_timerange": {
             "start": 0,
             "duration": 3000000
@@ -1537,14 +1537,14 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "2FE787C6-E5D2-4618-ACB5-F7DB96ACE827",
-            "B773DEDD-2111-4B98-BFF1-1EFCFE9DCE85",
-            "8F854880-E2B1-4373-B70D-7DA817EAC408",
-            "3DB48746-E1F9-494C-A3E1-EBE75466784B",
-            "F0612231-2CCF-413A-BA5D-2AED273C0E48",
-            "76E9FBAC-98B2-4651-A5C1-16C4C90E28A8",
-            "8A2CE79A-27F0-4D0B-B13E-F3D71F9F353F",
-            "B554F7B2-3FD1-4562-83C5-3DE64EAAF8B3"
+            "44736C77-EACF-4A92-85A3-55D142772434",
+            "CC0088A1-22EE-4DDE-A627-3A31EE10DBB6",
+            "485F150E-E230-404D-BCA5-76162082BCB4",
+            "73A52A8A-EBD2-489D-BA1D-D163C4E0AD51",
+            "AC271D46-70E2-4E3C-907B-71EB255CDD27",
+            "448917BF-06E6-468D-8679-3314AA858751",
+            "2FA161EB-7047-408F-A65F-6A6F9BA76E30",
+            "51B3FE54-011A-4542-AD5B-FEBB0E436BE8"
           ],
           "render_index": 0,
           "keyframe_refs": [],
@@ -1592,15 +1592,15 @@
       ]
     },
     {
-      "id": "65E80001-275B-4337-BAF8-56556142C109",
+      "id": "202C62F1-2317-4278-AF84-8D433170D051",
       "type": "text",
       "attribute": 0,
       "flag": 0,
       "name": "",
       "segments": [
         {
-          "id": "BBFA6C0A-B841-4594-B95A-BF5F6D7F02AA",
-          "material_id": "D50A34EE-191B-474E-993B-2A2EDF8CBD53",
+          "id": "C8593591-9FF4-4823-BBE5-6BA647324CB3",
+          "material_id": "6E5A5319-CE0B-441D-B63C-78E672FAA42D",
           "source_timerange": null,
           "target_timerange": {
             "start": 0,
@@ -1641,23 +1641,19 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "83B339B0-D643-4FDC-AD52-F19CEFC0793D"
+            "B05EC5FA-F0FF-4354-A4E6-E6F7133CC17C"
           ],
           "render_index": 14000,
           "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
+          "enable_lut": false,
+          "enable_adjust": false,
           "enable_hsl": false,
           "visible": true,
           "group_id": "",
           "enable_color_curves": true,
           "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
+          "track_render_index": 2,
+          "hdr_settings": null,
           "enable_color_wheels": true,
           "track_attribute": 0,
           "is_placeholder": false,
@@ -1678,7 +1674,7 @@
           "enable_adjust_mask": false,
           "raw_segment_id": "",
           "lyric_keyframes": null,
-          "enable_video_mask": false,
+          "enable_video_mask": true,
           "digital_human_template_group_id": "",
           "color_correct_alg_result": "",
           "source": "segmentsourcenormal",
@@ -1687,8 +1683,8 @@
           "enable_color_adjust_pro": false
         },
         {
-          "id": "A99B75A5-4378-48AB-8B79-164819A1209F",
-          "material_id": "D0BA477E-8A4C-4ECE-8CDD-A019DF6A959D",
+          "id": "6D20A9B2-E7A2-4812-A498-97053AA21FF5",
+          "material_id": "7EC007F7-120F-40E0-AC1E-551D376D7F4C",
           "source_timerange": null,
           "target_timerange": {
             "start": 3000000,
@@ -1729,23 +1725,19 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "78589AE7-2774-47D1-87B0-30523ADD484D"
+            "D08F7F10-7C11-44BD-8618-B40164F502D5"
           ],
-          "render_index": 14000,
+          "render_index": 14001,
           "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
+          "enable_lut": false,
+          "enable_adjust": false,
           "enable_hsl": false,
           "visible": true,
           "group_id": "",
           "enable_color_curves": true,
           "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
+          "track_render_index": 2,
+          "hdr_settings": null,
           "enable_color_wheels": true,
           "track_attribute": 0,
           "is_placeholder": false,
@@ -1766,7 +1758,7 @@
           "enable_adjust_mask": false,
           "raw_segment_id": "",
           "lyric_keyframes": null,
-          "enable_video_mask": false,
+          "enable_video_mask": true,
           "digital_human_template_group_id": "",
           "color_correct_alg_result": "",
           "source": "segmentsourcenormal",
@@ -1775,8 +1767,8 @@
           "enable_color_adjust_pro": false
         },
         {
-          "id": "B17F2972-73B2-4BB4-81F2-42658BFA1B45",
-          "material_id": "B8B82E53-EBF5-46FD-9F58-89C6214AC399",
+          "id": "11302D42-E6C3-4351-8ED4-838006659A2D",
+          "material_id": "D00F5A3D-A6EE-4C8E-AB9D-547A66B62FD2",
           "source_timerange": null,
           "target_timerange": {
             "start": 6000000,
@@ -1817,23 +1809,19 @@
             "value": 1.0
           },
           "extra_material_refs": [
-            "51FE89C9-8C8F-4B00-85D4-3BD9297399DD"
+            "57D3F350-A890-4767-925A-48C337FF587E"
           ],
-          "render_index": 14000,
+          "render_index": 14002,
           "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
+          "enable_lut": false,
+          "enable_adjust": false,
           "enable_hsl": false,
           "visible": true,
           "group_id": "",
           "enable_color_curves": true,
           "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
+          "track_render_index": 2,
+          "hdr_settings": null,
           "enable_color_wheels": true,
           "track_attribute": 0,
           "is_placeholder": false,
@@ -1854,7 +1842,7 @@
           "enable_adjust_mask": false,
           "raw_segment_id": "",
           "lyric_keyframes": null,
-          "enable_video_mask": false,
+          "enable_video_mask": true,
           "digital_human_template_group_id": "",
           "color_correct_alg_result": "",
           "source": "segmentsourcenormal",
@@ -1863,14 +1851,6 @@
           "enable_color_adjust_pro": false
         }
       ]
-    },
-    {
-      "id": "745AA74B-76ED-4763-BDB8-25CF9EAB7B5A",
-      "type": "audio",
-      "attribute": 0,
-      "flag": 0,
-      "name": "",
-      "segments": []
     }
   ]
 }

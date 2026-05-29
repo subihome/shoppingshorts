@@ -14,11 +14,13 @@ def _build_draft_content(plan: EditPlan) -> dict:
     text_segs: list[dict] = []
     audio_segs: list[dict] = []
 
-    for clip in plan.clips:
+    for i, clip in enumerate(plan.clips):
         target_start = T.us(clip.audio_start)
         target_dur = T.us(clip.audio_end - clip.audio_start)
 
-        vm = T.video_material(Path(clip.asset_path), plan.width, plan.height)
+        source_dur_us = T.us((clip.asset_out or (clip.audio_end - clip.audio_start)) - clip.asset_in)
+        vm = T.video_material(Path(clip.asset_path), plan.width, plan.height,
+                              used_duration_us=source_dur_us)
         materials["videos"].append(vm)
 
         speed = T.speed_material()
@@ -38,14 +40,13 @@ def _build_draft_content(plan: EditPlan) -> dict:
         materials["loudnesses"].append(loud)
         materials["vocal_separations"].append(vs)
 
-        source_dur = T.us((clip.asset_out or (clip.audio_end - clip.audio_start)) - clip.asset_in)
         source_start = T.us(clip.asset_in)
 
         is_photo = vm["type"] == "photo"
         video_segs.append(T.video_segment(
             material_id=vm["id"],
             target_start_us=target_start, target_dur_us=target_dur,
-            source_start_us=source_start, source_dur_us=source_dur,
+            source_start_us=source_start, source_dur_us=source_dur_us,
             extra_refs=[speed["id"], ph["id"], canvas["id"], anim["id"],
                         scm["id"], mc["id"], loud["id"], vs["id"]],
             volume=0.0 if is_photo else 1.0,
@@ -60,6 +61,7 @@ def _build_draft_content(plan: EditPlan) -> dict:
                 material_id=tm["id"],
                 target_start_us=target_start, target_dur_us=target_dur,
                 extra_refs=[t_anim["id"]],
+                render_index=14000 + i,
             ))
 
     total_us = T.us(plan.clips[-1].audio_end) if plan.clips else 0
@@ -84,11 +86,13 @@ def _build_draft_content(plan: EditPlan) -> dict:
             extra_refs=[a_speed["id"], a_ph["id"], a_beats["id"], a_scm["id"], a_vs["id"]],
         ))
 
-    tracks = [
-        {"id": T.uid(), "type": "video", "attribute": 1, "flag": 0, "name": "", "segments": video_segs},
-        {"id": T.uid(), "type": "text", "attribute": 0, "flag": 0, "name": "", "segments": text_segs},
-        {"id": T.uid(), "type": "audio", "attribute": 0, "flag": 0, "name": "", "segments": audio_segs},
-    ]
+    tracks: list[dict] = []
+    if video_segs:
+        tracks.append({"id": T.uid(), "type": "video", "attribute": 1, "flag": 0, "name": "", "segments": video_segs})
+    if text_segs:
+        tracks.append({"id": T.uid(), "type": "text", "attribute": 0, "flag": 0, "name": "", "segments": text_segs})
+    if audio_segs:
+        tracks.append({"id": T.uid(), "type": "audio", "attribute": 0, "flag": 0, "name": "", "segments": audio_segs})
 
     draft = T.root_scaffold(width=plan.width, height=plan.height, fps=plan.fps,
                             total_duration_us=total_us)

@@ -125,7 +125,7 @@ def beats_material() -> dict:
 _IMAGE_EXT = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
 
-def video_material(path: Path, width: int, height: int) -> dict:
+def video_material(path: Path, width: int, height: int, used_duration_us: int = 0) -> dict:
     is_image = path.suffix.lower() in _IMAGE_EXT
     # Photos get a long virtual duration (CapCut convention: 3h in microseconds);
     # actual on-timeline length is set by the segment's source_timerange.
@@ -206,7 +206,7 @@ def video_material(path: Path, width: int, height: int) -> dict:
         "corner_pin": None,
         "surface_trackings": [],
         "video_algorithm": {
-            "algorithms": [], "time_range": {"start": 0, "duration": 0},
+            "algorithms": [], "time_range": {"start": 0, "duration": used_duration_us},
             "path": "", "gameplay_configs": [], "ai_in_painting_config": [],
             "complement_frame_config": None, "motion_blur_config": None,
             "deflicker": None, "noise_reduction": None, "quality_enhance": None,
@@ -543,7 +543,7 @@ def audio_segment(*, material_id: str, target_start_us: int, target_dur_us: int,
 
 def text_segment(*, material_id: str, target_start_us: int, target_dur_us: int,
                  extra_refs: list[str], render_index: int = 14000,
-                 track_render_index: int = 0) -> dict:
+                 track_render_index: int = 2) -> dict:
     return {
         "id": uid(),
         "material_id": material_id,
@@ -571,15 +571,15 @@ def text_segment(*, material_id: str, target_start_us: int, target_dur_us: int,
         "extra_material_refs": extra_refs,
         "render_index": render_index,
         "keyframe_refs": [],
-        "enable_lut": True,
-        "enable_adjust": True,
+        "enable_lut": False,
+        "enable_adjust": False,
         "enable_hsl": False,
         "visible": True,
         "group_id": "",
         "enable_color_curves": True,
         "enable_hsl_curves": True,
         "track_render_index": track_render_index,
-        "hdr_settings": {"mode": 1, "intensity": 1.0, "nits": 1000},
+        "hdr_settings": None,
         "enable_color_wheels": True,
         "track_attribute": 0,
         "is_placeholder": False,
@@ -597,7 +597,7 @@ def text_segment(*, material_id: str, target_start_us: int, target_dur_us: int,
         "enable_adjust_mask": False,
         "raw_segment_id": "",
         "lyric_keyframes": None,
-        "enable_video_mask": False,
+        "enable_video_mask": True,
         "digital_human_template_group_id": "",
         "color_correct_alg_result": "",
         "source": "segmentsourcenormal",

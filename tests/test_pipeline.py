@@ -59,3 +59,5 @@ def test_end_to_end(tmp_path: Path):
     assert len(draft["materials"]["texts"]) == 3
     assert any(t["type"] == "video" for t in draft["tracks"])
     assert any(t["type"] == "text" for t in draft["tracks"])
+    for tr in draft["tracks"]:
+        assert tr["segments"], f"empty track emitted: {tr['type']}"
