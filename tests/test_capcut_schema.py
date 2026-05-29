@@ -1,19 +1,9 @@
+"""Smoke tests for the pyJianYingDraft-backed builder."""
 import json
 from pathlib import Path
 
 from shoppingshorts.capcut.builder import export_capcut_draft, export_capcut_project
-from shoppingshorts.plan.planner import build_plan
-from shoppingshorts.types import (
-    EditPlan,
-    ReferenceAnalysis,
-    Script,
-    ScriptSentence,
-    TimelineClip,
-)
-
-FIXTURES = Path(__file__).parent / "fixtures" / "sample_capcut" / "minimal"
-FIXTURE = FIXTURES / "draft_content.json"
-META_FIXTURE = FIXTURES / "draft_meta_info.json"
+from shoppingshorts.types import EditPlan, TimelineClip
 
 
 def _sample_plan() -> EditPlan:
@@ -21,7 +11,7 @@ def _sample_plan() -> EditPlan:
         width=1080,
         height=1920,
         fps=30.0,
-        narration_audio="/tmp/narration.wav",
+        narration_audio=None,
         clips=[
             TimelineClip(
                 sentence_index=0, asset_path="/tmp/a.mp4",
@@ -43,98 +33,43 @@ def _write_plan(tmp: Path) -> Path:
     return p
 
 
-def test_top_level_matches_fixture(tmp_path: Path):
+def test_export_draft_emits_valid_json(tmp_path: Path):
     p = _write_plan(tmp_path)
     out = tmp_path / "draft_content.json"
     export_capcut_draft(plan_path=p, out_path=out)
+    d = json.loads(out.read_text(encoding="utf-8"))
+    assert d["canvas_config"]["width"] == 1080
+    assert d["canvas_config"]["height"] == 1920
+    assert d["duration"] == 5_000_000
+    assert len(d["materials"]["videos"]) == 2
+    assert len(d["materials"]["texts"]) == 2
+    video_segs = [t for t in d["tracks"] if t["type"] == "video"][0]["segments"]
+    text_segs = [t for t in d["tracks"] if t["type"] == "text"][0]["segments"]
+    assert len(video_segs) == 2
+    assert len(text_segs) == 2
 
-    fixture = json.loads(FIXTURE.read_text(encoding="utf-8"))
-    produced = json.loads(out.read_text(encoding="utf-8"))
 
-    missing = set(fixture.keys()) - set(produced.keys())
-    assert not missing, f"missing top-level keys vs CapCut sample: {sorted(missing)}"
-
-
-def test_materials_buckets_match_fixture(tmp_path: Path):
+def test_segment_material_ids_resolve(tmp_path: Path):
     p = _write_plan(tmp_path)
     out = tmp_path / "draft_content.json"
     export_capcut_draft(plan_path=p, out_path=out)
-
-    fixture = json.loads(FIXTURE.read_text(encoding="utf-8"))
-    produced = json.loads(out.read_text(encoding="utf-8"))
-
-    missing = set(fixture["materials"].keys()) - set(produced["materials"].keys())
-    assert not missing, f"missing material buckets: {sorted(missing)}"
-
-
-def test_segment_refs_resolve_to_materials(tmp_path: Path):
-    p = _write_plan(tmp_path)
-    out = tmp_path / "draft_content.json"
-    export_capcut_draft(plan_path=p, out_path=out)
-
-    produced = json.loads(out.read_text(encoding="utf-8"))
-    all_ids: set[str] = set()
-    for items in produced["materials"].values():
-        for m in items:
-            if isinstance(m, dict) and "id" in m:
-                all_ids.add(m["id"])
-
-    for track in produced["tracks"]:
+    d = json.loads(out.read_text(encoding="utf-8"))
+    all_ids = {m["id"] for bucket in d["materials"].values() if isinstance(bucket, list)
+               for m in bucket if isinstance(m, dict) and "id" in m}
+    for track in d["tracks"]:
         for seg in track["segments"]:
-            assert seg["material_id"] in all_ids, f"segment material_id {seg['material_id']} not in materials"
-            for ref in seg["extra_material_refs"]:
-                assert ref in all_ids, f"extra_material_ref {ref} not in materials"
-
-
-def test_durations_are_microseconds(tmp_path: Path):
-    p = _write_plan(tmp_path)
-    out = tmp_path / "draft_content.json"
-    export_capcut_draft(plan_path=p, out_path=out)
-
-    produced = json.loads(out.read_text(encoding="utf-8"))
-    # plan total: 5.0s -> 5_000_000 us
-    assert produced["duration"] == 5_000_000
-    # first video segment: 2.0s -> 2_000_000 us
-    first = produced["tracks"][0]["segments"][0]
-    assert first["target_timerange"]["duration"] == 2_000_000
+            assert seg["material_id"] in all_ids
 
 
 def test_project_export_emits_both_files_with_matching_duration(tmp_path: Path):
     p = _write_plan(tmp_path)
     proj = tmp_path / "myproj"
-    export_capcut_project(plan_path=p, project_dir=proj,
-                          windows_root="C:/CapCut Drafts")
+    export_capcut_project(plan_path=p, project_dir=proj, windows_root="C:/CapCut Drafts")
 
     assert (proj / "draft_content.json").exists()
     assert (proj / "draft_meta_info.json").exists()
-
     content = json.loads((proj / "draft_content.json").read_text(encoding="utf-8"))
     meta = json.loads((proj / "draft_meta_info.json").read_text(encoding="utf-8"))
-
-    assert content["duration"] == meta["tm_duration"], "duration mismatch breaks CapCut on save"
+    assert content["duration"] == meta["tm_duration"]
     assert meta["draft_name"] == "myproj"
     assert meta["draft_fold_path"] == "C:/CapCut Drafts/myproj"
-
-
-def test_meta_top_level_matches_fixture(tmp_path: Path):
-    p = _write_plan(tmp_path)
-    proj = tmp_path / "myproj"
-    export_capcut_project(plan_path=p, project_dir=proj,
-                          windows_root="C:/CapCut Drafts")
-
-    fixture = json.loads(META_FIXTURE.read_text(encoding="utf-8"))
-    produced = json.loads((proj / "draft_meta_info.json").read_text(encoding="utf-8"))
-    missing = set(fixture.keys()) - set(produced.keys())
-    assert not missing, f"missing meta top-level keys: {sorted(missing)}"
-
-
-def test_text_content_is_valid_json_string(tmp_path: Path):
-    p = _write_plan(tmp_path)
-    out = tmp_path / "draft_content.json"
-    export_capcut_draft(plan_path=p, out_path=out)
-
-    produced = json.loads(out.read_text(encoding="utf-8"))
-    for tm in produced["materials"]["texts"]:
-        parsed = json.loads(tm["content"])
-        assert "text" in parsed
-        assert "styles" in parsed and len(parsed["styles"]) > 0

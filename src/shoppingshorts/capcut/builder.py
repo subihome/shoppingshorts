@@ -1,151 +1,190 @@
+"""CapCut draft builder backed by pyJianYingDraft.
+
+We use pyJianYingDraft to emit the CapCut/JianYing draft schema. The library
+validates media paths against the local filesystem on construction; when we're
+building on a remote machine for a user's Windows paths the file isn't there,
+so we provide *_unchecked helpers that bypass validation and fill in metadata
+explicitly.
+"""
 from __future__ import annotations
 
 import json
 import time
+import uuid
 from pathlib import Path
 
+import pyJianYingDraft as pyd
+from pyJianYingDraft import (
+    AudioMaterial,
+    AudioSegment,
+    ScriptFile,
+    TextSegment,
+    Timerange,
+    TrackType,
+    VideoMaterial,
+    VideoSegment,
+)
+from pyJianYingDraft.local_materials import CropSettings
+
 from ..types import EditPlan
-from . import templates as T
+
+_IMAGE_EXT = {".jpg", ".jpeg", ".png", ".bmp", ".webp", ".gif"}
 
 
-def _build_draft_content(plan: EditPlan) -> dict:
-    materials = T.empty_materials()
-    video_segs: list[dict] = []
-    text_segs: list[dict] = []
-    audio_segs: list[dict] = []
+def _video_material_unchecked(path: str, width: int, height: int) -> VideoMaterial:
+    """Construct a VideoMaterial without touching the filesystem."""
+    p = Path(path)
+    vm = VideoMaterial.__new__(VideoMaterial)
+    vm.material_name = p.name
+    vm.material_id = uuid.uuid4().hex
+    vm.path = str(p).replace("\\", "/")
+    vm.crop_settings = CropSettings()
+    vm.local_material_id = ""
+    if p.suffix.lower() in _IMAGE_EXT:
+        vm.material_type = "photo"
+    else:
+        vm.material_type = "video"
+    # Without media probing, give a long virtual duration so any segment
+    # source_timerange we hand the library passes its bounds check.
+    vm.duration = 10_800_000_000
+    vm.width = width
+    vm.height = height
+    return vm
 
-    for i, clip in enumerate(plan.clips):
-        target_start = T.us(clip.audio_start)
-        target_dur = T.us(clip.audio_end - clip.audio_start)
 
-        source_dur_us = T.us((clip.asset_out or (clip.audio_end - clip.audio_start)) - clip.asset_in)
-        vm = T.video_material(Path(clip.asset_path), plan.width, plan.height,
-                              used_duration_us=source_dur_us)
-        materials["videos"].append(vm)
+def _audio_material_unchecked(path: str, duration_us: int) -> AudioMaterial:
+    p = Path(path)
+    am = AudioMaterial.__new__(AudioMaterial)
+    am.material_name = p.name
+    am.material_id = uuid.uuid4().hex
+    am.path = str(p).replace("\\", "/")
+    am.duration = duration_us
+    return am
 
-        speed = T.speed_material()
-        ph = T.placeholder_info_material()
-        canvas = T.canvas_material()
-        anim = T.sticker_animation_material()
-        scm = T.sound_channel_mapping_material()
-        mc = T.material_color_material()
-        loud = T.loudness_material()
-        vs = T.vocal_separation_material()
-        materials["speeds"].append(speed)
-        materials["placeholder_infos"].append(ph)
-        materials["canvases"].append(canvas)
-        materials["material_animations"].append(anim)
-        materials["sound_channel_mappings"].append(scm)
-        materials["material_colors"].append(mc)
-        materials["loudnesses"].append(loud)
-        materials["vocal_separations"].append(vs)
 
-        source_start = T.us(clip.asset_in)
+def _build_script(plan: EditPlan) -> ScriptFile:
+    script = ScriptFile(width=plan.width, height=plan.height, fps=int(plan.fps),
+                        maintrack_adsorb=False)
+    script.add_track(TrackType.video, track_name="video_main")
+    script.add_track(TrackType.text, track_name="captions")
+    if plan.narration_audio:
+        script.add_track(TrackType.audio, track_name="narration")
 
-        is_photo = vm["type"] == "photo"
-        video_segs.append(T.video_segment(
-            material_id=vm["id"],
-            target_start_us=target_start, target_dur_us=target_dur,
-            source_start_us=source_start, source_dur_us=source_dur_us,
-            extra_refs=[speed["id"], ph["id"], canvas["id"], anim["id"],
-                        scm["id"], mc["id"], loud["id"], vs["id"]],
-            volume=0.0 if is_photo else 1.0,
-        ))
+    for clip in plan.clips:
+        target = Timerange(
+            start=int(round(clip.audio_start * 1_000_000)),
+            duration=int(round((clip.audio_end - clip.audio_start) * 1_000_000)),
+        )
+        source = Timerange(
+            start=int(round(clip.asset_in * 1_000_000)),
+            duration=int(round(((clip.asset_out or (clip.audio_end - clip.audio_start)) - clip.asset_in) * 1_000_000)),
+        )
+        vm = _video_material_unchecked(clip.asset_path, plan.width, plan.height)
+        seg = VideoSegment(material=vm, target_timerange=target, source_timerange=source)
+        script.add_segment(seg, track_name="video_main")
 
         if clip.text:
-            tm = T.text_material(clip.text)
-            t_anim = T.sticker_animation_material()
-            materials["texts"].append(tm)
-            materials["material_animations"].append(t_anim)
-            text_segs.append(T.text_segment(
-                material_id=tm["id"],
-                target_start_us=target_start, target_dur_us=target_dur,
-                extra_refs=[t_anim["id"]],
-                render_index=14000 + i,
-            ))
+            tseg = TextSegment(text=clip.text, timerange=target)
+            script.add_segment(tseg, track_name="captions")
 
-    total_us = T.us(plan.clips[-1].audio_end) if plan.clips else 0
+    if plan.narration_audio and plan.clips:
+        total_us = int(round(plan.clips[-1].audio_end * 1_000_000))
+        am = _audio_material_unchecked(plan.narration_audio, total_us)
+        aseg = AudioSegment(material=am,
+                            target_timerange=Timerange(start=0, duration=total_us),
+                            source_timerange=Timerange(start=0, duration=total_us))
+        script.add_segment(aseg, track_name="narration")
 
-    if plan.narration_audio:
-        am = T.audio_material(Path(plan.narration_audio), total_us)
-        a_speed = T.speed_material()
-        a_ph = T.placeholder_info_material()
-        a_beats = T.beats_material()
-        a_scm = T.sound_channel_mapping_material()
-        a_vs = T.vocal_separation_material()
-        materials["audios"].append(am)
-        materials["speeds"].append(a_speed)
-        materials["placeholder_infos"].append(a_ph)
-        materials["beats"].append(a_beats)
-        materials["sound_channel_mappings"].append(a_scm)
-        materials["vocal_separations"].append(a_vs)
-        audio_segs.append(T.audio_segment(
-            material_id=am["id"],
-            target_start_us=0, target_dur_us=total_us,
-            source_start_us=0, source_dur_us=total_us,
-            extra_refs=[a_speed["id"], a_ph["id"], a_beats["id"], a_scm["id"], a_vs["id"]],
-        ))
-
-    # Empirically: CapCut renders our timeline only when text segments use
-    # track_render_index=0 (matching the video track), even though the user's
-    # multi-track fixture used higher values. Values 1/2 either silently drop
-    # the timeline or refuse to load the project entirely. Leave them all at 0
-    # until we figure out the real rule.
-    tracks: list[dict] = []
-    if video_segs:
-        tracks.append({"id": T.uid(), "type": "video", "attribute": 1, "flag": 0, "name": "", "segments": video_segs})
-    if text_segs:
-        for s in text_segs:
-            s["track_render_index"] = 0
-        tracks.append({"id": T.uid(), "type": "text", "attribute": 0, "flag": 0, "name": "", "segments": text_segs})
-    if audio_segs:
-        for s in audio_segs:
-            s["track_render_index"] = 0
-        tracks.append({"id": T.uid(), "type": "audio", "attribute": 0, "flag": 0, "name": "", "segments": audio_segs})
-
-    draft = T.root_scaffold(width=plan.width, height=plan.height, fps=plan.fps,
-                            total_duration_us=total_us)
-    draft["materials"] = materials
-    draft["tracks"] = tracks
-    return draft
+    return script
 
 
 def export_capcut_draft(*, plan_path: Path, out_path: Path) -> None:
     plan = EditPlan.model_validate_json(plan_path.read_text(encoding="utf-8"))
-    draft = _build_draft_content(plan)
+    script = _build_script(plan)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(draft, ensure_ascii=False, indent=2), encoding="utf-8")
+    script.dump(str(out_path))
 
 
 def export_capcut_project(*, plan_path: Path, project_dir: Path,
                           windows_root: str = "C:/Users/sub/Downloads/CapCut Drafts") -> None:
-    """Emit both draft_content.json and draft_meta_info.json into project_dir.
-
-    project_dir's basename becomes draft_name. windows_root sets draft_root_path
-    in the meta — must match where CapCut expects projects on the target machine
-    (the user's CapCut Drafts root, NOT the local Linux path).
-    """
+    """Emit draft_content.json + draft_meta_info.json into project_dir."""
     plan = EditPlan.model_validate_json(plan_path.read_text(encoding="utf-8"))
-    draft = _build_draft_content(plan)
+    script = _build_script(plan)
 
     project_dir.mkdir(parents=True, exist_ok=True)
     name = project_dir.name
     folder_path = f"{windows_root.rstrip('/')}/{name}"
     now_us = int(time.time() * 1_000_000)
+    total_us = int(round(plan.clips[-1].audio_end * 1_000_000)) if plan.clips else 0
 
-    meta = T.meta_scaffold(
-        draft_id=T.uid(),
+    script.dump(str(project_dir / "draft_content.json"))
+
+    meta = _meta_scaffold(
+        draft_id=str(uuid.uuid4()).upper(),
         name=name,
         folder_path=folder_path,
         root_path=windows_root.rstrip("/"),
-        total_duration_us=draft["duration"],
+        total_duration_us=total_us,
         create_us=now_us,
         modified_us=now_us,
-    )
-
-    (project_dir / "draft_content.json").write_text(
-        json.dumps(draft, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     (project_dir / "draft_meta_info.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+
+
+def _meta_scaffold(*, draft_id: str, name: str, folder_path: str, root_path: str,
+                   total_duration_us: int, create_us: int, modified_us: int) -> dict:
+    return {
+        "cloud_draft_cover": False,
+        "cloud_draft_sync": False,
+        "cloud_package_completed_time": "",
+        "draft_cloud_capcut_purchase_info": "",
+        "draft_cloud_last_action_download": False,
+        "draft_cloud_package_type": "",
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "draft_cover.jpg",
+        "draft_deeplink_url": "",
+        "draft_enterprise_info": {
+            "draft_enterprise_extra": "",
+            "draft_enterprise_id": "",
+            "draft_enterprise_name": "",
+            "enterprise_material": [],
+        },
+        "draft_fold_path": folder_path,
+        "draft_id": draft_id,
+        "draft_is_ae_produce": False,
+        "draft_is_ai_packaging_used": False,
+        "draft_is_ai_shorts": False,
+        "draft_is_ai_translate": False,
+        "draft_is_article_video_draft": False,
+        "draft_is_cloud_temp_draft": False,
+        "draft_is_from_deeplink": "false",
+        "draft_is_invisible": False,
+        "draft_is_pippit_draft": False,
+        "draft_is_web_article_video": False,
+        "draft_materials": [{"type": t, "value": []} for t in (0, 1, 2, 3, 6, 7, 8, 18)],
+        "draft_materials_copied_info": [],
+        "draft_name": name,
+        "draft_need_rename_folder": False,
+        "draft_new_version": "",
+        "draft_removable_storage_device": "",
+        "draft_root_path": root_path,
+        "draft_segment_extra_info": [],
+        "draft_timeline_materials_size_": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "tm_draft_cloud_completed": 0,
+        "tm_draft_cloud_entry_id": 0,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_parent_entry_id": -1,
+        "tm_draft_cloud_space_id": 0,
+        "tm_draft_cloud_user_id": 0,
+        "tm_draft_create": create_us,
+        "tm_draft_modified": modified_us,
+        "tm_draft_removed": 0,
+        "tm_duration": total_duration_us,
+    }

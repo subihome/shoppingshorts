@@ -1,1856 +1,619 @@
 {
-  "id": "0E4D0B14-80A2-4C95-9C99-DB2C2B76670A",
-  "version": 360000,
-  "new_version": "171.0.0",
-  "draft_type": "video",
-  "platform": {
-    "os": "windows",
-    "os_version": "10.0.0",
-    "app_id": 359289,
-    "app_version": "8.5.0",
-    "app_source": "cc",
-    "device_id": "",
-    "hard_disk_id": "",
-    "mac_address": ""
-  },
-  "last_modified_platform": {
-    "os": "windows",
-    "os_version": "10.0.0",
-    "app_id": 359289,
-    "app_version": "8.5.0",
-    "app_source": "cc",
-    "device_id": "",
-    "hard_disk_id": "",
-    "mac_address": ""
-  },
-  "canvas_config": {
-    "width": 1080,
-    "height": 1920,
-    "ratio": "9:16",
-    "background": null
-  },
-  "duration": 9000000,
-  "fps": 30.0,
-  "color_space": 0,
-  "config": {
-    "video_mute": true,
-    "record_audio_last_index": 1,
-    "extract_audio_last_index": 1,
-    "original_sound_last_index": 2,
-    "subtitle_recognition_id": "",
-    "subtitle_taskinfo": [],
-    "lyrics_recognition_id": ""
-  },
-  "mutable_config": null,
-  "extra_info": null,
-  "free_render_index_mode_on": false,
-  "render_index_track_mode_on": true,
-  "is_drop_frame_timecode": false,
-  "keyframe_graph_list": [],
-  "keyframes": {
-    "videos": [],
-    "audios": [],
-    "texts": [],
-    "stickers": [],
-    "filters": [],
-    "adjusts": [],
-    "handwrites": [],
-    "effects": []
-  },
-  "relationships": [],
-  "time_marks": [],
-  "name": "",
-  "path": "",
-  "source": "default",
-  "cover": null,
-  "static_cover_image_path": "",
-  "retouch_cover": null,
-  "create_time": 0,
-  "update_time": 0,
-  "lyrics_effects": [],
-  "smart_ads_info": null,
-  "function_assistant_info": null,
-  "group_container": null,
-  "uneven_animation_template_info": null,
-  "materials": {
-    "flowers": [],
-    "videos": [
-      {
-        "id": "215E24C9-B246-4A13-9318-B42A76BAA993",
-        "unique_id": "",
-        "type": "photo",
-        "duration": 10800000000,
-        "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
-        "media_path": "",
-        "local_id": "",
-        "has_audio": false,
-        "reverse_path": "",
-        "intensifies_path": "",
-        "reverse_intensifies_path": "",
-        "intensifies_audio_path": "",
-        "cartoon_path": "",
+    "canvas_config": {
         "width": 1080,
         "height": 1920,
-        "category_id": "",
-        "category_name": "local",
-        "material_id": "",
-        "material_name": "0512(1)-복사.png",
-        "material_url": "",
-        "crop": {
-          "upper_left_x": 0.0,
-          "upper_left_y": 0.0,
-          "upper_right_x": 1.0,
-          "upper_right_y": 0.0,
-          "lower_left_x": 0.0,
-          "lower_left_y": 1.0,
-          "lower_right_x": 1.0,
-          "lower_right_y": 1.0
-        },
-        "crop_ratio": "free",
-        "audio_fade": null,
-        "crop_scale": 1.0,
-        "extra_type_option": 0,
-        "stable": {
-          "stable_level": 0,
-          "matrix_path": "",
-          "time_range": {
-            "start": 0,
-            "duration": 0
-          }
-        },
-        "matting": {
-          "flag": 0,
-          "path": "",
-          "interactiveTime": [],
-          "has_use_quick_brush": false,
-          "strokes": [],
-          "has_use_quick_eraser": false,
-          "expansion": 0,
-          "feather": 0,
-          "reverse": false,
-          "custom_matting_id": "",
-          "enable_matting_stroke": false,
-          "is_clould": false,
-          "mask_video_path": "",
-          "cloud_product_fps": 0.0
-        },
-        "source": 0,
-        "source_platform": 0,
-        "formula_id": "",
-        "check_flag": 62978047,
-        "is_unified_beauty_mode": false,
-        "is_set_beauty_mode": false,
-        "object_locked": null,
-        "smart_motion": null,
-        "multi_camera_info": null,
-        "freeze": null,
-        "picture_from": "none",
-        "picture_set_category_id": "",
-        "picture_set_category_name": "",
-        "team_id": "",
-        "local_material_id": "",
-        "origin_material_id": "",
-        "request_id": "",
-        "has_sound_separated": false,
-        "is_text_edit_overdub": false,
-        "is_ai_generate_content": false,
-        "aigc_type": "none",
-        "is_copyright": false,
-        "aigc_history_id": "",
-        "aigc_item_id": "",
-        "local_material_from": "",
-        "smart_match_info": null,
-        "beauty_face_preset_infos": [],
-        "beauty_body_preset_id": "",
-        "beauty_face_auto_preset": {
-          "preset_id": "",
-          "name": "",
-          "rate_map": "",
-          "scene": ""
-        },
-        "beauty_face_auto_preset_infos": [],
-        "beauty_body_auto_preset": null,
-        "live_photo_timestamp": -1,
-        "live_photo_cover_path": "",
-        "content_feature_info": null,
-        "corner_pin": null,
-        "surface_trackings": [],
-        "video_algorithm": {
-          "algorithms": [],
-          "time_range": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "path": "",
-          "gameplay_configs": [],
-          "ai_in_painting_config": [],
-          "complement_frame_config": null,
-          "motion_blur_config": null,
-          "deflicker": null,
-          "noise_reduction": null,
-          "quality_enhance": null,
-          "super_resolution": null,
-          "ai_background_configs": [],
-          "smart_complement_frame": null,
-          "aigc_generate": null,
-          "aigc_generate_list": [],
-          "mouth_shape_driver": null,
-          "ai_expression_driven": null,
-          "ai_motion_driven": null,
-          "image_interpretation": null,
-          "story_video_modify_video_config": {
-            "task_id": "",
-            "is_overwrite_last_video": false,
-            "tracker_task_id": ""
-          },
-          "skip_algorithm_index": []
-        },
-        "video_mask_stroke": {
-          "resource_id": "",
-          "path": "",
-          "type": "",
-          "color": "",
-          "size": 0.0,
-          "alpha": 0.0,
-          "distance": 0.0,
-          "texture": 0.0,
-          "horizontal_shift": 0.0,
-          "vertical_shift": 0.0
-        },
-        "video_mask_shadow": {
-          "resource_id": "",
-          "path": "",
-          "color": "",
-          "alpha": 0.0,
-          "blur": 0.0,
-          "distance": 0.0,
-          "angle": 0.0
-        }
-      },
-      {
-        "id": "01A80B52-8784-4D05-A58C-EC257E42AA32",
-        "unique_id": "",
-        "type": "photo",
-        "duration": 10800000000,
-        "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
-        "media_path": "",
-        "local_id": "",
-        "has_audio": false,
-        "reverse_path": "",
-        "intensifies_path": "",
-        "reverse_intensifies_path": "",
-        "intensifies_audio_path": "",
-        "cartoon_path": "",
-        "width": 1080,
-        "height": 1920,
-        "category_id": "",
-        "category_name": "local",
-        "material_id": "",
-        "material_name": "0512(1)-복사.png",
-        "material_url": "",
-        "crop": {
-          "upper_left_x": 0.0,
-          "upper_left_y": 0.0,
-          "upper_right_x": 1.0,
-          "upper_right_y": 0.0,
-          "lower_left_x": 0.0,
-          "lower_left_y": 1.0,
-          "lower_right_x": 1.0,
-          "lower_right_y": 1.0
-        },
-        "crop_ratio": "free",
-        "audio_fade": null,
-        "crop_scale": 1.0,
-        "extra_type_option": 0,
-        "stable": {
-          "stable_level": 0,
-          "matrix_path": "",
-          "time_range": {
-            "start": 0,
-            "duration": 0
-          }
-        },
-        "matting": {
-          "flag": 0,
-          "path": "",
-          "interactiveTime": [],
-          "has_use_quick_brush": false,
-          "strokes": [],
-          "has_use_quick_eraser": false,
-          "expansion": 0,
-          "feather": 0,
-          "reverse": false,
-          "custom_matting_id": "",
-          "enable_matting_stroke": false,
-          "is_clould": false,
-          "mask_video_path": "",
-          "cloud_product_fps": 0.0
-        },
-        "source": 0,
-        "source_platform": 0,
-        "formula_id": "",
-        "check_flag": 62978047,
-        "is_unified_beauty_mode": false,
-        "is_set_beauty_mode": false,
-        "object_locked": null,
-        "smart_motion": null,
-        "multi_camera_info": null,
-        "freeze": null,
-        "picture_from": "none",
-        "picture_set_category_id": "",
-        "picture_set_category_name": "",
-        "team_id": "",
-        "local_material_id": "",
-        "origin_material_id": "",
-        "request_id": "",
-        "has_sound_separated": false,
-        "is_text_edit_overdub": false,
-        "is_ai_generate_content": false,
-        "aigc_type": "none",
-        "is_copyright": false,
-        "aigc_history_id": "",
-        "aigc_item_id": "",
-        "local_material_from": "",
-        "smart_match_info": null,
-        "beauty_face_preset_infos": [],
-        "beauty_body_preset_id": "",
-        "beauty_face_auto_preset": {
-          "preset_id": "",
-          "name": "",
-          "rate_map": "",
-          "scene": ""
-        },
-        "beauty_face_auto_preset_infos": [],
-        "beauty_body_auto_preset": null,
-        "live_photo_timestamp": -1,
-        "live_photo_cover_path": "",
-        "content_feature_info": null,
-        "corner_pin": null,
-        "surface_trackings": [],
-        "video_algorithm": {
-          "algorithms": [],
-          "time_range": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "path": "",
-          "gameplay_configs": [],
-          "ai_in_painting_config": [],
-          "complement_frame_config": null,
-          "motion_blur_config": null,
-          "deflicker": null,
-          "noise_reduction": null,
-          "quality_enhance": null,
-          "super_resolution": null,
-          "ai_background_configs": [],
-          "smart_complement_frame": null,
-          "aigc_generate": null,
-          "aigc_generate_list": [],
-          "mouth_shape_driver": null,
-          "ai_expression_driven": null,
-          "ai_motion_driven": null,
-          "image_interpretation": null,
-          "story_video_modify_video_config": {
-            "task_id": "",
-            "is_overwrite_last_video": false,
-            "tracker_task_id": ""
-          },
-          "skip_algorithm_index": []
-        },
-        "video_mask_stroke": {
-          "resource_id": "",
-          "path": "",
-          "type": "",
-          "color": "",
-          "size": 0.0,
-          "alpha": 0.0,
-          "distance": 0.0,
-          "texture": 0.0,
-          "horizontal_shift": 0.0,
-          "vertical_shift": 0.0
-        },
-        "video_mask_shadow": {
-          "resource_id": "",
-          "path": "",
-          "color": "",
-          "alpha": 0.0,
-          "blur": 0.0,
-          "distance": 0.0,
-          "angle": 0.0
-        }
-      },
-      {
-        "id": "FCC6C76E-601D-4191-AF0A-2363E80C81D2",
-        "unique_id": "",
-        "type": "photo",
-        "duration": 10800000000,
-        "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
-        "media_path": "",
-        "local_id": "",
-        "has_audio": false,
-        "reverse_path": "",
-        "intensifies_path": "",
-        "reverse_intensifies_path": "",
-        "intensifies_audio_path": "",
-        "cartoon_path": "",
-        "width": 1080,
-        "height": 1920,
-        "category_id": "",
-        "category_name": "local",
-        "material_id": "",
-        "material_name": "0512(1)-복사.png",
-        "material_url": "",
-        "crop": {
-          "upper_left_x": 0.0,
-          "upper_left_y": 0.0,
-          "upper_right_x": 1.0,
-          "upper_right_y": 0.0,
-          "lower_left_x": 0.0,
-          "lower_left_y": 1.0,
-          "lower_right_x": 1.0,
-          "lower_right_y": 1.0
-        },
-        "crop_ratio": "free",
-        "audio_fade": null,
-        "crop_scale": 1.0,
-        "extra_type_option": 0,
-        "stable": {
-          "stable_level": 0,
-          "matrix_path": "",
-          "time_range": {
-            "start": 0,
-            "duration": 0
-          }
-        },
-        "matting": {
-          "flag": 0,
-          "path": "",
-          "interactiveTime": [],
-          "has_use_quick_brush": false,
-          "strokes": [],
-          "has_use_quick_eraser": false,
-          "expansion": 0,
-          "feather": 0,
-          "reverse": false,
-          "custom_matting_id": "",
-          "enable_matting_stroke": false,
-          "is_clould": false,
-          "mask_video_path": "",
-          "cloud_product_fps": 0.0
-        },
-        "source": 0,
-        "source_platform": 0,
-        "formula_id": "",
-        "check_flag": 62978047,
-        "is_unified_beauty_mode": false,
-        "is_set_beauty_mode": false,
-        "object_locked": null,
-        "smart_motion": null,
-        "multi_camera_info": null,
-        "freeze": null,
-        "picture_from": "none",
-        "picture_set_category_id": "",
-        "picture_set_category_name": "",
-        "team_id": "",
-        "local_material_id": "",
-        "origin_material_id": "",
-        "request_id": "",
-        "has_sound_separated": false,
-        "is_text_edit_overdub": false,
-        "is_ai_generate_content": false,
-        "aigc_type": "none",
-        "is_copyright": false,
-        "aigc_history_id": "",
-        "aigc_item_id": "",
-        "local_material_from": "",
-        "smart_match_info": null,
-        "beauty_face_preset_infos": [],
-        "beauty_body_preset_id": "",
-        "beauty_face_auto_preset": {
-          "preset_id": "",
-          "name": "",
-          "rate_map": "",
-          "scene": ""
-        },
-        "beauty_face_auto_preset_infos": [],
-        "beauty_body_auto_preset": null,
-        "live_photo_timestamp": -1,
-        "live_photo_cover_path": "",
-        "content_feature_info": null,
-        "corner_pin": null,
-        "surface_trackings": [],
-        "video_algorithm": {
-          "algorithms": [],
-          "time_range": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "path": "",
-          "gameplay_configs": [],
-          "ai_in_painting_config": [],
-          "complement_frame_config": null,
-          "motion_blur_config": null,
-          "deflicker": null,
-          "noise_reduction": null,
-          "quality_enhance": null,
-          "super_resolution": null,
-          "ai_background_configs": [],
-          "smart_complement_frame": null,
-          "aigc_generate": null,
-          "aigc_generate_list": [],
-          "mouth_shape_driver": null,
-          "ai_expression_driven": null,
-          "ai_motion_driven": null,
-          "image_interpretation": null,
-          "story_video_modify_video_config": {
-            "task_id": "",
-            "is_overwrite_last_video": false,
-            "tracker_task_id": ""
-          },
-          "skip_algorithm_index": []
-        },
-        "video_mask_stroke": {
-          "resource_id": "",
-          "path": "",
-          "type": "",
-          "color": "",
-          "size": 0.0,
-          "alpha": 0.0,
-          "distance": 0.0,
-          "texture": 0.0,
-          "horizontal_shift": 0.0,
-          "vertical_shift": 0.0
-        },
-        "video_mask_shadow": {
-          "resource_id": "",
-          "path": "",
-          "color": "",
-          "alpha": 0.0,
-          "blur": 0.0,
-          "distance": 0.0,
-          "angle": 0.0
-        }
-      }
-    ],
-    "tail_leaders": [],
-    "audios": [],
-    "images": [],
-    "texts": [
-      {
-        "id": "59DCFB3C-D1F7-43FA-83B6-C54CE94C4548",
-        "type": "subtitle",
-        "content": "{\"text\": \"테스트 1\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
-        "name": "",
-        "recognize_text": "",
-        "recognize_model": "",
-        "recognize_task_id": "",
-        "recognize_type": 0,
-        "punc_model": "",
-        "base_content": "",
-        "words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "current_words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "global_alpha": 1.0,
-        "combo_info": {
-          "text_templates": []
-        },
-        "caption_template_info": {
-          "resource_id": "",
-          "third_resource_id": "",
-          "resource_name": "",
-          "category_id": "",
-          "category_name": "",
-          "effect_id": "",
-          "request_id": "",
-          "path": "",
-          "is_new": false,
-          "source_platform": 0
-        },
-        "layer_weight": 1,
-        "letter_spacing": 0.0,
-        "text_curve": null,
-        "text_loop_on_path": false,
-        "offset_on_path": 0.0,
-        "enable_path_typesetting": false,
-        "text_exceeds_path_process_type": 0,
-        "text_typesetting_paths": null,
-        "text_typesetting_paths_file": "",
-        "text_typesetting_path_index": 0,
-        "line_spacing": 0.02,
-        "has_shadow": false,
-        "shadow_color": "#000000",
-        "shadow_alpha": 0.0,
-        "shadow_smoothing": 1.0,
-        "shadow_distance": 5.0,
-        "shadow_point": {
-          "x": 0.0,
-          "y": 0.0
-        },
-        "shadow_angle": -45.0,
-        "shadow_thickness_projection_enable": false,
-        "shadow_thickness_projection_angle": 0.0,
-        "shadow_thickness_projection_distance": 0.0,
-        "border_alpha": 1.0,
-        "border_color": "#000000",
-        "border_width": 0.02,
-        "border_mode": 0,
-        "style_name": "",
-        "text_color": "#ffffff",
-        "text_alpha": 1.0,
-        "font_name": "",
-        "font_title": "none",
-        "font_size": 12.0,
-        "font_path": "",
-        "font_id": "",
-        "font_resource_id": "",
-        "initial_scale": 1.0,
-        "font_url": "",
-        "typesetting": 0,
-        "alignment": 1,
-        "line_feed": 1,
-        "use_effect_default_color": true,
-        "is_rich_text": false,
-        "shape_clip_x": false,
-        "shape_clip_y": false,
-        "ktv_color": "",
-        "text_to_audio_ids": [],
-        "bold_width": 0.0,
-        "italic_degree": 0,
-        "underline": false,
-        "underline_width": 0.05,
-        "underline_offset": 0.22,
-        "sub_type": 0,
-        "check_flag": 47,
-        "text_size": 30,
-        "font_category_name": "",
-        "font_source_platform": 0,
-        "font_third_resource_id": "",
-        "font_category_id": "",
-        "add_type": 2,
-        "operation_type": 0,
-        "fonts": [],
-        "background_color": "#000000",
-        "background_alpha": 0.0,
-        "background_style": 0,
-        "background_fill": 0,
-        "background_height": 0.14,
-        "background_horizontal_offset": 0.0,
-        "background_vertical_offset": 0.0,
-        "background_round_radius": 0.0,
-        "background_width": 0.14,
-        "fixed_height": -1.0,
-        "fixed_width": -1.0,
-        "force_apply_line_max_width": false,
-        "line_max_width": 0.82,
-        "preset_category": "",
-        "preset_category_id": "",
-        "preset_has_set_alignment": false,
-        "preset_id": "",
-        "preset_index": 0,
-        "preset_name": "",
-        "single_char_bg_alpha": 0.0,
-        "single_char_bg_color": "#000000",
-        "single_char_bg_enable": false,
-        "single_char_bg_height": 0.14,
-        "single_char_bg_horizontal_offset": 0.0,
-        "single_char_bg_round_radius": 0.0,
-        "single_char_bg_vertical_offset": 0.0,
-        "single_char_bg_width": 0.14,
-        "source_from": "",
-        "ssml_content": "",
-        "sub_template_id": "",
-        "subtitle_keywords": null,
-        "subtitle_keywords_config": null,
-        "subtitle_template_original_fontsize": 0,
-        "text_preset_resource_id": "",
-        "translate_original_text": "",
-        "tts_auto_update": false,
-        "cutoff_postfix": "",
-        "current_words_recognize_type": 0,
-        "enable_text_motion_blur": false,
-        "group_id": "",
-        "initial_scale_x": 1.0,
-        "initial_scale_y": 1.0,
-        "is_batch_replace": false,
-        "is_lyric_effect": false,
-        "is_words_linear": false,
-        "language": "",
-        "lyric_group_id": "",
-        "lyrics_template": null,
-        "multi_language_current": "none",
-        "oneline_cutoff": 0,
-        "original_size": [
-          0.0,
-          0.0
-        ],
-        "relevance_segment": []
-      },
-      {
-        "id": "8CDFF1CD-61FD-4CE2-BFC9-F19638F3DF1B",
-        "type": "subtitle",
-        "content": "{\"text\": \"테스트 2\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
-        "name": "",
-        "recognize_text": "",
-        "recognize_model": "",
-        "recognize_task_id": "",
-        "recognize_type": 0,
-        "punc_model": "",
-        "base_content": "",
-        "words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "current_words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "global_alpha": 1.0,
-        "combo_info": {
-          "text_templates": []
-        },
-        "caption_template_info": {
-          "resource_id": "",
-          "third_resource_id": "",
-          "resource_name": "",
-          "category_id": "",
-          "category_name": "",
-          "effect_id": "",
-          "request_id": "",
-          "path": "",
-          "is_new": false,
-          "source_platform": 0
-        },
-        "layer_weight": 1,
-        "letter_spacing": 0.0,
-        "text_curve": null,
-        "text_loop_on_path": false,
-        "offset_on_path": 0.0,
-        "enable_path_typesetting": false,
-        "text_exceeds_path_process_type": 0,
-        "text_typesetting_paths": null,
-        "text_typesetting_paths_file": "",
-        "text_typesetting_path_index": 0,
-        "line_spacing": 0.02,
-        "has_shadow": false,
-        "shadow_color": "#000000",
-        "shadow_alpha": 0.0,
-        "shadow_smoothing": 1.0,
-        "shadow_distance": 5.0,
-        "shadow_point": {
-          "x": 0.0,
-          "y": 0.0
-        },
-        "shadow_angle": -45.0,
-        "shadow_thickness_projection_enable": false,
-        "shadow_thickness_projection_angle": 0.0,
-        "shadow_thickness_projection_distance": 0.0,
-        "border_alpha": 1.0,
-        "border_color": "#000000",
-        "border_width": 0.02,
-        "border_mode": 0,
-        "style_name": "",
-        "text_color": "#ffffff",
-        "text_alpha": 1.0,
-        "font_name": "",
-        "font_title": "none",
-        "font_size": 12.0,
-        "font_path": "",
-        "font_id": "",
-        "font_resource_id": "",
-        "initial_scale": 1.0,
-        "font_url": "",
-        "typesetting": 0,
-        "alignment": 1,
-        "line_feed": 1,
-        "use_effect_default_color": true,
-        "is_rich_text": false,
-        "shape_clip_x": false,
-        "shape_clip_y": false,
-        "ktv_color": "",
-        "text_to_audio_ids": [],
-        "bold_width": 0.0,
-        "italic_degree": 0,
-        "underline": false,
-        "underline_width": 0.05,
-        "underline_offset": 0.22,
-        "sub_type": 0,
-        "check_flag": 47,
-        "text_size": 30,
-        "font_category_name": "",
-        "font_source_platform": 0,
-        "font_third_resource_id": "",
-        "font_category_id": "",
-        "add_type": 2,
-        "operation_type": 0,
-        "fonts": [],
-        "background_color": "#000000",
-        "background_alpha": 0.0,
-        "background_style": 0,
-        "background_fill": 0,
-        "background_height": 0.14,
-        "background_horizontal_offset": 0.0,
-        "background_vertical_offset": 0.0,
-        "background_round_radius": 0.0,
-        "background_width": 0.14,
-        "fixed_height": -1.0,
-        "fixed_width": -1.0,
-        "force_apply_line_max_width": false,
-        "line_max_width": 0.82,
-        "preset_category": "",
-        "preset_category_id": "",
-        "preset_has_set_alignment": false,
-        "preset_id": "",
-        "preset_index": 0,
-        "preset_name": "",
-        "single_char_bg_alpha": 0.0,
-        "single_char_bg_color": "#000000",
-        "single_char_bg_enable": false,
-        "single_char_bg_height": 0.14,
-        "single_char_bg_horizontal_offset": 0.0,
-        "single_char_bg_round_radius": 0.0,
-        "single_char_bg_vertical_offset": 0.0,
-        "single_char_bg_width": 0.14,
-        "source_from": "",
-        "ssml_content": "",
-        "sub_template_id": "",
-        "subtitle_keywords": null,
-        "subtitle_keywords_config": null,
-        "subtitle_template_original_fontsize": 0,
-        "text_preset_resource_id": "",
-        "translate_original_text": "",
-        "tts_auto_update": false,
-        "cutoff_postfix": "",
-        "current_words_recognize_type": 0,
-        "enable_text_motion_blur": false,
-        "group_id": "",
-        "initial_scale_x": 1.0,
-        "initial_scale_y": 1.0,
-        "is_batch_replace": false,
-        "is_lyric_effect": false,
-        "is_words_linear": false,
-        "language": "",
-        "lyric_group_id": "",
-        "lyrics_template": null,
-        "multi_language_current": "none",
-        "oneline_cutoff": 0,
-        "original_size": [
-          0.0,
-          0.0
-        ],
-        "relevance_segment": []
-      },
-      {
-        "id": "F06C328D-45C5-4FD6-81ED-50D3E00A58FB",
-        "type": "subtitle",
-        "content": "{\"text\": \"테스트 3\", \"styles\": [{\"fill\": {\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [1, 1, 1]}}}, \"font\": {\"path\": \"\", \"id\": \"\"}, \"strokes\": [{\"content\": {\"render_type\": \"solid\", \"solid\": {\"color\": [0, 0, 0]}}, \"width\": 0.02, \"mode\": 0}], \"size\": 12, \"useLetterColor\": true, \"range\": [0, 5]}]}",
-        "name": "",
-        "recognize_text": "",
-        "recognize_model": "",
-        "recognize_task_id": "",
-        "recognize_type": 0,
-        "punc_model": "",
-        "base_content": "",
-        "words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "current_words": {
-          "start_time": [],
-          "end_time": [],
-          "text": []
-        },
-        "global_alpha": 1.0,
-        "combo_info": {
-          "text_templates": []
-        },
-        "caption_template_info": {
-          "resource_id": "",
-          "third_resource_id": "",
-          "resource_name": "",
-          "category_id": "",
-          "category_name": "",
-          "effect_id": "",
-          "request_id": "",
-          "path": "",
-          "is_new": false,
-          "source_platform": 0
-        },
-        "layer_weight": 1,
-        "letter_spacing": 0.0,
-        "text_curve": null,
-        "text_loop_on_path": false,
-        "offset_on_path": 0.0,
-        "enable_path_typesetting": false,
-        "text_exceeds_path_process_type": 0,
-        "text_typesetting_paths": null,
-        "text_typesetting_paths_file": "",
-        "text_typesetting_path_index": 0,
-        "line_spacing": 0.02,
-        "has_shadow": false,
-        "shadow_color": "#000000",
-        "shadow_alpha": 0.0,
-        "shadow_smoothing": 1.0,
-        "shadow_distance": 5.0,
-        "shadow_point": {
-          "x": 0.0,
-          "y": 0.0
-        },
-        "shadow_angle": -45.0,
-        "shadow_thickness_projection_enable": false,
-        "shadow_thickness_projection_angle": 0.0,
-        "shadow_thickness_projection_distance": 0.0,
-        "border_alpha": 1.0,
-        "border_color": "#000000",
-        "border_width": 0.02,
-        "border_mode": 0,
-        "style_name": "",
-        "text_color": "#ffffff",
-        "text_alpha": 1.0,
-        "font_name": "",
-        "font_title": "none",
-        "font_size": 12.0,
-        "font_path": "",
-        "font_id": "",
-        "font_resource_id": "",
-        "initial_scale": 1.0,
-        "font_url": "",
-        "typesetting": 0,
-        "alignment": 1,
-        "line_feed": 1,
-        "use_effect_default_color": true,
-        "is_rich_text": false,
-        "shape_clip_x": false,
-        "shape_clip_y": false,
-        "ktv_color": "",
-        "text_to_audio_ids": [],
-        "bold_width": 0.0,
-        "italic_degree": 0,
-        "underline": false,
-        "underline_width": 0.05,
-        "underline_offset": 0.22,
-        "sub_type": 0,
-        "check_flag": 47,
-        "text_size": 30,
-        "font_category_name": "",
-        "font_source_platform": 0,
-        "font_third_resource_id": "",
-        "font_category_id": "",
-        "add_type": 2,
-        "operation_type": 0,
-        "fonts": [],
-        "background_color": "#000000",
-        "background_alpha": 0.0,
-        "background_style": 0,
-        "background_fill": 0,
-        "background_height": 0.14,
-        "background_horizontal_offset": 0.0,
-        "background_vertical_offset": 0.0,
-        "background_round_radius": 0.0,
-        "background_width": 0.14,
-        "fixed_height": -1.0,
-        "fixed_width": -1.0,
-        "force_apply_line_max_width": false,
-        "line_max_width": 0.82,
-        "preset_category": "",
-        "preset_category_id": "",
-        "preset_has_set_alignment": false,
-        "preset_id": "",
-        "preset_index": 0,
-        "preset_name": "",
-        "single_char_bg_alpha": 0.0,
-        "single_char_bg_color": "#000000",
-        "single_char_bg_enable": false,
-        "single_char_bg_height": 0.14,
-        "single_char_bg_horizontal_offset": 0.0,
-        "single_char_bg_round_radius": 0.0,
-        "single_char_bg_vertical_offset": 0.0,
-        "single_char_bg_width": 0.14,
-        "source_from": "",
-        "ssml_content": "",
-        "sub_template_id": "",
-        "subtitle_keywords": null,
-        "subtitle_keywords_config": null,
-        "subtitle_template_original_fontsize": 0,
-        "text_preset_resource_id": "",
-        "translate_original_text": "",
-        "tts_auto_update": false,
-        "cutoff_postfix": "",
-        "current_words_recognize_type": 0,
-        "enable_text_motion_blur": false,
-        "group_id": "",
-        "initial_scale_x": 1.0,
-        "initial_scale_y": 1.0,
-        "is_batch_replace": false,
-        "is_lyric_effect": false,
-        "is_words_linear": false,
-        "language": "",
-        "lyric_group_id": "",
-        "lyrics_template": null,
-        "multi_language_current": "none",
-        "oneline_cutoff": 0,
-        "original_size": [
-          0.0,
-          0.0
-        ],
-        "relevance_segment": []
-      }
-    ],
-    "effects": [],
-    "stickers": [],
-    "canvases": [
-      {
-        "id": "AB95469B-DDBA-4BB6-8F49-D03E89793F7A",
-        "type": "canvas_color",
-        "color": "",
-        "blur": 0.0,
-        "image": "",
-        "album_image": "",
-        "image_id": "",
-        "image_name": "",
-        "source_platform": 0,
-        "team_id": ""
-      },
-      {
-        "id": "95DE5A0D-2330-49F6-9BB7-C7A7CA2D4974",
-        "type": "canvas_color",
-        "color": "",
-        "blur": 0.0,
-        "image": "",
-        "album_image": "",
-        "image_id": "",
-        "image_name": "",
-        "source_platform": 0,
-        "team_id": ""
-      },
-      {
-        "id": "97558F00-AA67-4896-A44F-B586FC1640E8",
-        "type": "canvas_color",
-        "color": "",
-        "blur": 0.0,
-        "image": "",
-        "album_image": "",
-        "image_id": "",
-        "image_name": "",
-        "source_platform": 0,
-        "team_id": ""
-      }
-    ],
-    "transitions": [],
-    "audio_effects": [],
-    "audio_fades": [],
-    "beats": [],
-    "material_animations": [
-      {
-        "id": "A7F62413-DED6-4B85-B658-D5549FDD5AAA",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "DF0C51C3-9895-4EE2-990C-6641B0BB883F",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "D31F2CAD-966D-49CD-905B-36F7C6B8F877",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "48CAD6BE-BFB9-4C64-80B4-7583F1A75D43",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "39089F38-191C-4998-B94B-0F9F918737FC",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      },
-      {
-        "id": "EBE18450-1067-4B8F-8DB0-0CC485F4CA6E",
-        "type": "sticker_animation",
-        "animations": [],
-        "multi_language_current": "none"
-      }
-    ],
-    "placeholders": [],
-    "placeholder_infos": [
-      {
-        "id": "77141220-8C1F-44D3-9470-59A7C81704C8",
-        "type": "placeholder_info",
-        "meta_type": "none",
-        "res_path": "",
-        "res_text": "",
-        "error_path": "",
-        "error_text": ""
-      },
-      {
-        "id": "CF1BBAE8-636A-4FE2-896B-6C99E445A21F",
-        "type": "placeholder_info",
-        "meta_type": "none",
-        "res_path": "",
-        "res_text": "",
-        "error_path": "",
-        "error_text": ""
-      },
-      {
-        "id": "A37F3493-A07F-4D84-9C6C-4D9A233B13D4",
-        "type": "placeholder_info",
-        "meta_type": "none",
-        "res_path": "",
-        "res_text": "",
-        "error_path": "",
-        "error_text": ""
-      }
-    ],
-    "speeds": [
-      {
-        "id": "8B1BB0C5-B6F9-4040-A8F9-7A65D3EDEA1F",
-        "type": "speed",
-        "mode": 0,
-        "speed": 1.0,
-        "curve_speed": null
-      },
-      {
-        "id": "5F1A8031-DEFD-474A-A100-0FA03EAD2D16",
-        "type": "speed",
-        "mode": 0,
-        "speed": 1.0,
-        "curve_speed": null
-      },
-      {
-        "id": "1EB12FAC-C9DA-463E-8C7B-3E1C4FD417B8",
-        "type": "speed",
-        "mode": 0,
-        "speed": 1.0,
-        "curve_speed": null
-      }
-    ],
-    "common_mask": [],
-    "chromas": [],
-    "text_templates": [],
-    "realtime_denoises": [],
-    "audio_pannings": [],
-    "audio_pitch_shifts": [],
-    "video_trackings": [],
-    "hsl": [],
-    "drafts": [],
-    "color_curves": [],
-    "hsl_curves": [],
-    "primary_color_wheels": [],
-    "log_color_wheels": [],
-    "video_effects": [],
-    "audio_balances": [],
-    "handwrites": [],
-    "manual_deformations": [],
-    "manual_beautys": [],
-    "plugin_effects": [],
-    "sound_channel_mappings": [
-      {
-        "id": "A2835A88-FEF2-44E1-828B-BB28062AD1EC",
-        "type": "none",
-        "audio_channel_mapping": 0,
-        "is_config_open": false
-      },
-      {
-        "id": "207545FD-BF5F-4968-8B6A-35B678B11313",
-        "type": "none",
-        "audio_channel_mapping": 0,
-        "is_config_open": false
-      },
-      {
-        "id": "43D6C593-C5DA-45DD-B37E-64D5BD67F484",
-        "type": "none",
-        "audio_channel_mapping": 0,
-        "is_config_open": false
-      }
-    ],
-    "green_screens": [],
-    "shapes": [],
-    "material_colors": [
-      {
-        "id": "6769C4D6-0ADF-481F-A2F7-D1BEC3C3C91E",
-        "is_color_clip": false,
-        "is_gradient": false,
-        "solid_color": "",
-        "gradient_colors": [],
-        "gradient_percents": [],
-        "gradient_angle": 90.0,
-        "width": 0.0,
-        "height": 0.0
-      },
-      {
-        "id": "8B1BCFE1-912A-4887-A44B-D816DEA9B7CC",
-        "is_color_clip": false,
-        "is_gradient": false,
-        "solid_color": "",
-        "gradient_colors": [],
-        "gradient_percents": [],
-        "gradient_angle": 90.0,
-        "width": 0.0,
-        "height": 0.0
-      },
-      {
-        "id": "37E70C8D-F886-4A87-87AE-E7A074054166",
-        "is_color_clip": false,
-        "is_gradient": false,
-        "solid_color": "",
-        "gradient_colors": [],
-        "gradient_percents": [],
-        "gradient_angle": 90.0,
-        "width": 0.0,
-        "height": 0.0
-      }
-    ],
-    "digital_humans": [],
-    "digital_human_model_dressing": [],
-    "smart_crops": [],
-    "ai_translates": [],
-    "audio_track_indexes": [],
-    "loudnesses": [
-      {
-        "id": "3432A392-9610-4C7C-A77A-1E4DB5128276",
-        "enable": false,
-        "time_range": null,
-        "file_id": "",
-        "target_loudness": 0.0,
-        "loudness_param": null
-      },
-      {
-        "id": "BAFC303B-A5F0-415A-8354-6C8BB728856D",
-        "enable": false,
-        "time_range": null,
-        "file_id": "",
-        "target_loudness": 0.0,
-        "loudness_param": null
-      },
-      {
-        "id": "C0EAEB13-4F21-40D2-AB39-35257DB3981F",
-        "enable": false,
-        "time_range": null,
-        "file_id": "",
-        "target_loudness": 0.0,
-        "loudness_param": null
-      }
-    ],
-    "vocal_beautifys": [],
-    "vocal_separations": [
-      {
-        "id": "593509F8-18E4-4B16-9098-E1C8B2A14287",
-        "type": "vocal_separation",
-        "choice": 0,
-        "removed_sounds": [],
-        "time_range": null,
-        "production_path": "",
-        "final_algorithm": "",
-        "enter_from": ""
-      },
-      {
-        "id": "052D1D69-FC5D-4D13-8BF4-049931E847B8",
-        "type": "vocal_separation",
-        "choice": 0,
-        "removed_sounds": [],
-        "time_range": null,
-        "production_path": "",
-        "final_algorithm": "",
-        "enter_from": ""
-      },
-      {
-        "id": "DBDC1EB0-DCAE-4758-9BBC-F5EDC03B76A8",
-        "type": "vocal_separation",
-        "choice": 0,
-        "removed_sounds": [],
-        "time_range": null,
-        "production_path": "",
-        "final_algorithm": "",
-        "enter_from": ""
-      }
-    ],
-    "smart_relights": [],
-    "time_marks": [],
-    "multi_language_refs": [],
-    "video_shadows": [],
-    "video_strokes": [],
-    "video_radius": []
-  },
-  "tracks": [
-    {
-      "id": "664E1629-0A0F-43CF-B0A5-0DBB1FD1DA32",
-      "type": "video",
-      "attribute": 1,
-      "flag": 0,
-      "name": "",
-      "segments": [
-        {
-          "id": "A88B6314-C205-41E3-A2F6-7731DB9F4170",
-          "material_id": "215E24C9-B246-4A13-9318-B42A76BAA993",
-          "source_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "target_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 0.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.0
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "extra_material_refs": [
-            "8B1BB0C5-B6F9-4040-A8F9-7A65D3EDEA1F",
-            "77141220-8C1F-44D3-9470-59A7C81704C8",
-            "AB95469B-DDBA-4BB6-8F49-D03E89793F7A",
-            "A7F62413-DED6-4B85-B658-D5549FDD5AAA",
-            "A2835A88-FEF2-44E1-828B-BB28062AD1EC",
-            "6769C4D6-0ADF-481F-A2F7-D1BEC3C3C91E",
-            "3432A392-9610-4C7C-A77A-1E4DB5128276",
-            "593509F8-18E4-4B16-9098-E1C8B2A14287"
-          ],
-          "render_index": 0,
-          "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
-          "enable_color_wheels": true,
-          "track_attribute": 1,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        },
-        {
-          "id": "8F6505A3-3385-4B50-ACB1-5BE64A77BD16",
-          "material_id": "01A80B52-8784-4D05-A58C-EC257E42AA32",
-          "source_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "target_timerange": {
-            "start": 3000000,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 0.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.0
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "extra_material_refs": [
-            "5F1A8031-DEFD-474A-A100-0FA03EAD2D16",
-            "CF1BBAE8-636A-4FE2-896B-6C99E445A21F",
-            "95DE5A0D-2330-49F6-9BB7-C7A7CA2D4974",
-            "D31F2CAD-966D-49CD-905B-36F7C6B8F877",
-            "207545FD-BF5F-4968-8B6A-35B678B11313",
-            "8B1BCFE1-912A-4887-A44B-D816DEA9B7CC",
-            "BAFC303B-A5F0-415A-8354-6C8BB728856D",
-            "052D1D69-FC5D-4D13-8BF4-049931E847B8"
-          ],
-          "render_index": 0,
-          "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
-          "enable_color_wheels": true,
-          "track_attribute": 1,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        },
-        {
-          "id": "59774054-3684-4D1B-B783-612F19267AEC",
-          "material_id": "FCC6C76E-601D-4191-AF0A-2363E80C81D2",
-          "source_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "target_timerange": {
-            "start": 6000000,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 0.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.0
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "extra_material_refs": [
-            "1EB12FAC-C9DA-463E-8C7B-3E1C4FD417B8",
-            "A37F3493-A07F-4D84-9C6C-4D9A233B13D4",
-            "97558F00-AA67-4896-A44F-B586FC1640E8",
-            "39089F38-191C-4998-B94B-0F9F918737FC",
-            "43D6C593-C5DA-45DD-B37E-64D5BD67F484",
-            "37E70C8D-F886-4A87-87AE-E7A074054166",
-            "C0EAEB13-4F21-40D2-AB39-35257DB3981F",
-            "DBDC1EB0-DCAE-4758-9BBC-F5EDC03B76A8"
-          ],
-          "render_index": 0,
-          "keyframe_refs": [],
-          "enable_lut": true,
-          "enable_adjust": true,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": {
-            "mode": 1,
-            "intensity": 1.0,
-            "nits": 1000
-          },
-          "enable_color_wheels": true,
-          "track_attribute": 1,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        }
-      ]
+        "ratio": "original"
     },
-    {
-      "id": "9A83A679-6D89-4EC1-8316-C55AB838EABC",
-      "type": "text",
-      "attribute": 0,
-      "flag": 0,
-      "name": "",
-      "segments": [
+    "color_space": 0,
+    "config": {
+        "adjust_max_index": 1,
+        "attachment_info": [],
+        "combination_max_index": 1,
+        "export_range": null,
+        "extract_audio_last_index": 1,
+        "lyrics_recognition_id": "",
+        "lyrics_sync": true,
+        "lyrics_taskinfo": [],
+        "maintrack_adsorb": false,
+        "material_save_mode": 0,
+        "multi_language_current": "none",
+        "multi_language_list": [],
+        "multi_language_main": "none",
+        "multi_language_mode": "none",
+        "original_sound_last_index": 1,
+        "record_audio_last_index": 1,
+        "sticker_max_index": 1,
+        "subtitle_keywords_config": null,
+        "subtitle_recognition_id": "",
+        "subtitle_sync": true,
+        "subtitle_taskinfo": [],
+        "system_font_list": [],
+        "video_mute": false,
+        "zoom_info_params": null
+    },
+    "cover": null,
+    "create_time": 0,
+    "duration": 9000000,
+    "extra_info": null,
+    "fps": 30,
+    "free_render_index_mode_on": false,
+    "group_container": null,
+    "id": "91E08AC5-22FB-47e2-9AA0-7DC300FAEA2B",
+    "keyframe_graph_list": [],
+    "keyframes": {
+        "adjusts": [],
+        "audios": [],
+        "effects": [],
+        "filters": [],
+        "handwrites": [],
+        "stickers": [],
+        "texts": [],
+        "videos": []
+    },
+    "last_modified_platform": {
+        "app_id": 3704,
+        "app_source": "lv",
+        "app_version": "5.9.0",
+        "os": "windows"
+    },
+    "platform": {
+        "app_id": 3704,
+        "app_source": "lv",
+        "app_version": "5.9.0",
+        "os": "windows"
+    },
+    "materials": {
+        "ai_translates": [],
+        "audio_balances": [],
+        "audio_effects": [],
+        "audio_fades": [],
+        "audio_track_indexes": [],
+        "audios": [],
+        "beats": [],
+        "canvases": [],
+        "chromas": [],
+        "color_curves": [],
+        "digital_humans": [],
+        "drafts": [],
+        "effects": [],
+        "flowers": [],
+        "green_screens": [],
+        "handwrites": [],
+        "hsl": [],
+        "images": [],
+        "log_color_wheels": [],
+        "loudnesses": [],
+        "manual_deformations": [],
+        "masks": [],
+        "material_animations": [],
+        "material_colors": [],
+        "multi_language_refs": [],
+        "placeholders": [],
+        "plugin_effects": [],
+        "primary_color_wheels": [],
+        "realtime_denoises": [],
+        "shapes": [],
+        "smart_crops": [],
+        "smart_relights": [],
+        "sound_channel_mappings": [],
+        "speeds": [
+            {
+                "curve_speed": null,
+                "id": "16a65df2da094201a1f6928701f747e4",
+                "mode": 0,
+                "speed": 1.0,
+                "type": "speed"
+            },
+            {
+                "curve_speed": null,
+                "id": "92e8fec52a864c0896a85667005de4b0",
+                "mode": 0,
+                "speed": 1.0,
+                "type": "speed"
+            },
+            {
+                "curve_speed": null,
+                "id": "7b3bbb603ed8481ea6cada2b506b6cbc",
+                "mode": 0,
+                "speed": 1.0,
+                "type": "speed"
+            }
+        ],
+        "stickers": [],
+        "tail_leaders": [],
+        "text_templates": [],
+        "texts": [
+            {
+                "id": "2e03a377330e457ca0558e09bddea99b",
+                "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 5], \"size\": 8.0, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"테스트 1\"}",
+                "typesetting": 0,
+                "alignment": 0,
+                "letter_spacing": 0.0,
+                "line_spacing": 0.02,
+                "line_feed": 1,
+                "line_max_width": 0.82,
+                "force_apply_line_max_width": false,
+                "check_flag": 7,
+                "type": "text",
+                "global_alpha": 1.0
+            },
+            {
+                "id": "e35eca7bf2524c3fb3cd69dfc547a1dc",
+                "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 5], \"size\": 8.0, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"테스트 2\"}",
+                "typesetting": 0,
+                "alignment": 0,
+                "letter_spacing": 0.0,
+                "line_spacing": 0.02,
+                "line_feed": 1,
+                "line_max_width": 0.82,
+                "force_apply_line_max_width": false,
+                "check_flag": 7,
+                "type": "text",
+                "global_alpha": 1.0
+            },
+            {
+                "id": "bab4419923c74eee9cf4b4c17300fb65",
+                "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 5], \"size\": 8.0, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"테스트 3\"}",
+                "typesetting": 0,
+                "alignment": 0,
+                "letter_spacing": 0.0,
+                "line_spacing": 0.02,
+                "line_feed": 1,
+                "line_max_width": 0.82,
+                "force_apply_line_max_width": false,
+                "check_flag": 7,
+                "type": "text",
+                "global_alpha": 1.0
+            }
+        ],
+        "time_marks": [],
+        "transitions": [],
+        "video_effects": [],
+        "video_trackings": [],
+        "videos": [
+            {
+                "audio_fade": null,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 63487,
+                "crop": {
+                    "upper_left_x": 0.0,
+                    "upper_left_y": 0.0,
+                    "upper_right_x": 1.0,
+                    "upper_right_y": 0.0,
+                    "lower_left_x": 0.0,
+                    "lower_left_y": 1.0,
+                    "lower_right_x": 1.0,
+                    "lower_right_y": 1.0
+                },
+                "crop_ratio": "free",
+                "crop_scale": 1.0,
+                "duration": 10800000000,
+                "height": 1920,
+                "id": "5e61a6a79b8d4b9d9282975320816ee4",
+                "local_material_id": "",
+                "material_id": "5e61a6a79b8d4b9d9282975320816ee4",
+                "material_name": "0512(1)-복사.png",
+                "media_path": "",
+                "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
+                "type": "photo",
+                "width": 1080
+            },
+            {
+                "audio_fade": null,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 63487,
+                "crop": {
+                    "upper_left_x": 0.0,
+                    "upper_left_y": 0.0,
+                    "upper_right_x": 1.0,
+                    "upper_right_y": 0.0,
+                    "lower_left_x": 0.0,
+                    "lower_left_y": 1.0,
+                    "lower_right_x": 1.0,
+                    "lower_right_y": 1.0
+                },
+                "crop_ratio": "free",
+                "crop_scale": 1.0,
+                "duration": 10800000000,
+                "height": 1920,
+                "id": "0e4d2a83f3724d428f420960f1600a9b",
+                "local_material_id": "",
+                "material_id": "0e4d2a83f3724d428f420960f1600a9b",
+                "material_name": "0512(1)-복사.png",
+                "media_path": "",
+                "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
+                "type": "photo",
+                "width": 1080
+            },
+            {
+                "audio_fade": null,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 63487,
+                "crop": {
+                    "upper_left_x": 0.0,
+                    "upper_left_y": 0.0,
+                    "upper_right_x": 1.0,
+                    "upper_right_y": 0.0,
+                    "lower_left_x": 0.0,
+                    "lower_left_y": 1.0,
+                    "lower_right_x": 1.0,
+                    "lower_right_y": 1.0
+                },
+                "crop_ratio": "free",
+                "crop_scale": 1.0,
+                "duration": 10800000000,
+                "height": 1920,
+                "id": "e58eba3b356b4f8eb1438ff76cb33740",
+                "local_material_id": "",
+                "material_id": "e58eba3b356b4f8eb1438ff76cb33740",
+                "material_name": "0512(1)-복사.png",
+                "media_path": "",
+                "path": "C:/Users/sub/Downloads/0512(1)-복사.png",
+                "type": "photo",
+                "width": 1080
+            }
+        ],
+        "vocal_beautifys": [],
+        "vocal_separations": []
+    },
+    "mutable_config": null,
+    "name": "",
+    "new_version": "110.0.0",
+    "relationships": [],
+    "render_index_track_mode_on": false,
+    "retouch_cover": null,
+    "source": "default",
+    "static_cover_image_path": "",
+    "time_marks": null,
+    "tracks": [
         {
-          "id": "CA02B80D-BFB5-42D5-A448-90A2B929A50C",
-          "material_id": "59DCFB3C-D1F7-43FA-83B6-C54CE94C4548",
-          "source_timerange": null,
-          "target_timerange": {
-            "start": 0,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 1.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.3
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "extra_material_refs": [
-            "DF0C51C3-9895-4EE2-990C-6641B0BB883F"
-          ],
-          "render_index": 14000,
-          "keyframe_refs": [],
-          "enable_lut": false,
-          "enable_adjust": false,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": null,
-          "enable_color_wheels": true,
-          "track_attribute": 0,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
+            "attribute": 0,
+            "flag": 0,
+            "id": "6ef38c54653f479cb82882230d3bf96f",
+            "is_default_name": false,
+            "name": "video_main",
+            "segments": [
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "5d0fb0e5def1491d8ec666b62dd296c5",
+                    "material_id": "5e61a6a79b8d4b9d9282975320816ee4",
+                    "target_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "16a65df2da094201a1f6928701f747e4"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": {
+                        "alpha": 1.0,
+                        "flip": {
+                            "horizontal": false,
+                            "vertical": false
+                        },
+                        "rotation": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "transform": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "uniform_scale": {
+                        "on": true,
+                        "value": 1.0
+                    },
+                    "hdr_settings": {
+                        "intensity": 1.0,
+                        "mode": 1,
+                        "nits": 1000
+                    },
+                    "render_index": 0
+                },
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "8a387f7d1c26485da963efd74eb0c2bf",
+                    "material_id": "0e4d2a83f3724d428f420960f1600a9b",
+                    "target_timerange": {
+                        "start": 3000000,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "92e8fec52a864c0896a85667005de4b0"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": {
+                        "alpha": 1.0,
+                        "flip": {
+                            "horizontal": false,
+                            "vertical": false
+                        },
+                        "rotation": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "transform": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "uniform_scale": {
+                        "on": true,
+                        "value": 1.0
+                    },
+                    "hdr_settings": {
+                        "intensity": 1.0,
+                        "mode": 1,
+                        "nits": 1000
+                    },
+                    "render_index": 0
+                },
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "74776001b8f947fab50b2543fa6d1d60",
+                    "material_id": "e58eba3b356b4f8eb1438ff76cb33740",
+                    "target_timerange": {
+                        "start": 6000000,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "7b3bbb603ed8481ea6cada2b506b6cbc"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": {
+                        "alpha": 1.0,
+                        "flip": {
+                            "horizontal": false,
+                            "vertical": false
+                        },
+                        "rotation": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "transform": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "uniform_scale": {
+                        "on": true,
+                        "value": 1.0
+                    },
+                    "hdr_settings": {
+                        "intensity": 1.0,
+                        "mode": 1,
+                        "nits": 1000
+                    },
+                    "render_index": 0
+                }
+            ],
+            "type": "video"
         },
         {
-          "id": "509722B1-1376-4377-91A5-F718E4605AAB",
-          "material_id": "8CDFF1CD-61FD-4CE2-BFC9-F19638F3DF1B",
-          "source_timerange": null,
-          "target_timerange": {
-            "start": 3000000,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 1.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.3
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "extra_material_refs": [
-            "48CAD6BE-BFB9-4C64-80B4-7583F1A75D43"
-          ],
-          "render_index": 14001,
-          "keyframe_refs": [],
-          "enable_lut": false,
-          "enable_adjust": false,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": null,
-          "enable_color_wheels": true,
-          "track_attribute": 0,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
-        },
-        {
-          "id": "468458B8-DABC-4F45-889E-EA861B32DDCD",
-          "material_id": "F06C328D-45C5-4FD6-81ED-50D3E00A58FB",
-          "source_timerange": null,
-          "target_timerange": {
-            "start": 6000000,
-            "duration": 3000000
-          },
-          "render_timerange": {
-            "start": 0,
-            "duration": 0
-          },
-          "desc": "",
-          "state": 0,
-          "speed": 1.0,
-          "is_loop": false,
-          "is_tone_modify": false,
-          "reverse": false,
-          "intensifies_audio": false,
-          "cartoon": false,
-          "volume": 1.0,
-          "last_nonzero_volume": 1.0,
-          "clip": {
-            "scale": {
-              "x": 1.0,
-              "y": 1.0
-            },
-            "rotation": 0.0,
-            "transform": {
-              "x": 0.0,
-              "y": 0.3
-            },
-            "flip": {
-              "vertical": false,
-              "horizontal": false
-            },
-            "alpha": 1.0
-          },
-          "uniform_scale": {
-            "on": true,
-            "value": 1.0
-          },
-          "extra_material_refs": [
-            "EBE18450-1067-4B8F-8DB0-0CC485F4CA6E"
-          ],
-          "render_index": 14002,
-          "keyframe_refs": [],
-          "enable_lut": false,
-          "enable_adjust": false,
-          "enable_hsl": false,
-          "visible": true,
-          "group_id": "",
-          "enable_color_curves": true,
-          "enable_hsl_curves": true,
-          "track_render_index": 0,
-          "hdr_settings": null,
-          "enable_color_wheels": true,
-          "track_attribute": 0,
-          "is_placeholder": false,
-          "template_id": "",
-          "enable_smart_color_adjust": false,
-          "template_scene": "default",
-          "common_keyframes": [],
-          "caption_info": null,
-          "responsive_layout": {
-            "enable": false,
-            "target_follow": "",
-            "size_layout": 0,
-            "horizontal_pos_layout": 0,
-            "vertical_pos_layout": 0
-          },
-          "enable_color_match_adjust": false,
-          "enable_color_correct_adjust": false,
-          "enable_adjust_mask": false,
-          "raw_segment_id": "",
-          "lyric_keyframes": null,
-          "enable_video_mask": true,
-          "digital_human_template_group_id": "",
-          "color_correct_alg_result": "",
-          "source": "segmentsourcenormal",
-          "enable_mask_stroke": false,
-          "enable_mask_shadow": false,
-          "enable_color_adjust_pro": false
+            "attribute": 0,
+            "flag": 0,
+            "id": "305b5e2a6b1048b0a0d7cb316f25843a",
+            "is_default_name": false,
+            "name": "captions",
+            "segments": [
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "26fed09369c74a44b07630dc151a9530",
+                    "material_id": "2e03a377330e457ca0558e09bddea99b",
+                    "target_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": null,
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "dd63bd0ae78644c1bc639b833798f15a"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": {
+                        "alpha": 1.0,
+                        "flip": {
+                            "horizontal": false,
+                            "vertical": false
+                        },
+                        "rotation": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "transform": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "uniform_scale": {
+                        "on": true,
+                        "value": 1.0
+                    },
+                    "render_index": 15000
+                },
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "475cf9c48b6749d2868cff44fb7058c7",
+                    "material_id": "e35eca7bf2524c3fb3cd69dfc547a1dc",
+                    "target_timerange": {
+                        "start": 3000000,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": null,
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "41295b02ebe84f2e9315ebf50fd150d2"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": {
+                        "alpha": 1.0,
+                        "flip": {
+                            "horizontal": false,
+                            "vertical": false
+                        },
+                        "rotation": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "transform": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "uniform_scale": {
+                        "on": true,
+                        "value": 1.0
+                    },
+                    "render_index": 15000
+                },
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "b86189462df1449084363839ea5841c4",
+                    "material_id": "bab4419923c74eee9cf4b4c17300fb65",
+                    "target_timerange": {
+                        "start": 6000000,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": null,
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "fcbde2a0d4554d54a9237186e8e05ffc"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": {
+                        "alpha": 1.0,
+                        "flip": {
+                            "horizontal": false,
+                            "vertical": false
+                        },
+                        "rotation": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "transform": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "uniform_scale": {
+                        "on": true,
+                        "value": 1.0
+                    },
+                    "render_index": 15000
+                }
+            ],
+            "type": "text"
         }
-      ]
-    }
-  ]
+    ],
+    "update_time": 0,
+    "version": 360000
 }
