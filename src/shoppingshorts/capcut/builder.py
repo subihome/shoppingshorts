@@ -28,7 +28,9 @@ def _us(seconds: float) -> int:
 
 
 def _win_path(p: str | Path) -> str:
-    return str(p).replace("/", "\\")
+    # The user's own working draft uses forward slashes in path fields, so we
+    # mirror that — backslashes in our earlier attempt didn't help.
+    return str(p).replace("\\", "/")
 
 
 def _video_material(path: str, width: int, height: int,
